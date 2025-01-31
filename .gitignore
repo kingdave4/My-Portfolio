@@ -1,0 +1,27 @@
+# Ignore Hugo-generated files
+public/
+resources/
+hugo_stats.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Git-related files
+.git/
+
+# Ignore Hugo cache files
+.cache/
+hugo_cache/
+*.log
+
+# Ignore Terraform state & config files
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
+
+# Ignore Node.js files (if using npm for custom themes)
+node_modules/
+package-lock.json
+yarn.lock

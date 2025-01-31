@@ -1,0 +1,13 @@
+baseURL = "https://yourblog.azurewebsites.net/"
+languageCode = "en-us"
+title = "My Hugo Blog"
+theme = "PaperMod"
+
+[params]
+  author = "Your Name"
+  description = "A DevOps Engineer's Blog & Resume"
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/posts/"
