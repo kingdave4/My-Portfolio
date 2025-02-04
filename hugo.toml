@@ -1,13 +1,74 @@
-baseURL = "https://yourblog.azurewebsites.net/"
+baseURL = "http://localhost:1313/"  # For local development
 languageCode = "en-us"
-title = "My Hugo Blog"
-theme = "PaperMod"
+defaultContentLanguage = "en"
+title = "David Mboli-Idie"
+theme = "gokarna"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Projects"
+    pre = "<span data-feather='code'></span>"
+    url = "/projects/"
+    weight = 3
+  [[menu.main]]
+    name = "Blog"
+    pre = "<span data-feather='book'></span>"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+  
+  [[menu.main]]
+    name = "Tags"
+    pre = "<span data-feather='tag'></span>"
+    url = "/tags/"
+    weight = 4
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
 
 [params]
-  author = "Your Name"
-  description = "A DevOps Engineer's Blog & Resume"
 
-[[menu.main]]
-  identifier = "blog"
-  name = "Blog"
-  url = "/posts/"
+  # Choose the color shown when hyperlinks are hovered over
+  accentColor = "#FF4D4D"
+
+  # Avatar settings
+  avatarURL = "/images/my_photo.png"  # Updated path to your avatar image
+  avatarSize = "size-m"               # Options: size-xs, size-s, size-m, size-l, size-xl
+
+  # Custom Head HTML (optional)
+  customHeadHTML = "<script>console.log('Any HTML')</script>"
+
+  # Date format for posts
+  dateFormat = "2 January, 2006"
+
+  # Meta description for the home page
+  description = "IT Support to Cloud Engineer | AWS | DevOps | Python"
+
+  showBackToTopButton = true
+  
+  showPostsOnHomePage = ""
+  
+  # Social icons
+  socialIcons = [
+    {name = "github", url = "https://github.com/kingdave4"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/david-mboli-idie-38b974209/"},
+    {name = "email", url = "mailto:davidmboli1@email.com"}
+  ]
+
+[minify]
+    minifyOutput = true

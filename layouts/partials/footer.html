@@ -1,0 +1,68 @@
+<footer class="footer">
+    <!-- Option for user to inject custom html -->
+    {{ if .Site.Params.CustomFooterHTML }}
+    {{ .Site.Params.CustomFooterHTML | safeHTML }}
+    {{ end }}
+
+    {{ .Scratch.Set "footerText" "" }}
+
+    {{ if (.Site.Params.Footer) }}
+
+        {{ if and (eq .Kind "page") (.Date) }}
+            {{ .Scratch.Add "footerText" (.Date | time.Format "2006") }}
+        {{ else }}
+            {{ .Scratch.Add "footerText" (time.Now | time.Format "2006") }}
+        {{ end }}
+
+        {{ if and (eq .Kind "page") (.Lastmod) (gt (time.Format "2006" .Lastmod) (time.Format "2006" .Date)) }}
+            {{ .Scratch.Add "footerText" "-" }}
+            {{ .Scratch.Add "footerText" (.Lastmod | time.Format "2006") }}
+        {{ end }}
+
+        {{ .Scratch.Add "footerText" " " }}
+        {{ .Scratch.Add "footerText" .Site.Params.Footer }}
+
+        {{ if and (eq .Kind "page") (.Site.Copyright) }}
+            {{ .Scratch.Add "footerText" " " }}
+            {{ .Scratch.Add "footerText" .Site.Copyright }}
+        {{ end }}
+
+    {{ end }}
+
+    {{ if (gt (.Scratch.Get "footerText" | len) 0) }}
+        <span>&copy; {{ .Scratch.Get "footerText" | markdownify }}</span>
+    {{ end }}
+
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/gokarna-theme/gokarna-hugo">Gokarna</a>
+    </span>
+    
+</footer>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- Typed.js for Animated Text -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var typedElement = document.querySelector(".animated-text");
+
+    if (typedElement) {
+        var siteDescription = typedElement.innerText.trim(); // Get description from HTML
+        var typed = new Typed(".animated-text", {
+            strings: [siteDescription], // Animate the description
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    }
+});
+</script>
+
+
+</body>
+</html>
+

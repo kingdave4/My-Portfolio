@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h1>Portfolio</h1>
+  <div class="projects">
+    {{ range .Pages }}
+      <div class="project">
+        <h2>{{ .Title }}</h2>
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        <p>{{ .Content }}</p>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

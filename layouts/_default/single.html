@@ -1,0 +1,38 @@
+{{ define "main" }}
+    {{ if eq .Type "post" }}
+        {{- partial "post.html" . -}}
+        {{/* Add TOC after post content but within post context */}}
+        {{ if .Params.toc }}
+            <aside class="toc-container">
+                <h2>Table of Contents</h2>
+                {{ .TableOfContents }}
+            </aside>
+        {{ end }}
+    {{ else if eq .Type "page" }}
+        {{- partial "page.html" . -}}
+        {{/* Add TOC conditionally for pages */}}
+        {{ if .Params.toc }}
+            <aside class="toc-container">
+                <h2>Contents</h2>
+                {{ .TableOfContents }}
+            </aside>
+        {{ end }}
+    {{ else }}
+        <article>
+            <h1>{{ .Title }}</h1>
+            <p class="post-meta">Published on {{ .Date.Format "January 2, 2006" }}</p>
+            
+            {{/* Add TOC for other content types */}}
+            {{ if .Params.toc }}
+                <aside class="toc-container">
+                    <h2>Contents</h2>
+                    {{ .TableOfContents }}
+                </aside>
+            {{ end }}
+
+            <div class="content">
+                {{ .Content }}
+            </div>
+        </article>
+    {{ end }}
+{{ end }}
