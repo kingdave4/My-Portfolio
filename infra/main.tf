@@ -6,7 +6,7 @@ resource "azurerm_resource_group" "hugo_rg" {
 
 # Storage Account
 resource "azurerm_storage_account" "hugo_storage" {
-  name                     = "myhugoblogstorage31"  # Change to a unique name
+  name                     = "myhugoblogstoragedave"  # Change to a unique name
   resource_group_name      = azurerm_resource_group.hugo_rg.name
   location                 = azurerm_resource_group.hugo_rg.location
   account_tier             = "Standard"
@@ -43,7 +43,7 @@ resource "azurerm_cdn_endpoint" "hugo_cdn_endpoint" {
 resource "azurerm_cdn_endpoint_custom_domain" "hugo_custom_domain" {
   name            = "hugo-custom-domain"
   cdn_endpoint_id = azurerm_cdn_endpoint.hugo_cdn_endpoint.id
-  host_name       = "kingdavedevopsproject.ca" # Replace with your GoDaddy domain
+  host_name       = "www.kingdavedevopsproject.ca" # Replace with your GoDaddy domain
 
   cdn_managed_https {
     certificate_type = "Dedicated"
