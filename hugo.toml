@@ -1,4 +1,4 @@
-baseURL = "https://www.kingdavedevopsproject.ca"  # For local development
+baseURL = "https://myhugoblogstoragedave.z13.web.core.windows.net/"  # For local development
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "David Mboli-Idie"
