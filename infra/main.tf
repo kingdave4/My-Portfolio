@@ -1,4 +1,4 @@
-# Resource Group
+# Resource Group for Hugo Blog
 resource "azurerm_resource_group" "hugo_rg" {
   name     = "hugo-blog-rg"
   location = "East US"
