@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"  # For local development
+baseURL = "https://www.kingdavedevopsproject.ca"  # For local development
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "David Mboli-Idie"
