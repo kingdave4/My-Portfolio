@@ -24,5 +24,10 @@ jobs:
         uses: azure/cli@v1
         with:
           inlineScript: |
-            az storage blob upload-batch --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
-              --destination '$web' --source 'public' --overwrite
+            az storage blob upload-batch \
+              --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+              --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
+              --auth-mode key \
+              --destination '$web' \
+              --source 'public' \
+              --overwrite
