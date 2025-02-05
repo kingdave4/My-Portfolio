@@ -1,4 +1,4 @@
-baseURL = "https://www.kingdavedevopsproject.ca"  # For local development
+baseURL = "https://www.davidmboli-idie.com"  # For local development
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "David Mboli-Idie"
@@ -72,3 +72,4 @@ theme = "gokarna"
 
 [minify]
     minifyOutput = true
+showBackToTopButton = true # true or false for "back to top" button on posts and pages

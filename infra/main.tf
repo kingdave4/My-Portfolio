@@ -43,7 +43,7 @@ resource "azurerm_cdn_endpoint" "hugo_cdn_endpoint" {
 resource "azurerm_cdn_endpoint_custom_domain" "hugo_custom_domain" {
   name            = "hugo-custom-domain"
   cdn_endpoint_id = azurerm_cdn_endpoint.hugo_cdn_endpoint.id
-  host_name       = "www.kingdavedevopsproject.ca" # Replace with your GoDaddy domain
+  host_name       = "www.davidmboli-idie.com" # Replace with your GoDaddy domain
 
   cdn_managed_https {
     certificate_type = "Dedicated"
