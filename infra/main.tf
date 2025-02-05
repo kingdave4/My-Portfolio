@@ -39,7 +39,7 @@ resource "azurerm_cdn_endpoint" "hugo_cdn_endpoint" {
   }
 }
 
-# Custom Domain with HTTPS
+# Custom Domain with HTTPS for our website
 resource "azurerm_cdn_endpoint_custom_domain" "hugo_custom_domain" {
   name            = "hugo-custom-domain"
   cdn_endpoint_id = azurerm_cdn_endpoint.hugo_cdn_endpoint.id
