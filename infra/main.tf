@@ -39,4 +39,3 @@ resource "azurerm_cdn_endpoint" "hugo_cdn_endpoint" {
   }
 }
 
-##
