@@ -39,4 +39,9 @@ resource "azurerm_cdn_endpoint" "hugo_cdn_endpoint" {
   }
 }
 
-##
+#  Assign Storage Blob Data Contributor role using a variable
+resource "azurerm_role_assignment" "storage_blob_contributor" {
+  scope                = azurerm_storage_account.hugo_storage.id
+  role_definition_name = "Storage Blob Data Contributor"
+  principal_id         = var.principal_id
+}
