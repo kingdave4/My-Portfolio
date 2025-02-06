@@ -23,7 +23,7 @@ jobs:
           git submodule update --init --recursive
 
       - name: Build Hugo site
-        run: hugo --verbose --minify
+        run: hugo --minify
 
       - name: Verify Hugo output
         run: ls -la public/
