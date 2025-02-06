@@ -28,6 +28,12 @@ jobs:
       - name: Verify Hugo output
         run: ls -la public/
 
+      # Add Azure authentication step
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Upload to Azure Storage
         uses: azure/cli@v1
         with:
@@ -36,4 +42,5 @@ jobs:
               --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
               --destination '$web' \
               --source 'public' \
-              --overwrite
+              --overwrite \
+              --auth-mode login
