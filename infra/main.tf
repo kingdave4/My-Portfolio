@@ -38,3 +38,5 @@ resource "azurerm_cdn_endpoint" "hugo_cdn_endpoint" {
     host_name = azurerm_storage_account.hugo_storage.primary_web_host
   }
 }
+
+#

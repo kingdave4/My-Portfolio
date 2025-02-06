@@ -17,8 +17,16 @@ jobs:
         with:
           hugo-version: 'latest'
 
+      - name: Install Hugo modules and themes
+        run: |
+          hugo mod get
+          git submodule update --init --recursive
+
       - name: Build Hugo site
-        run: hugo --minify
+        run: hugo --debug --verbose --minify
+
+      - name: Verify Hugo output
+        run: ls -la public/
 
       - name: Upload to Azure Storage
         uses: azure/cli@v1
@@ -26,8 +34,6 @@ jobs:
           inlineScript: |
             az storage blob upload-batch \
               --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
-              --account-key ${{ secrets.AZURE_STORAGE_KEY }} \
-              --auth-mode key \
               --destination '$web' \
               --source 'public' \
               --overwrite
