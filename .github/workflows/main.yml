@@ -16,6 +16,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+          extended: true
 
       - name: Install Hugo modules and themes
         run: |
@@ -23,7 +24,7 @@ jobs:
           git submodule update --init --recursive
 
       - name: Build Hugo site
-        run: hugo --minify
+        run: hugo
 
       - name: Verify Hugo output
         run: ls -la public/

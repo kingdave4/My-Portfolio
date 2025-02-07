@@ -39,11 +39,17 @@ resource "azurerm_cdn_endpoint" "hugo_cdn_endpoint" {
   }
 }
 
-#  Assign Storage Blob Data Contributor role using a variable
+# Custom Domain for CDN
+resource "azurerm_cdn_endpoint_custom_domain" "hugo_custom_domain" {
+  name            = "hugo-custom-domain"
+  cdn_endpoint_id = azurerm_cdn_endpoint.hugo_cdn_endpoint.id
+  host_name       = "www.davidmboli-idie.com"  # Replace with your custom domain
+}
+
+# Assign Storage Blob Data Contributor role using a variable
 resource "azurerm_role_assignment" "storage_blob_contributor" {
   scope                = azurerm_storage_account.hugo_storage.id
   role_definition_name = "Storage Blob Data Contributor"
   principal_id         = var.principal_id
-}
 
-##
+}
