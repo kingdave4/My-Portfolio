@@ -46,4 +46,4 @@ resource "azurerm_role_assignment" "storage_blob_contributor" {
   principal_id         = var.principal_id
 }
 
-#
+##

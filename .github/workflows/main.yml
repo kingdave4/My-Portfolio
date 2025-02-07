@@ -39,9 +39,10 @@ jobs:
         with:
           inlineScript: |
             az storage blob upload-batch \
-              --subscription d9b9463a-c7d3-4f78-beb4-9053a43f2f05 \
               --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
+              --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
               --destination '$web' \
               --source 'public' \
               --overwrite \
-              --auth-mode login
+              --auth-mode key \
+              --subscription "d9b9463a-c7d3-4f78-beb4-9053a43f2f05"
