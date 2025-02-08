@@ -1,49 +1,35 @@
-name: Deploy Hugo to Azure Storage
+name: Deploy Hugo Site to Azure Static Web App
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
 
-      - name: Install Hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.125.7' # Update to your Hugo version
           extended: true
 
-      - name: Install Hugo modules and themes
-        run: |
-          hugo mod get
-          git submodule update --init --recursive
+      - name: Build Hugo Site
+        run: hugo --minify
 
-      - name: Build Hugo site
-        run: hugo
-
-      - name: Verify Hugo output
-        run: ls -la public/
-
-      # Add Azure authentication step
-      - name: Azure Login
-        uses: azure/login@v2
+      - name: Deploy to Azure Static Web Apps
+        uses: azure/static-web-apps-deploy@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - name: Upload to Azure Storage
-        uses: azure/cli@v1
-        with:
-          inlineScript: |
-            az storage blob upload-batch \
-              --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT }} \
-              --account-key "${{ secrets.AZURE_STORAGE_KEY }}" \
-              --destination '$web' \
-              --source 'public' \
-              --overwrite \
-              --auth-mode key \
-              --subscription "d9b9463a-c7d3-4f78-beb4-9053a43f2f05"
+          action: 'upload'
+          app_location: "/"
+          output_location: "public"
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}

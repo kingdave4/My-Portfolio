@@ -1,57 +1,14 @@
-# Resource Group for Hugo Blog
-resource "azurerm_resource_group" "hugo_rg" {
-  name     = "hugo-blog-rg"
-  location = "East US"
+# Resource Group
+resource "azurerm_resource_group" "rg" {
+  name     = "static-web-app-rg"
+  location = var.location
 }
 
-# Storage Account
-resource "azurerm_storage_account" "hugo_storage" {
-  name                     = "myhugoblogstorage2"  # Change to a unique name
-  resource_group_name      = azurerm_resource_group.hugo_rg.name
-  location                 = azurerm_resource_group.hugo_rg.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-
-  static_website {
-    index_document     = "index.html"
-    error_404_document = "404.html"
-  }
+# Static Web App
+resource "azurerm_static_web_app" "static_site" {
+  name                = var.static_site_name
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
+  sku_tier            = "Free"
+  sku_size            = "Free"
 }
-
-# CDN Profile
-resource "azurerm_cdn_profile" "hugo_cdn_profile" {
-  name                = "hugo-cdn-profile"
-  location            = azurerm_resource_group.hugo_rg.location
-  resource_group_name = azurerm_resource_group.hugo_rg.name
-  sku                 = "Standard_Microsoft"
-}
-
-# CDN Endpoint
-resource "azurerm_cdn_endpoint" "hugo_cdn_endpoint" {
-  name                = "hugo-cdn-endpoint"
-  profile_name        = azurerm_cdn_profile.hugo_cdn_profile.name
-  location            = azurerm_resource_group.hugo_rg.location
-  resource_group_name = azurerm_resource_group.hugo_rg.name
-
-  origin {
-    name      = "hugo-storage-origin"
-    host_name = azurerm_storage_account.hugo_storage.primary_web_host
-  }
-}
-
-# Custom Domain for CDN
-resource "azurerm_cdn_endpoint_custom_domain" "hugo_custom_domain" {
-  name            = "hugo-custom-domain"
-  cdn_endpoint_id = azurerm_cdn_endpoint.hugo_cdn_endpoint.id
-  host_name       = "www.davidmboli-idie.com"  # Replace with your custom domain
-}
-
-# Assign Storage Blob Data Contributor role using a variable
-resource "azurerm_role_assignment" "storage_blob_contributor" {
-  scope                = azurerm_storage_account.hugo_storage.id
-  role_definition_name = "Storage Blob Data Contributor"
-  principal_id         = var.principal_id
-
-}
-
-#

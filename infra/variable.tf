@@ -1,5 +1,11 @@
-variable "principal_id" {
-  description = "Azure AD Object ID of the user or service principal"
-  default = "7a18fa5d-3414-4fc2-9cd0-aaa5c0d5bbcb"
+variable "location" {
+  description = "Azure region for the resources."
   type        = string
+  default     = "eastus2"
+}
+
+variable "static_site_name" {
+  description = "Name for the Azure Static Web App."
+  type        = string
+  default     = "my-static-web-app"
 }

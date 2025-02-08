@@ -1,8 +1,5 @@
-# Outputs
-output "storage_account_name" {
-  value = azurerm_storage_account.hugo_storage.name
-}
-
-output "website_url" {
-  value = azurerm_storage_account.hugo_storage.primary_web_endpoint
+# Output deployment token
+output "static_site_api_token" {
+  value       = azurerm_static_web_app.static_site.api_key
+  sensitive   = true
 }
