@@ -1,18 +1,17 @@
 <header class="header">
     <nav class="header-nav">
 
-        {{ if .Site.Params.avatarURL }}
+        {{ if isset .Site.Params "avatarurl" }}
         <div class="avatar">
             <a href="{{ .Site.BaseURL }}">
-            <img 
-                src="{{ .Site.Params.avatarURL }}" 
-                alt="{{ .Site.Params.AvatarAltText | default "avatar" }}" 
-                class="{{ .Site.Params.avatarSize }}"
-            >
+                <img src='{{ .Scratch.Get "avatarImgSrc" }}' alt="{{ .Site.Params.AvatarAltText|default "avatar" }}">
             </a>
         </div>
         {{ end }}
-        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
 
         <div class="nav-links">
             {{ range .Site.Menus.main }}

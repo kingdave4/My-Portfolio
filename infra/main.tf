@@ -12,3 +12,5 @@ resource "azurerm_static_web_app" "static_site" {
   sku_tier            = "Free"
   sku_size            = "Free"
 }
+
+#
