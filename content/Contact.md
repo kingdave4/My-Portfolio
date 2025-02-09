@@ -47,4 +47,4 @@ Follow me on social media:
 **Why My Background Matters:**  
 My IT support experience ensures I build systems with operational reliability in mind. Combined with modern cloud/DevOps skills, I deliver infrastructure solutions that are both innovative and maintainable.
 
-[Schedule a Professional Discussion](https://calendly.com/yourlink)  
+[Schedule a Professional Discussion](https://calendly.com/davidmboli1)  
