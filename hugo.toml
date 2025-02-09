@@ -46,7 +46,7 @@ publishDir = "public"
 
   # Choose the color shown when hyperlinks are hovered over
   accentColor = "#FF4D4D"
-
+  favicon = "favicon.ico"
   # Avatar settings
   avatarURL = "/images/my_photo.png"  # Updated path to your avatar image
   avatarSize = "size-m"               # Options: size-xs, size-s, size-m, size-l, size-xl
