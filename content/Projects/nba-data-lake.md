@@ -1,12 +1,10 @@
 ---
-title: "NBA Data Lake Pipeline"
+title: " 🏀 NBA Data Lake Pipeline"
 date: 2025-02-02
 description: "Automating NBA player data collection, storage, and analysis using AWS."
 tags: ["AWS", "Data Engineering", "DevOps"]
 categories: ["Projects"]
 ---
-
-## 🏀 NBA Data Lake Pipeline  
 
 ### 🚀 Overview  
 This project automates the process of collecting, storing, and analyzing NBA player data using AWS services.  

@@ -13,4 +13,4 @@ resource "azurerm_static_web_app" "static_site" {
   sku_size            = "Free"
 }
 
-#
+###

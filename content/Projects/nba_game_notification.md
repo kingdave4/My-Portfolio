@@ -6,10 +6,6 @@ categories: ["Projects", "DevOps"]
 tags: ["AWS", "Terraform", "Lambda", "SNS", "EventBridge", "Python"]
 ---
 
-## NBA Game Updates Project 🚀
-
-Welcome to my 2nd Project of the 30 Days DevOps Challenge! I am excited to continue this journey of learning cloud technologies and tackling hands-on projects. To push myself further, I automated the deployment using Terraform, making the project more efficient compared to manually configuring AWS resources via the console.
-
 ### 🌟 Project Overview
 This project fetches real-time NBA game updates and delivers them to subscribers via email using AWS services. It leverages **AWS Lambda, SNS (Simple Notification Service), and EventBridge** for automation and notifications, with **Terraform** managing infrastructure as code.
 
