@@ -23,8 +23,6 @@ Automation: GitHub Actions
 
 Domain Management: Godaddy
 
-📊 Architecture
-
 
 ## The deployment process follows this flow:
 
