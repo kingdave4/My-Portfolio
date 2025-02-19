@@ -18,7 +18,7 @@ To take it a step further, I automated the entire workflow using GitHub Actions 
 
 ---
 
-## 🏀 What This Project Does
+### 🏀 What This Project Does
 This project automates the process of collecting NBA player data and storing it in an AWS data lake. Here's what it accomplishes:
 
 1. **Fetch NBA Data** – Retrieves player stats from the Sportsdata.io API.
@@ -33,7 +33,7 @@ This project automates the process of collecting NBA player data and storing it 
 
 ---
 
-## 🛠️ Tools and Technologies Used
+### 🛠️ Tools and Technologies Used
 To build this pipeline, I leveraged the following technologies:
 
 - **Programming Language**: Python 3.8
@@ -46,7 +46,7 @@ To build this pipeline, I leveraged the following technologies:
 
 ---
 
-## 📝 Setup Instructions
+### 📝 Setup Instructions
 ### Step 1: Prerequisites
 Before setting up this project, ensure you have:
 
@@ -61,6 +61,8 @@ Before setting up this project, ensure you have:
   
 - Add these secrets to your GitHub repository (**Settings > Secrets and variables > Actions**):
 
+
+```plaintext
   | Secret Name           | Description                      |
   |----------------------|----------------------------------|
   | AWS_ACCESS_KEY_ID    | AWS access key                  |
@@ -69,6 +71,7 @@ Before setting up this project, ensure you have:
   | AWS_BUCKET_NAME      | Your S3 bucket name            |
   | NBA_ENDPOINT        | Sportsdata.io API endpoint      |
   | SPORTS_DATA_API_KEY  | Sportsdata.io API key         |
+```
 
 ### Step 2: How It Works
 1. **Clone the Repository**
@@ -94,7 +97,7 @@ Before setting up this project, ensure you have:
 
 ---
 
-## 🏗️ Order of Execution
+### 🏗️ Order of Execution
 Here’s how the Python script executes step by step:
 
 1. **Create an S3 Bucket** – The bucket is used to store raw NBA data.
@@ -113,7 +116,7 @@ Here’s how the Python script executes step by step:
 
 ---
 
-## ⚙️ GitHub Actions: Automating the Deployment
+### ⚙️ GitHub Actions: Automating the Deployment
 The GitHub Actions workflow is set up to trigger on every push to the repository. When executed, it:
 
 1. Installs dependencies
@@ -128,7 +131,7 @@ This ensures that each code update automatically refreshes the pipeline, making 
 
 ---
 
-## 📊 Results of the Pipeline Execution
+### 📊 Results of the Pipeline Execution
 Once the pipeline runs successfully:
 
 - **S3 Bucket**: Stores all raw data in the `raw-data/` folder.
@@ -144,7 +147,7 @@ WHERE Position = 'SG';
 
 ---
 
-## 🛡️ Error Tracking & Logging with CloudWatch
+### 🛡️ Error Tracking & Logging with CloudWatch
 To ensure smooth execution, I integrated **AWS CloudWatch Logs** to track key activities, including:
 
 - API calls
@@ -160,7 +163,7 @@ If an error occurs (e.g., missing API keys or AWS permissions), CloudWatch provi
 
 ---
 
-## 🌟 Lessons Learned
+### 🌟 Lessons Learned
 This project reinforced several key DevOps and cloud computing concepts:
 
 ✅ Leveraging AWS services (S3, Glue, Athena, CloudWatch) to build scalable data pipelines.
@@ -177,7 +180,7 @@ This project reinforced several key DevOps and cloud computing concepts:
 
 ---
 
-## 🔮 Future Enhancements
+### 🔮 Future Enhancements
 To improve the pipeline further, I plan to:
 
 ✨ **Automate data ingestion with AWS Lambda** – Run the pipeline on a scheduled basis.
@@ -188,7 +191,7 @@ To improve the pipeline further, I plan to:
 
 ---
 
-## 🎯 Final Thoughts
+### 🎯 Final Thoughts
 This project was an exciting challenge that combined **DevOps, cloud computing, and data engineering**. 
 
 Automating data collection and analysis using AWS tools has been a game-changer for me. 
