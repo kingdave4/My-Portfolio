@@ -1,10 +1,10 @@
 ---
 title: "Automating NBA Data Collection with AWS: My Data Lake Pipeline Project"
-date: 2025-02-04T21:29:01+08:00
+date: 2025-01-28T21:29:01+08:00
 description: "A deep dive into my NBA Data Lake Pipeline project, automating data collection and analysis using AWS services."
 tags: ["AWS", "Data Engineering", "DevOps", "GitHub Actions"]
 type: post
-weight: 50
+weight: 30
 categories: ["Projects"]
 showTableOfContents: true
 ---

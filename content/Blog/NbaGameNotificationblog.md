@@ -1,6 +1,6 @@
 ---
 title: "Automating NBA Game Notifications with AWS & Terraform"
-date: 2025-02-02
+date: "2025-01-21"
 description: "How I built an automated NBA game update notification system using AWS Lambda, SNS, and Terraform."
 categories: ["Blog", "DevOps"]
 tags: ["AWS", "Terraform", "Lambda", "SNS", "EventBridge ", "30 Days DevOps Challenge🚀"]

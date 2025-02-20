@@ -16,17 +16,11 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 ## 🏗️ Featured Projects  
 
-### 🏀 **NBA Data Lake Pipeline**  
-📌 *Automating NBA player data collection, storage, and analysis using AWS and Python.*  
-**Tech Stack:** AWS S3, Glue, Athena, CloudWatch, GitHub Actions, Python  
-[🔗 Read More →](/projects/nba-data-lake/)  
-
----
-
 ### 🌦️ **Weather Dashboard**  
 📌 *Fetching real-time weather data and storing it in AWS S3.*  
 **Tech Stack:** Python, OpenWeatherMap API, AWS S3  
 [🔗 Read More →](/projects/weather-dashboard/)  
+
 
 ---
 
@@ -41,6 +35,14 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 📌 *Building an automated NBA game update notification system using AWS Lambda, SNS, and Terraform.*  
 **Tech Stack:** AWS Lambda, SNS, EventBridge, IAM, Terraform, Python  
 [🔗 Read More →](/projects/nba_game_notification/)  
+
+---
+
+### 🏀 **NBA Data Lake Pipeline**  
+📌 *Automating NBA player data collection, storage, and analysis using AWS and Python.*  
+**Tech Stack:** AWS S3, Glue, Athena, CloudWatch, GitHub Actions, Python  
+[🔗 Read More →](/projects/nba-data-lake/)  
+
 
 ---
 

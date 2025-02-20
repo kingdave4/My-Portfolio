@@ -1,11 +1,12 @@
 ---
 title: "NBA Game Updates Project"
-date: 2025-02-02
+date: "2025-01-21"
 description: "Automated NBA game notifications using AWS Lambda, SNS, and EventBridge with Terraform."
 categories: ["Projects", "DevOps"]
 tags: ["AWS", "Terraform", "Lambda", "SNS", "EventBridge", "Python"]
 ---
 
+---
 ### 🌟 Project Overview
 This project fetches real-time NBA game updates and delivers them to subscribers via email using AWS services. It leverages **AWS Lambda, SNS (Simple Notification Service), and EventBridge** for automation and notifications, with **Terraform** managing infrastructure as code.
 
@@ -16,6 +17,8 @@ This project fetches real-time NBA game updates and delivers them to subscribers
 - **Automates execution** using AWS **EventBridge**.
 
 ### 🏗️ Architecture Overview
+![Project NBA Game update diagram](/images/Nbagame_notification_diagram.png)
+
 #### Lambda Function:
 - Fetches **NBA game data** from an external API.
 - Formats the data based on game status (e.g., Scheduled, InProgress, Final).
@@ -35,6 +38,7 @@ This project fetches real-time NBA game updates and delivers them to subscribers
 - **Terraform installed** on your local machine
 - **API key** for the NBA game data provider (e.g., **SportsData.io**)
 
+---
 ### 🏁 Setup Instructions
 #### 1️⃣ Clone the Repository
 ```sh
@@ -87,6 +91,7 @@ Check your inbox and **confirm the SNS subscription** via the email link.
 - **Terraform** (Infrastructure as Code - IaC)
 - **Python** (Lambda function scripting)
 
+---
 ### 🚀 Future Enhancements
 - ✅ **Add support for SMS notifications** 📱
 - ✅ **Implement filters** to customize updates for specific teams 🏀

@@ -6,34 +6,29 @@ tags: ["Hugo", "Terraform", "Azure", "GitHub Actions", "DevOps"]
 categories: ["Projects"]
 ---
 
-
+---
 ## 📌 Overview
 
 This project focuses on deploying a personal portfolio and blog using Hugo as the static site generator, GitHub for version control, Terraform for infrastructure automation, and Azure Static Web Apps for hosting. The objective is to establish a scalable, automated, and cost-effective method to manage the portfolio site.
 
+
 ### 🛠️ Technologies Used
 
-Static Site Generator: Hugo
+- **Static Site Generator:** Hugo
+- **Infrastructure as Code:** Terraform
+- **Cloud Provider:** Azure Static Web Apps
+- **Automation:** GitHub Actions
+- **Domain Management:** Godaddy
 
-Infrastructure as Code: Terraform
-
-Cloud Provider: Azure Static Web Apps
-
-Automation: GitHub Actions
-
-Domain Management: Godaddy
-
-
+---
 ## The deployment process follows this flow:
 
 
-Local Development: Build and preview the Hugo site locally.
-
-Version Control: Push changes to GitHub.
-
-Automation: GitHub Actions triggers deployment.
-
-Infrastructure as Code: Terraform provisions Azure resources.
+- **Local Development:** Build and preview the Hugo site locally.
+- **Version Control:** Push changes to GitHub.
+- **Automation:** GitHub Actions triggers deployment.
+- **Infrastructure as Code:** Terraform provisions Azure resources.
+- **Deployment:** The site is hosted on Azure Static Web Apps.
 
 
 ### Deployment: The site is hosted on Azure Static Web Apps.
@@ -147,7 +142,7 @@ terraform apply
 ```
 This will provision the Azure Static Web App.
 
-
+---
 ### 🔹 Step 4: Configuring GitHub Actions for Deployment ***
 
 Set Up GitHub Actions Workflow: Azure Static Web Apps integrates with GitHub Actions to automate deployments.
