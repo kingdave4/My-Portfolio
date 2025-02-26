@@ -4,7 +4,7 @@ date: 2025-02-01
 tags: ["career transition", "cloud"]
 description: "A showcase of my DevOps and Cloud projects."
 showTableOfContents: true
-weight: 20
+layout: "list-posts"
 ---
 I started in IT Support and worked on troubleshooting and system administration.  
 Then, I learned **AWS, Docker, and Terraform** to transition into Cloud Engineering.  

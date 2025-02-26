@@ -4,6 +4,8 @@ date: "2025-01-21"
 description: "Automated NBA game notifications using AWS Lambda, SNS, and EventBridge with Terraform."
 categories: ["Projects", "DevOps"]
 tags: ["AWS", "Terraform", "Lambda", "SNS", "EventBridge", "Python"]
+type: "page"
+showTableOfContents: true
 ---
 
 ---

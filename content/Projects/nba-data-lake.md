@@ -4,6 +4,8 @@ date: 2025-02-02
 description: "Automating NBA player data collection, storage, and analysis using AWS."
 tags: ["AWS", "Data Engineering", "DevOps", "Python", "GitHub Actions", "S3", "Glue", "Athena", "CloudWatch"]
 categories: ["Projects"]
+type: "page"
+showTableOfContents: true
 ---
 
 ### 🚀 Overview  

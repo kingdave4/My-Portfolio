@@ -9,6 +9,7 @@ subtitle: "Collaborating on cloud solutions and DevOps innovation"
 
 Transitioning from **IT Support** to **Cloud Engineering/DevOps** with hands-on experience in modern infrastructure solutions. My 3 years in technical support have honed my problem-solving skills, which I now apply to building scalable cloud systems.
 
+#### [Schedule a Professional Discussion](https://calendly.com/davidmboli1)  
 ---
 
 ### How I Can Help
@@ -30,7 +31,7 @@ Follow me on social media:
 
 ### Technical Focus Areas
 **Currently Enhancing Skills In:**
-- Cloud platform certifications (AWS/Azure/GCP)
+- Cloud platform certifications (AWS & Azure)
 - Infrastructure as Code best practices
 - Kubernetes cluster management
 - Monitoring/observability tools (Prometheus, Grafana)
@@ -47,4 +48,3 @@ Follow me on social media:
 **Why My Background Matters:**  
 My IT support experience ensures I build systems with operational reliability in mind. Combined with modern cloud/DevOps skills, I deliver infrastructure solutions that are both innovative and maintainable.
 
-[Schedule a Professional Discussion](https://calendly.com/davidmboli1)  

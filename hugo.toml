@@ -38,8 +38,8 @@ publishDir = "public"
 
 [markup]
   [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 4
+    startLevel = 1
+    endLevel = 3
     ordered = false
 
 [params]
