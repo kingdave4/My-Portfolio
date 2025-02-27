@@ -12,7 +12,8 @@ categories: ["Projects"]
 
 This project focuses on deploying a personal portfolio and blog using Hugo as the static site generator, GitHub for version control, Terraform for infrastructure automation, and Azure Static Web Apps for hosting. The objective is to establish a scalable, automated, and cost-effective method to manage the portfolio site.
 
-![Diagram](/images/myportofolio.png)
+### Project Archetectur diagrm
+![Diagram for the portfolio](/images/myhugoportofolio.png)
 
 ### 🛠️ Technologies Used
 
