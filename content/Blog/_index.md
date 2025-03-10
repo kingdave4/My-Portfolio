@@ -1,8 +1,8 @@
 ---
-title: "My Journey from IT Support to Cloud Engineering"
+title: "Welcome to my cloud and devops blogs"
 date: 2025-02-01
 tags: ["career transition", "cloud"]
-description: "A showcase of my DevOps and Cloud projects."
+description: " My experience with Cloud and Devops projects through blog."
 showTableOfContents: true
 layout: "list-posts"
 ---
