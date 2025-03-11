@@ -6,27 +6,25 @@ showTableOfContents: true
 type: page
 ---
 
-## 🚀 My DevOps & Cloud Projects  
+## 🚀 My Cloud & DevOps Projects
 
 Welcome to my projects showcase! Here, you’ll find hands-on projects that highlight my experience in **DevOps, Cloud Engineering, and Automation**. I focus on **AWS, Terraform, CI/CD, and Data Pipelines** to build scalable and reliable solutions.  
 
 Each project includes a breakdown of **technologies used, architecture, implementation steps, and lessons learned**. Click on any project to explore its details!  
 
----
-
-## 🏗️ Featured Projects  
+## 🏗️ Featured Projects
+--- 
 
 ### 🌦️ **Weather Dashboard**  
 📌 *Fetching real-time weather data and storing it in AWS S3.*  
 **Tech Stack:** Python, OpenWeatherMap API, AWS S3  
 [🔗 Read More →](/projects/weather-dashboard/)  
 
-
 ---
 
 ### 🏗️ **Portfolio & Blog Deployment**  
 📌 *Deploying my personal site using Hugo, GitHub, and Terraform on Azure.*  
-**Tech Stack:** Hugo, Terraform, Azure, GitHub Pages  
+**Tech Stack:** Hugo, Terraform, Azure, GitHub action  
 [🔗 Read More →](/projects/portfolio-deployment/)  
 
 ---
@@ -43,6 +41,25 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 **Tech Stack:** AWS S3, Glue, Athena, CloudWatch, GitHub Actions, Python  
 [🔗 Read More →](/projects/nba-data-lake/)  
 
+---
+
+### 🏀 **Containerized Sports API Management System**  
+📌 *A containerized API management system for querying real-time sports data using AWS ECS (Fargate), API Gateway, Docker, and Terraform.*  
+**Tech Stack:** AWS, ECS, API Gateway, Terraform, Docker, DevOps, Python  
+[🔗 Read More →](/projects/containerized-sports-api/)  
+
+---
+
+### 🏀 **NCAA Game Highlights**  
+📌 *A containerized pipeline that fetches NCAA game highlights using RapidAPI, processes videos with AWS MediaConvert, and provisions infrastructure with Terraform.*  
+**Tech Stack:** AWS, MediaConvert, Terraform, Docker, RapidAPI, DevOps  
+[🔗 Read More →](/projects/ncaa-game-highlights/)  
+
+---
+### 🏀 **NCAA Game Data Backup (SportsDataBackup)**  
+📌 *An evolved pipeline that fetches NCAA game highlights, backs up query data using AWS DynamoDB, and automates daily triggers with AWS EventBridge and ECS Fargate.*  
+**Tech Stack:** AWS, DynamoDB, EventBridge, ECS Fargate, MediaConvert, Terraform, Docker, DevOps  
+[🔗 Read More →](/projects/ncaa-game-data-backup/)  
 
 ---
 

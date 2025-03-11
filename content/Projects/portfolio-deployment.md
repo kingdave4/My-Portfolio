@@ -4,6 +4,8 @@ date: 2025-02-02
 description: "Deploying my personal portfolio using Hugo, GitHub, and Terraform on Azure."
 tags: ["Hugo", "Terraform", "Azure", "GitHub Actions", "DevOps"]
 categories: ["Projects"]
+type: "post"
+showTableOfContents: true
 ---
 
 ---
@@ -152,8 +154,43 @@ Set Up GitHub Actions Workflow: Azure Static Web Apps integrates with GitHub Act
 
 Create Workflow File: In your repository, create .github/workflows/azure-static-web-apps.yml with the following content:
 
-![Github CI/CD ](/images/AzureStaticwebappcicd.png)
+``` yml
+name: Deploy Hugo Site to Azure Static Web App
 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.125.7' # Update to your Hugo version
+          extended: true
+
+      - name: Build Hugo Site
+        run: hugo --minify
+
+      - name: Deploy to Azure Static Web Apps
+        uses: azure/static-web-apps-deploy@v1
+        with:
+          action: 'upload'
+          app_location: "/"
+          output_location: "public"
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+```
 
 *** Set Secrets: ***
 
