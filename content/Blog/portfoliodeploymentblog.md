@@ -8,7 +8,7 @@ showTableOfContents: true
 weight: 40
 ---
 
-# Deploying My Portfolio
+# 🌟 Deploying My Portfolio
 
 When I decided to transition from IT Support to Cloud Engineering, I knew I needed a project that could truly showcase my evolving skill set. That's when I embarked on this project—to build and deploy my personal portfolio and blog using modern DevOps practices. With this portfolio, I can now host all my projects, blogs, and professional information in one place, and I’m excited to share the process with you.
 

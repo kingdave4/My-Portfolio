@@ -5,7 +5,7 @@ layout: "contact"
 subtitle: "Collaborating on cloud solutions and DevOps innovation"
 ---
 
-### Professional Background
+### 🌟 Professional Background
 
 Transitioning from **IT Support** to **Cloud Engineering/DevOps** with hands-on experience in modern infrastructure solutions. My 3 years in technical support have honed my problem-solving skills, which I now apply to building scalable cloud systems.
 

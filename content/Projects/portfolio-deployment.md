@@ -36,11 +36,11 @@ This project focuses on deploying a personal portfolio and blog using Hugo as th
 - **Deployment:** The site is hosted on Azure Static Web Apps.
 
 
-### Deployment: The site is hosted on Azure Static Web Apps.
+**Deployment: The site is hosted on Azure Static Web Apps.**
 
 🏗️ How to Deploy Your Portfolio
 
-***🔹 Step 1: Setting Up Hugo***
+### 🔹Step 1: Setting Up Hugo
 
 Install Hugo:
 
@@ -52,7 +52,7 @@ Create a New Site with the following command:
 hugo new site my-portfolio
 ```
 
-***🔹 Step 2: Initializing GitHub Repository***
+### 🔹Step 2: Initializing GitHub Repository
 
 Initialize Git Repository:
 
@@ -76,7 +76,7 @@ git remote add origin https://github.com/<YOUR_USER_NAME>/my-portfolio.git
 git push -u origin main
 ```
 
-***🔹 Step 3: Provisioning Azure Static Web App with Terraform***
+### 🔹Step 3: Provisioning Azure Static Web App with Terraform
 Create a provider.tf, main.tf and variable.tf file with the following content:
 
 *** provider.tf ***
@@ -192,17 +192,15 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
 ```
 
-*** Set Secrets: ***
-
+### Set Github Secret key: 
 In your GitHub repository settings, add the ***AZURE_STATIC_WEB_APPS_API_TOKEN***  secret. 
-
 You can obtain this token from the Azure portal under your Static Web App's settings.
 
 ![Deployement Token ](/images/APiToken.png)
 
 
 
-***🔹 Step 5: Managing Custom Domain (Optional)***
+### 🔹Step 5: Managing Custom Domain (Optional)
 
 Configure Custom Domain:
 

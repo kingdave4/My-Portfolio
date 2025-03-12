@@ -219,7 +219,7 @@ This project enhanced my cloud automation and DevOps skills, teaching me:
   - Verify that the NBA_API_KEY is correctly set and valid.
 
 
-#### NBA Game Updates received from SNS
+### NBA Game Updates received from SNS
 
 ![Notification from SNS ](/images/nba_game_update.png)
 
@@ -232,7 +232,7 @@ To improve the project, I plan to:
 - Enable multi-channel alerts (SMS and mobile push notifications) – Expands accessibility beyond email, making notifications more immediate.
 - Incorporate a user-friendly dashboard with AWS QuickSight – Provides real-time analytics and visualization of game updates for better user experience.
 
-### 🎯 Final Thoughts
+**🎯 Final Thoughts**
 
 This project has been a valuable experience in building serverless solutions and deploying infrastructure with Terraform. I'm excited to tackle more cloud and DevOps challenges as I continue my journey into Cloud Engineering! 🚀
 

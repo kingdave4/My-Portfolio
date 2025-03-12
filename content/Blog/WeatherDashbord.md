@@ -8,7 +8,7 @@ showTableOfContents: true
 weight: 10
 ---
 
-# My Journey into Cloud Automation
+## 🌟 My Journey into Cloud Automation
 
 When I embarked on my 30 Days DevOps Challenge, I was eager to dive into cloud technologies and explore how to build scalable, automated solutions. My first project, the **Weather Dashboard**, was a hands-on experience that combined AWS services with Python programming—and it set the tone for my journey into cloud automation.
 
