@@ -62,6 +62,8 @@ publishDir = "public"
   # Date format for posts
   dateFormat = "2 January, 2006"
 
+  mainSections = ["blog"]
+
   # Meta description for the home page
   description = "IT Support to Cloud Engineer | AWS & AZURE | DevOps | Python"
 

@@ -1,10 +1,24 @@
 ---
-title: "Projects"
+title: "My Projects"
 description: "A showcase of my DevOps and Cloud projects."
 date: 2025-02-02
 type: "page"
 showTableOfContents: true
 toc: true
+---
+---
+## 📋 Table of Contents  
+- [🚀 My Cloud & DevOps Projects](#-my-cloud--devops-projects)  
+- [🏗️ Featured Projects](#-featured-projects)  
+  - [🌦️ Weather Dashboard](#-weather-dashboard)  
+  - [🏗️ Portfolio & Blog Deployment](#-portfolio--blog-deployment)  
+  - [🏀 Automating NBA Game Notifications](#-automating-nba-game-notifications-with-aws--terraform)  
+  - [🏀 NBA Data Lake Pipeline](#-nba-data-lake-pipeline)  
+  - [🏀 Containerized Sports API Management System](#-containerized-sports-api-management-system)  
+  - [🏀 NCAA Game Highlights](#-ncaa-game-highlights)  
+  - [🏀 NCAA Game Data Backup (SportsDataBackup)](#-ncaa-game-data-backup-sportsdatabackup)  
+- [🛠️ Technologies I Use](#-technologies-i-use)  
+
 ---
 
 ## 🚀 My Cloud & DevOps Projects
@@ -14,7 +28,7 @@ Welcome to my projects showcase! Here, you’ll find hands-on projects that high
 Each project includes a breakdown of **technologies used, architecture, implementation steps, and lessons learned**. Click on any project to explore its details!  
 
 ## 🏗️ Featured Projects
---- 
+---
 
 ### 🌦️ **Weather Dashboard**  
 📌 *Fetching real-time weather data and storing it in AWS S3.*  
@@ -25,7 +39,7 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 ### 🏗️ **Portfolio & Blog Deployment**  
 📌 *Deploying my personal site using Hugo, GitHub, and Terraform on Azure.*  
-**Tech Stack:** Hugo, Terraform, Azure, GitHub action  
+**Tech Stack:** Hugo, Terraform, Azure, GitHub Actions  
 [🔗 Read More →](/projects/portfolio-deployment/)  
 
 ---
@@ -57,6 +71,7 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 [🔗 Read More →](/projects/ncaa-game-highlights/)  
 
 ---
+
 ### 🏀 **NCAA Game Data Backup (SportsDataBackup)**  
 📌 *An evolved pipeline that fetches NCAA game highlights, backs up query data using AWS DynamoDB, and automates daily triggers with AWS EventBridge and ECS Fargate.*  
 **Tech Stack:** AWS, DynamoDB, EventBridge, ECS Fargate, MediaConvert, Terraform, Docker, DevOps  
