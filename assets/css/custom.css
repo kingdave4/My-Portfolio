@@ -55,9 +55,9 @@
 }
 
 .cert-card img {
-  width: 50px;                /* larger icon */
-  height: 50px;
-  flex-shrink: 0;             /* don’t let icon shrink */
+  width: 50px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .cert-card .cert-content {
