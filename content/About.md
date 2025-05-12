@@ -30,6 +30,28 @@ Throughout my transition, I have built a strong foundation in:
 
 ✅ **Linux Administration** – Enhancing my ability to manage and optimize cloud-based Linux environments.
 
+
+## 🎖️ Certifications
+
+<div class="cert-card">
+  <img src="/images/icons/microsoft.svg" alt="Microsoft Logo" width="30" />
+  <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
+  <p><strong>Issued by:</strong> Microsoft</p>
+  <p><strong>Issued:</strong> 2024</p>
+  <p><strong>Credential ID:</strong> AZ104-XXXXXXX</p>
+  <a href="https://www.credly.com/badges/YOUR-AZ104-BADGE-ID" target="_blank">Verify Credential</a>
+</div>
+
+<div class="cert-card">
+  <img src="/images/icons/microsoft.svg" alt="Microsoft Logo" width="30" />
+  <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+  <p><strong>Issued by:</strong> Microsoft</p>
+  <p><strong>Issued:</strong> 2024</p>
+  <p><strong>Credential ID:</strong> AZ900-XXXXXXX</p>
+  <a href="https://www.credly.com/badges/YOUR-AZ900-BADGE-ID" target="_blank">Verify Credential</a>
+</div>
+
+
 ## 🏗️ Hands-on Projects
 
 To solidify my learning, I have been actively working on **real-world projects**:
