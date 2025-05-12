@@ -40,39 +40,45 @@
   color: #ffcc00;
 }
 
-/* ────────────── Certificate Cards ────────────── */
-
+/* ──────────── Updated Certificate Cards ──────────── */
 .cert-card {
+  max-width: 700px;           /* limit width so cards don’t stretch too wide */
+  margin: 2rem auto;          /* center and add vertical breathing room */
+  padding: 2rem;              /* larger padding for a more spacious feel */
   background-color: #fff;
   border: 1px solid #ddd;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  overflow: hidden;
-  clear: both; /* ensure cards stack properly */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;              /* use flexbox for side-by-side icon + text */
+  align-items: flex-start;
+  gap: 1.5rem;                /* space between icon and content */
 }
 
 .cert-card img {
-  float: left;
-  margin-right: 10px;
-  margin-top: 5px;
+  width: 50px;                /* larger icon */
+  height: 50px;
+  flex-shrink: 0;             /* don’t let icon shrink */
+}
+
+.cert-card .cert-content {
+  flex: 1;                    /* let text area fill remaining space */
 }
 
 .cert-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.25rem;
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;          /* bigger heading */
 }
 
 .cert-card p {
-  margin: 0.1rem 0;
-  font-size: 0.95rem;
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .cert-card a {
   display: inline-block;
-  margin-top: 8px;
-  font-size: 0.95rem;
+  margin-top: 0.8rem;
+  font-size: 1rem;
   color: #1a73e8;
   text-decoration: none;
 }
