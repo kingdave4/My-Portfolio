@@ -35,11 +35,13 @@ Throughout my transition, I have built a strong foundation in:
 
 <div class="cert-card">
   <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo" width="50" />
-  <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
-  <p><strong>Issued by:</strong> Microsoft</p>
-  <p><strong>Issued:</strong> 2024</p>
-  <p><strong>Credential ID:</strong> AZ104-XXXXXXX</p>
-  <a href="https://learn.microsoft.com/api/credentials/share/en-us/davidmboli-3321/7E6EE01DEA8495D9?sharingId=C4D3AB08BBE6BAE2" target="_blank">Verify Credential</a>
+  <div class="cert-content">
+    <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
+    <p><strong>Issued by:</strong> Microsoft</p>
+    <p><strong>Issued:</strong> 2024</p>
+    <p><strong>Credential ID:</strong> AZ104-XXXXXXX</p>
+    <a href="https://learn.microsoft.com/api/credentials/share/en-us/davidmboli-3321/7E6EE01DEA8495D9?sharingId=C4D3AB08BBE6BAE2" target="_blank">Verify Credential</a>
+  </div>
 </div>
 
 <div class="cert-card">
