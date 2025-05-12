@@ -43,7 +43,7 @@
 /* ──────────── Updated Certificate Cards ──────────── */
 /* Compact Certificate Cards */
 .cert-card {
-  max-width: 400px;          /* narrower overall width */
+  max-width: 100px;          /* narrower overall width */
   margin: 1.5rem auto;       /* less vertical gap */
   padding: 0.8rem;             /* tighter padding */
   background-color: #fff;
@@ -56,7 +56,7 @@
 }
 
 .cert-card img {
-  width: 30px;    /* or whatever fixed width you’d like */
+  width: 20px;    /* or whatever fixed width you’d like */
   height: auto;   /* keeps aspect ratio */
 }
 
@@ -79,7 +79,7 @@
   margin-top: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 100px) {
   .cert-card img {
     width: 25px;
   }
