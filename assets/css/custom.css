@@ -56,9 +56,8 @@
 }
 
 .cert-card img {
-  width: 30px;               /* smaller icon */
-  height: auto;
-  flex-shrink: 0;
+  width: 30px;    /* or whatever fixed width you’d like */
+  height: auto;   /* keeps aspect ratio */
 }
 
 .cert-card .cert-content {
@@ -80,13 +79,9 @@
   margin-top: 0.5rem;
 }
 
-@media (max-width: 480px) {
-  .cert-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
+@media (max-width: 600px) {
   .cert-card img {
-    margin-bottom: 0.5rem;
+    width: 25px;
   }
 }
+
