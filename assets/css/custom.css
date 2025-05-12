@@ -51,8 +51,9 @@
   border-radius: 8px;        /* slightly smaller rounding */
   box-shadow: 0 2px 5px rgba(0,0,0,0.08);
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;                 /* closer icon/text spacing */
+  justify-content: flex-start;  
+  align-items: center;
+  gap: 0.8rem;               /* closer icon/text spacing */
 }
 
 .cert-card img {
