@@ -68,7 +68,7 @@ publishDir = "public"
   mainSections = ["blog"]
 
   # Meta description for the home page
-  description = "IT Support to Cloud Engineer | AWS & AZURE | DevOps | Python"
+  description = "IT Support to Cloud Engineer | AZURE & AWS |
 
   showBackToTopButton = true
   
