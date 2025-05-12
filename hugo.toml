@@ -10,6 +10,9 @@ publishDir = "public"
     startLevel = 1
     endLevel = 3
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [menu]
   [[menu.main]]
     name = "Home"
