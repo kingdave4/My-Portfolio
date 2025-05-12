@@ -43,20 +43,20 @@
 /* ──────────── Updated Certificate Cards ──────────── */
 /* Compact Certificate Cards */
 .cert-card {
-  max-width: 600px;          /* narrower overall width */
+  max-width: 400px;          /* narrower overall width */
   margin: 1.5rem auto;       /* less vertical gap */
-  padding: 1rem;             /* tighter padding */
+  padding: 0.8rem;             /* tighter padding */
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;        /* slightly smaller rounding */
   box-shadow: 0 2px 5px rgba(0,0,0,0.08);
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 1rem;                 /* closer icon/text spacing */
 }
 
 .cert-card img {
-  width: 40px;               /* smaller icon */
+  width: 30px;               /* smaller icon */
   height: auto;
   flex-shrink: 0;
 }
