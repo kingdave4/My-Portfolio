@@ -34,7 +34,7 @@ Throughout my transition, I have built a strong foundation in:
 ## 🎖️ Certifications
 
 <div class="cert-card">
-  <img src="/images/microsoft.svg" alt="Microsoft Logo" width="30" />
+  <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo" width="50" />
   <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
   <p><strong>Issued by:</strong> Microsoft</p>
   <p><strong>Issued:</strong> 2024</p>
@@ -43,7 +43,7 @@ Throughout my transition, I have built a strong foundation in:
 </div>
 
 <div class="cert-card">
-  <img src="/images/microsoft.svg" alt="Microsoft Logo" width="30" />
+  <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo" width="50" />
   <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
   <p><strong>Issued by:</strong> Microsoft</p>
   <p><strong>Issued:</strong> 2024</p>
