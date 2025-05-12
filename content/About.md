@@ -39,7 +39,7 @@ Throughout my transition, I have built a strong foundation in:
   <p><strong>Issued by:</strong> Microsoft</p>
   <p><strong>Issued:</strong> 2024</p>
   <p><strong>Credential ID:</strong> AZ104-XXXXXXX</p>
-  <a href="https://www.credly.com/badges/YOUR-AZ104-BADGE-ID" target="_blank">Verify Credential</a>
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/davidmboli-3321/7E6EE01DEA8495D9?sharingId=C4D3AB08BBE6BAE2" target="_blank">Verify Credential</a>
 </div>
 
 <div class="cert-card">
@@ -48,7 +48,7 @@ Throughout my transition, I have built a strong foundation in:
   <p><strong>Issued by:</strong> Microsoft</p>
   <p><strong>Issued:</strong> 2024</p>
   <p><strong>Credential ID:</strong> AZ900-XXXXXXX</p>
-  <a href="https://www.credly.com/badges/YOUR-AZ900-BADGE-ID" target="_blank">Verify Credential</a>
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/davidmboli-3321/E79B0FED126C78D0?sharingId=C4D3AB08BBE6BAE2" target="_blank">Verify Credential</a>
 </div>
 
 
