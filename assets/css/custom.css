@@ -41,48 +41,52 @@
 }
 
 /* ──────────── Updated Certificate Cards ──────────── */
+/* Compact Certificate Cards */
 .cert-card {
-  max-width: 700px;           /* limit width so cards don’t stretch too wide */
-  margin: 2rem auto;          /* center and add vertical breathing room */
-  padding: 2rem;              /* larger padding for a more spacious feel */
+  max-width: 600px;          /* narrower overall width */
+  margin: 1.5rem auto;       /* less vertical gap */
+  padding: 1rem;             /* tighter padding */
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  display: flex;              /* use flexbox for side-by-side icon + text */
-  align-items: flex-start;
-  gap: 1.5rem;                /* space between icon and content */
+  border-radius: 8px;        /* slightly smaller rounding */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 1rem;                 /* closer icon/text spacing */
 }
 
 .cert-card img {
-  width: 50px;
+  width: 40px;               /* smaller icon */
   height: auto;
   flex-shrink: 0;
 }
 
 .cert-card .cert-content {
-  flex: 1;                    /* let text area fill remaining space */
+  flex: 1;
 }
 
 .cert-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.3rem;          /* bigger heading */
+  font-size: 1.1rem;         /* slightly smaller heading */
+  margin: 0 0 0.4rem;
 }
 
-.cert-card p {
-  margin: 0.3rem 0;
-  font-size: 1rem;
-  line-height: 1.4;
+.cert-card p,
+.cert-card a {
+  font-size: 0.9rem;         /* smaller body text */
+  margin: 0.2rem 0;
 }
 
 .cert-card a {
-  display: inline-block;
-  margin-top: 0.8rem;
-  font-size: 1rem;
-  color: #1a73e8;
-  text-decoration: none;
+  margin-top: 0.5rem;
 }
 
-.cert-card a:hover {
-  text-decoration: underline;
+@media (max-width: 480px) {
+  .cert-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cert-card img {
+    margin-bottom: 0.5rem;
+  }
 }
