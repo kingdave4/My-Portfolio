@@ -45,7 +45,7 @@ Throughout my transition, I have built a strong foundation in:
 </div>
 
 <div class="cert-card">
-  <img src="/images/microsoft.svg" alt="Microsoft Logo"  width="200" height="200" />
+  <img src="/images/microsoft-certified-fundamentals-badge.svg" alt="Microsoft Logo"  width="200" height="200" />
   <div class="cert-content">
     <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
     <p><strong>Issued by:</strong> Microsoft</p>
