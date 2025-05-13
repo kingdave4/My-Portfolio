@@ -30,7 +30,20 @@ Throughout my transition, I have built a strong foundation in:
 
 <img src="/images/terraform.svg" alt="Terraform" width="40" />
 
-<img src="/images/aws.svg" alt="Aws" width="40" />
+<img src="/images/cd-cd.svg" alt="CD/CD" width="40" />
+
+<img src="/images/github.svg" alt="Github" width="40" />
+
+<img src="/images/powershell.svg" alt="Powershell" width="40" />
+
+<img src="/images/jenkins.svg" alt="Jenkins" width="40" />
+
+<img src="/images/githubaction.svg" alt="Github Action" width="40" />
+
+<img src="/images/azure-devops.svg" alt="Azure Devops" width="40" />
+
+<img src="/images/ansible.svg" alt="Ansible" width="40" />
+
 
 ✅ **Cloud Technologies** – Working with AWS services like **S3, Glue, Athena, and CloudWatch** to automate and manage infrastructure.
 
@@ -48,7 +61,7 @@ Throughout my transition, I have built a strong foundation in:
 ## 🎖️ Certifications
 
 <div class="cert-card">
-  <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo"/>
+  <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo" width="30"/>
   <div class="cert-content">
     <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
     <p><strong>Issued by:</strong> Microsoft</p>
