@@ -30,12 +30,12 @@ publishDir = "public"
     url = "/blog/"
     weight = 2
   [[menu.main]]
-    name = "About me"
+    name = "About"
     url = "/about/"
     weight = 5
 
   [[menu.main]]
-    name = "contact"
+    name = "Contact"
     url = "/contact/"
     weight = 6
   
@@ -50,6 +50,12 @@ publishDir = "public"
     pre = "<span data-feather='github'></span>"
     url = "https://github.com/kingdave4/My-Portfolio.git"
     weight = 9
+  
+  [[menu.main]]
+    name = "Resume"
+    url = "/files/My_resume.pdf"
+    weight = 10
+  
 
 [params]
 
