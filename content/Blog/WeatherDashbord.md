@@ -1,5 +1,6 @@
 ---
 title: "Weather Dashboard: My Journey into Cloud Automation"
+image: "/images/weather_dashboard_diagram.png"
 date: "2025-01-07"
 tags: ["AWS", "Python", "boto3", "OpenWeatherMap", "DevOps", "30 Days DevOps Challenge", "Blog"]
 description: "Reflecting on my experience building the Weather Dashboard project, my first project in the 30 Days DevOps Challenge."
