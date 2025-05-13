@@ -10,6 +10,9 @@ publishDir = "public"
     startLevel = 1
     endLevel = 3
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [menu]
   [[menu.main]]
     name = "Home"
@@ -68,7 +71,7 @@ publishDir = "public"
   mainSections = ["blog"]
 
   # Meta description for the home page
-  description = "IT Support to Cloud Engineer | AZURE & AWS  | DevOps | Python "
+  description = "IT Support to Cloud Engineer | AZURE & AWS |"
 
   showBackToTopButton = true
   

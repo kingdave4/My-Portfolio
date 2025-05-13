@@ -37,6 +37,32 @@ Throughout my transition, I have built a strong foundation in:
 
 ✅ **Linux Administration** – Enhancing my ability to manage and optimize cloud-based Linux environments.
 
+
+## 🎖️ Certifications
+
+<div class="cert-card">
+  <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo" width="200" height="200"/>
+  <div class="cert-content">
+    <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
+    <p><strong>Issued by:</strong> Microsoft</p>
+    <p><strong>Issued:</strong> 2025</p>
+    <p><strong>Credential ID:</strong> AZ104-7E6EE01DEA8495D9</p>
+    <a href="https://learn.microsoft.com/api/credentials/share/en-us/davidmboli-3321/7E6EE01DEA8495D9?sharingId=C4D3AB08BBE6BAE2" target="_blank" rel="noopener noreferrer">Verify Credential</a>
+  </div>
+</div>
+
+<div class="cert-card">
+  <img src="/images/microsoft-certified-fundamentals-badge.svg" alt="Microsoft Logo"  width="200" height="200" />
+  <div class="cert-content">
+    <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+    <p><strong>Issued by:</strong> Microsoft</p>
+    <p><strong>Issued:</strong> 2024</p>
+    <p><strong>Credential ID:</strong> AZ900-E79B0FED126C78D0</p>
+    <a href="https://learn.microsoft.com/api/credentials/share/en-us/davidmboli-3321/E79B0FED126C78D0?sharingId=C4D3AB08BBE6BAE2" target="_blank" rel="noopener noreferrer">Verify Credential</a>
+  </div>
+</div>
+
+
 ## 🏗️ Hands-on Projects
 
 To solidify my learning, I have been actively working on **real-world projects**:
