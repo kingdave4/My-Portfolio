@@ -11,7 +11,7 @@ showTableOfContents: true
 
 ## 🚀 My Journey: From IT Support to Cloud Engineering
 
-I’ve always been deeply passionate about technology. My professional journey began in IT support, where I gained valuable experience troubleshooting systems, managing infrastructure, and ensuring seamless operations. Over time, I discovered my true interest lay in **building**, **automating**, and **scaling** systems — not just maintaining them.
+I’ve always been deeply passionate about technology. My professional journey began in IT support, where I gained valuable experience troubleshooting systems, managing infrastructure, and ensuring seamless operations. Over time, I discovered my true interest lay in **building**, **automating**, and **scaling** systems - not just maintaining them.
 
 ## 🌟 Why Cloud & DevOps?
 
