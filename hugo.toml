@@ -53,7 +53,7 @@ publishDir = "public"
   
   [[menu.main]]
     name = "Resume"
-    url = "static/files/My_resume.pdf"
+    url = "/files/My_resume.pdf"
     weight = 10
   
 [params]
