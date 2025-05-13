@@ -727,9 +727,18 @@ table td {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 100px) {
+@media (max-width: 768px) {
+  .cert-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cert-content {
+    width: 100%;
+  }
+
   .cert-card img {
-    width: 25px;
+    margin-bottom: 1rem;
   }
 }
 
