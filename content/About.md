@@ -55,6 +55,9 @@ Throughout my transition, I have built a strong foundation in:
 <img src="/images/ansible.svg" alt="Ansible" width="40" />
 
 
+<img src="/images/aws.svg" alt="Aws" width="40" />
+
+
 ✅ **Cloud Technologies** – Working with AWS services like **S3, Glue, Athena, and CloudWatch** to automate and manage infrastructure.
 
 ✅ **Infrastructure as Code (IaC)** – Using **Terraform** to define and deploy cloud resources efficiently.
