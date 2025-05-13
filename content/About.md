@@ -24,23 +24,33 @@ Throughout my transition, I have built a strong foundation in:
 
 <img src="/images/docker.svg" alt="Docker" width="40" />
 
+
 <img src="/images/azure.svg" alt="Azure" width="40" />
+
 
 <img src="/images/python.svg" alt="Python" width="40" />
 
+
 <img src="/images/terraform.svg" alt="Terraform" width="40" />
 
-<img src="/images/cd-cd.svg" alt="CD/CD" width="40" />
+
+<img src="/images/ci-cd.svg" alt="CD/CD" width="40" />
+
 
 <img src="/images/github.svg" alt="Github" width="40" />
 
+
 <img src="/images/powershell.svg" alt="Powershell" width="40" />
+
 
 <img src="/images/jenkins.svg" alt="Jenkins" width="40" />
 
-<img src="/images/githubaction.svg" alt="Github Action" width="40" />
+
+<img src="/images/githubactions.svg" alt="Github Action" width="40" />
+
 
 <img src="/images/azure-devops.svg" alt="Azure Devops" width="40" />
+
 
 <img src="/images/ansible.svg" alt="Ansible" width="40" />
 
@@ -61,7 +71,7 @@ Throughout my transition, I have built a strong foundation in:
 ## 🎖️ Certifications
 
 <div class="cert-card">
-  <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo" width="30"/>
+  <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo"/>
   <div class="cert-content">
     <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
     <p><strong>Issued by:</strong> Microsoft</p>
