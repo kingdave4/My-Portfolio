@@ -53,6 +53,7 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 <img src="/images/githubactions.svg" alt="Github Action" width="40" />
 
+<img src="/images/hugo.svg" alt="Hugo" width="40" /> 
 
 [🔗 Read More →](/projects/portfolio-deployment/)  
 
