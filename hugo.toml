@@ -53,10 +53,9 @@ publishDir = "public"
   
   [[menu.main]]
     name = "Resume"
-    url = "/files/"
+    url = "static/files/My_resume.pdf"
     weight = 10
   
-
 [params]
 
   # Choose the color shown when hyperlinks are hovered over
@@ -81,7 +80,7 @@ publishDir = "public"
 
   showBackToTopButton = true
   
-  showPostsOnHomePage = ""
+  showPostsOnHomePage = true
   
   # Social icons
   socialIcons = [
