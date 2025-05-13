@@ -5,6 +5,7 @@ tags: ["AWS", "Python", "boto3", "OpenWeatherMap", "DevOps", "30 Days DevOps Cha
 description: "A project post for my Weather Dashboard project, which fetches weather data from the OpenWeatherMap API and saves it to an AWS S3 bucket using Python and boto3."
 type: "page"
 weight: 5
+image: "/images/weather_dashboard_diagram.png"
 showTableOfContents: true
 ---
 
