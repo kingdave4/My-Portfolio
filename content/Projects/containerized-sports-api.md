@@ -4,6 +4,7 @@ date: 2025-03-09T00:00:00Z
 description: "A containerized API management system for querying real-time sports data using AWS ECS (Fargate), API Gateway, Docker, and Terraform."
 tags: ["AWS", "ECS", "API Gateway", "Terraform", "Docker", "DevOps", "Python"]
 type: "page"
+image: "/images/sportdiagram.png"
 showTableOfContents: true
 ---
 
