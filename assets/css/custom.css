@@ -40,51 +40,16 @@
   color: #ffcc00;
 }
 
-/* ──────────── Updated Certificate Cards ──────────── */
-/* Compact Certificate Cards */
-.cert-card {
-  max-width: 100px;          /* narrower overall width */
-  margin: 1.5rem auto;       /* less vertical gap */
-  padding: 0.8rem;             /* tighter padding */
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;        /* slightly smaller rounding */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-  display: flex;
-  justify-content: flex-start;  
-  align-items: center;
-  gap: 0.8rem;               /* closer icon/text spacing */
+
+.post-content img {
+  display: inline-block;      /* let text sit beside the image */ 
+  margin: 0 1rem 1rem 0;      /* add right/bottom space for text wrap */
 }
 
-.cert-card img {
-  float: left;
-  margin-right: 1rem;   /* keeps some space between the icon and text */
+.post-content::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-.cert-card .cert-content {
-  flex: 1;
-}
-
-.cert-card h3 {
-  font-size: 1.1rem;         /* slightly smaller heading */
-  margin: 0 0 0.4rem;
-}
-
-.cert-card p,
-.cert-card a {
-  font-size: 0.9rem;         /* smaller body text */
-  margin: 0.2rem 0;
-}
-
-.cert-card a {
-  margin-top: 0.5rem;
-}
-
-@media (max-width: 100px) {
-  .cert-card img {
-    width: 25px;
-  }
-}
-
 
 
