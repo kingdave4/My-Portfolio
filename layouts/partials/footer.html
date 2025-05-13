@@ -33,16 +33,8 @@
         <span>&copy; {{ .Scratch.Get "footerText" | markdownify }}</span>
     {{ end }}
 
-    <span>
-        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/gokarna-theme/gokarna-hugo">Gokarna</a>
-    </span>
-    
-</footer>
-<footer class="footer">
-    <div class="footer-content">
-        <p>&copy; {{ now.Year }} {{ .Site.Title }}. All Rights Reserved.</p>
-    </div>
-</footer>
+    <span>&copy; {{ now.Year }} {{ .Site.Title }}. All Rights Reserved.</span>
+
 
 <!-- Typed.js for Animated Text -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

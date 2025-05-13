@@ -4,7 +4,7 @@ date: 2025-03-09T00:00:00Z
 description: "An automated pipeline for collecting, storing, and analyzing NBA player data using AWS and GitHub Actions."
 tags: ["AWS", "Data Lake", "GitHub Actions", "Python", "DevOps"]
 github: "https://github.com/kingdave4/Nba_Data_Lake.git"
-type: "post"
+type: "page"
 showTableOfContents: true
 ---
 

@@ -3,10 +3,11 @@ title: "NCAA Game Data Backup (SportsDataBackup)"
 date: 2025-03-09T00:00:00Z
 description: "An evolved pipeline that fetches NCAA game highlights, backs up query data using AWS DynamoDB, and automates daily triggers with AWS EventBridge and ECS Fargate."
 tags: ["AWS", "DynamoDB", "EventBridge", "ECS Fargate", "MediaConvert", "Terraform", "Docker", "DevOps"]
-type: "post"
+type: "page"
 showTableOfContents: true
 ---
 
+---
 ## 📌Overview
 
 **NCAA Game Data Backup – Project #6: SportsDataBackup** is an evolution of the previous NCAA Game Highlights project. This upgrade enhances reliability and efficiency by integrating AWS DynamoDB for backing up query data and AWS EventBridge for daily automated triggers using ECS Fargate. The pipeline fetches game highlights via RapidAPI, processes videos with AWS MediaConvert, and provisions all necessary AWS infrastructure with Terraform—all while containerizing the workflow with Docker.

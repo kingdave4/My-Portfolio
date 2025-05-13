@@ -3,7 +3,7 @@ title: "Weather Dashboard Project"
 date: "2025-01-07"
 tags: ["AWS", "Python", "boto3", "OpenWeatherMap", "DevOps", "30 Days DevOps Challenge"]
 description: "A project post for my Weather Dashboard project, which fetches weather data from the OpenWeatherMap API and saves it to an AWS S3 bucket using Python and boto3."
-type: "post"
+type: "page"
 weight: 5
 showTableOfContents: true
 ---

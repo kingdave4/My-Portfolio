@@ -27,11 +27,12 @@ publishDir = "public"
     url = "/blog/"
     weight = 2
   [[menu.main]]
-    name = "About"
+    name = "About me"
     url = "/about/"
     weight = 5
+
   [[menu.main]]
-    name = "Contact"
+    name = "contact"
     url = "/contact/"
     weight = 6
   
@@ -39,13 +40,13 @@ publishDir = "public"
     name = "Tags"
     pre = "<span data-feather='tag'></span>"
     url = "/tags/"
-    weight = 4
+    weight = 8
 
   [[menu.main]]
     identifier = "github"
     pre = "<span data-feather='github'></span>"
     url = "https://github.com/kingdave4/My-Portfolio.git"
-    weight = 7
+    weight = 9
 
 [params]
 
@@ -59,13 +60,15 @@ publishDir = "public"
   # Custom Head HTML (optional)
   customHeadHTML = "<script>console.log('Any HTML')</script>"
 
+  customCSS = ["css/custom.css"]
+  
   # Date format for posts
   dateFormat = "2 January, 2006"
 
   mainSections = ["blog"]
 
   # Meta description for the home page
-  description = "IT Support to Cloud Engineer | AWS & AZURE | DevOps | Python"
+  description = "IT Support to Cloud Engineer | AZURE & AWS  | DevOps | Python "
 
   showBackToTopButton = true
   

@@ -4,11 +4,18 @@ date: 2025-02-02
 description: "How I am transitioning from IT support to a career in DevOps and Cloud Engineering."
 tags: ["Cloud Engineering", "DevOps", "Career Transition"]
 categories: ["About"]
+type: page
+showTableOfContents: true
 ---
-
+---
 ## 🚀 My Journey: From IT Support to Cloud Engineering
 
 I have always been deeply passionate about technology, and over time, I realized that my true calling lies in **DevOps and Cloud Engineering**. My journey began in **IT support**, where I gained hands-on experience troubleshooting systems, managing infrastructure, and ensuring seamless IT operations. While I valued this experience, I knew I wanted to **build and automate** rather than just maintain systems.
+
+## Certification
+![Azure administrator](/images/azure_administrator_associate.png)
+[Show credential](https://learn.microsoft.com/en-us/users/davidmboli-3321/credentials/7e6ee01dea8495d9?ref=https%3A%2F%2Fwww.linkedin.com%2F)
+
 
 ## 🌟 Why Cloud & DevOps?
 

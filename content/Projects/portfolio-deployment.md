@@ -4,7 +4,7 @@ date: 2025-02-02
 description: "Deploying my personal portfolio using Hugo, GitHub, and Terraform on Azure."
 tags: ["Hugo", "Terraform", "Azure", "GitHub Actions", "DevOps"]
 categories: ["Projects"]
-type: "post"
+type: "page"
 showTableOfContents: true
 ---
 
