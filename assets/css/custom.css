@@ -1,52 +1,90 @@
 .hero-section {
-    background-image: url('/images/my_photo.png');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    text-align: center;
-    color: white;
-  }
-  
-  .hero-section h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero-section p {
-    font-size: 1.5rem;
-    font-style: italic;
-  }
-
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-  }
-  
-  @keyframes blink {
-    50% { border-color: transparent; }
-  }
-  
-  .animated-text {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid #7436c6;
-    animation: typing 3s steps(30, end) forwards, blink 0.8s infinite;
-  }
-  
-  .animated-text {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffcc00;
+  background-image: url('/images/my_photo.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
 }
 
-.nav-title {
-  margin-right: auto;  /* Pushes it to the left */
-  text-align: left;    /* Ensures text inside stays left-aligned */
+.hero-section h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.nav-brand {
-  text-decoration: none;
-  color: #333;         /* Optional styling for the text */
+.hero-section p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  animation: typing 3s steps(30, end) forwards, blink 0.8s infinite;
+}
+
+.animated-text {
+  font-size: 18px;
   font-weight: bold;
+  color: #ffcc00;
 }
+
+/* ──────────── Updated Certificate Cards ──────────── */
+/* Compact Certificate Cards */
+.cert-card {
+  max-width: 100px;          /* narrower overall width */
+  margin: 1.5rem auto;       /* less vertical gap */
+  padding: 0.8rem;             /* tighter padding */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;        /* slightly smaller rounding */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+  gap: 0.8rem;               /* closer icon/text spacing */
+}
+
+.cert-card img {
+  float: left;
+  margin-right: 1rem;   /* keeps some space between the icon and text */
+}
+
+.cert-card .cert-content {
+  flex: 1;
+}
+
+.cert-card h3 {
+  font-size: 1.1rem;         /* slightly smaller heading */
+  margin: 0 0 0.4rem;
+}
+
+.cert-card p,
+.cert-card a {
+  font-size: 0.9rem;         /* smaller body text */
+  margin: 0.2rem 0;
+}
+
+.cert-card a {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 100px) {
+  .cert-card img {
+    width: 25px;
+  }
+}
+
+
+
