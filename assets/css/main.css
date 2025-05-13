@@ -690,7 +690,7 @@ table td {
 /* ──────────── Updated Certificate Cards ──────────── */
 /* Compact Certificate Cards */
 .cert-card {
-  max-width: 110px;          /* narrower overall width */
+  max-width: 210px;          /* narrower overall width */
   /*margin: 1.5rem auto;       /* less vertical gap */
   /*padding: 0.8rem;             /* tighter padding */
   background-color: #fff;
