@@ -33,15 +33,27 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 ### 🌦️ **Weather Dashboard**  
 📌 *Fetching real-time weather data and storing it in AWS S3.*  
 **Tech Stack:** Python, OpenWeatherMap API, AWS S3 
-<img src="/images/aws.svg" alt="Aws" width="40" /> <img src="/images/python.svg" alt="Python" width="40" />
+
+<img src="/images/aws.svg" alt="Aws" width="40" /> 
+
+<img src="/images/python.svg" alt="Python" width="40" />
+
+
 [🔗 Read More →](/projects/weather-dashboard/)  
 
 ---
 
 ### 🏗️ **Portfolio & Blog Deployment**  
 📌 *Deploying my personal site using Hugo, GitHub, and Terraform on Azure.*  
-**Tech Stack:** Hugo, Terraform, Azure, GitHub Actions  
-<img src="/images/terraform.svg" alt="Terraform" width="40" /> <img src="/images/azure.svg" alt="Azure" width="40" /> <img src="/images/githubactions.svg" alt="Github Action" width="40" />
+**Tech Stack:** Hugo, Terraform, Azure, GitHub Actions
+
+<img src="/images/terraform.svg" alt="Terraform" width="40" /> 
+
+<img src="/images/azure.svg" alt="Azure" width="40" /> 
+
+<img src="/images/githubactions.svg" alt="Github Action" width="40" />
+
+
 [🔗 Read More →](/projects/portfolio-deployment/)  
 
 ---
