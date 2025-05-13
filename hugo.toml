@@ -80,7 +80,8 @@ publishDir = "public"
 
   showBackToTopButton = true
   
-  showPostsOnHomePage = true
+  showPostsOnHomePage = ""
+  numberPostsOnHomePage = 4
   
   # Social icons
   socialIcons = [
