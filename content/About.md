@@ -24,7 +24,7 @@ Throughout my transition, I have built a strong foundation in:
 
 <img src="/images/docker.svg" alt="Docker" width="40" />
 
-<img src="/images/Azure.svg" alt="Azure" width="40" />
+<img src="/images/azure.svg" alt="Azure" width="40" />
 
 <img src="/images/python.svg" alt="Python" width="40" />
 
