@@ -123,4 +123,4 @@ Check your inbox and **confirm the SNS subscription** via the email link.
 ---
 This project showcases my ability to **automate cloud deployments** using **Terraform** and **leverage AWS services** to create a **fully automated NBA game update notification system**. More exciting projects coming soon! 🚀
 
-🔗 **GitHub Repository:** [NBA Data Lake Pipeline](https://github.com/kingdave4/nba_game_notification_update.git)  
+[View on GitHub](https://github.com/kingdave4/nba_game_notification_update.git) 

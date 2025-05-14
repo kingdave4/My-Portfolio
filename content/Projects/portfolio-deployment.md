@@ -210,4 +210,4 @@ Follow the instructions to validate and configure DNS settings.
 
 [click here for the instructions](https://learn.microsoft.com/en-us/azure/static-web-apps/custom-domain)
 
-
+[View on GitHub](https://github.com/kingdave4/My-Portfolio.git) 
