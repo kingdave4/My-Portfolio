@@ -19,16 +19,19 @@ publishDir = "public"
     pre = "<span data-feather='home'></span>"
     url = "/"
     weight = 1
+    
   [[menu.main]]
     name = "Projects"
     pre = "<span data-feather='code'></span>"
     url = "/projects/"
     weight = 3
+
   [[menu.main]]
     name = "Blog"
     pre = "<span data-feather='book'></span>"
     url = "/blog/"
     weight = 2
+
   [[menu.main]]
     name = "About"
     url = "/about/"
@@ -53,7 +56,7 @@ publishDir = "public"
   
   [[menu.main]]
     name = "Resume"
-    url = "/files/My_resume.pdf"
+    url = "/Resume/"
     weight = 10
   
 [params]
