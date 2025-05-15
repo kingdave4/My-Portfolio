@@ -11,16 +11,20 @@ showTableOfContents: true
 
 ## 🚀 My Journey: From IT Support to Cloud Engineering
 
-I’ve always been deeply passionate about technology. My professional journey began in IT support, where I gained valuable experience troubleshooting systems, managing infrastructure, and ensuring seamless operations. Over time, I discovered my true interest lay in **building**, **automating**, and **scaling** systems - not just maintaining them.
+After four years in IT support troubleshooting hardware, networks, and on-prem servers, I fell in love with automating and scaling infrastructure. Today, as an **AZ-104 Certified Azure Administrator Associate**, I architect and deploy cloud solutions using Infrastructure as Code, containers, and CI/CD pipelines—transforming manual workflows into repeatable, reliable processes.
 
-## 🌟 Why Cloud & DevOps?
+---
 
-The more I learned about **cloud computing and automation**, the more fascinated I became. The idea of managing infrastructure as code (IaC), deploying applications seamlessly, and automating workflows resonated with me. Tools like **Terraform, Docker, Ansible, Kubernetes, Jenkins, and GitHub Actions** showed me how infrastructure can be built, deployed, and scaled efficiently.
+## 🔑 Core Strengths
 
+- **Collaborative Communication:** Bridging gaps between development, security, and operations  
+- **Analytical Troubleshooter:** Rapidly diagnose and resolve production incidents  
+- **Continuous Learner:** Always exploring new tools, patterns, and best practices  
+- **Documentation-Driven:** Clear runbooks and diagrams to onboard teammates  
 
-## 🔧 Skills I’ve Gained
+---
 
-Throughout my transition, I have built a strong foundation in:
+## 🛠️ Technical Skills
 
 <img src="/images/Git.svg" alt="Git" width="40" />
 
@@ -67,18 +71,41 @@ Throughout my transition, I have built a strong foundation in:
 <img src="/images/VS Code.svg" alt="Visual Studio Code" width="40" />
 
 
-✅ **Cloud Technologies** – Working with AWS services like **S3, Glue, Athena, and CloudWatch** to automate and manage infrastructure.
+<div style="display: flex; gap: 2rem; flex-wrap: wrap;">
 
-✅ **Infrastructure as Code (IaC)** – Using **Terraform** to define and deploy cloud resources efficiently.
+<div>
+**💻 Infrastructure as Code**  
+Terraform · Bicep · ARM · Azure CLI  
+</div>
 
-✅ **CI/CD Pipelines** – Implementing **Jenkins, GitHub Actions, and other CI/CD tools** to automate deployments.
+<div>
+**🐳 Containers & Orchestration**  
+Docker · Kubernetes · Azure Kubernetes Service  
+</div>
 
-✅ **Containerization & Orchestration** – Leveraging **Docker and Kubernetes** to package and manage applications.
+<div>
+**🔁 CI/CD & Automation**  
+Azure DevOps · GitHub Actions · Jenkins  
+</div>
 
-✅ **Scripting & Automation** – Writing scripts in **Python, JSON, and YAML** to automate cloud operations.
+<div>
+**☁️ Cloud Platforms**  
+Azure (VMs, Functions, Synapse) · AWS (S3, Glue, Athena)  
+</div>
 
-✅ **Linux Administration** – Enhancing my ability to manage and optimize cloud-based Linux environments.
+<div>
+**⚙️ Scripting & Tooling**  
+Python · Bash · PowerShell · YAML · JSON  
+</div>
 
+<div>
+**🐧 Linux Administration**  
+Ubuntu · CentOS · Shell scripting · Monitoring & Logging  
+</div>
+
+</div>
+
+---
 
 ## 🎖️ Certifications
 
@@ -107,4 +134,7 @@ Throughout my transition, I have built a strong foundation in:
 </div>
 
 
+## 📬 Let’s Connect
 
+If you’re looking for someone who can streamline your cloud deployments and drive automation, let’s talk!  
+[Contact Me »](davidmboli1@gmail.com)
