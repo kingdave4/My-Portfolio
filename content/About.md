@@ -72,7 +72,9 @@ After three years in IT support troubleshooting hardware, networks, and on-prem 
 <img src="/images/VS Code.svg" alt="Visual Studio Code" width="40" />
 
 
+
 <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+
 
 <div>
 **💻 Infrastructure as Code**  
