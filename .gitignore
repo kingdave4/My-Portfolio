@@ -26,3 +26,6 @@ node_modules/
 package-lock.json
 yarn.lock
 infra/.terraform/
+
+terraform.tfstate
+terraform.tfstate.backup
