@@ -46,7 +46,7 @@ Throughout my transition, I have built a strong foundation in:
 <img src="/images/jenkins.svg" alt="Jenkins" width="40" />
 
 
-<img src="/images/githubactions.svg" alt="Github Action" width="40" />
+<img src="/images/GitHub Actions.svg" alt="Github Action" width="40" />
 
 
 <img src="/images/azure-devops.svg" alt="Azure Devops" width="40" />
@@ -56,6 +56,15 @@ Throughout my transition, I have built a strong foundation in:
 
 
 <img src="/images/aws.svg" alt="Aws" width="40" />
+
+
+<img src="/images/Linux.svg" alt="Linux" width="40" />
+
+
+<img src="/images/VS Code.svg" alt="Visual Studio Code" width="40" />
+
+
+<img src="/images/Git.svg" alt="Aws" width="40" />
 
 
 ✅ **Cloud Technologies** – Working with AWS services like **S3, Glue, Athena, and CloudWatch** to automate and manage infrastructure.
