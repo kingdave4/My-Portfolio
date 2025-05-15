@@ -34,6 +34,8 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 📌 *Fetching real-time weather data and storing it in AWS S3.*  
 **Tech Stack:** Python, OpenWeatherMap API, AWS S3 
 
+<img src="/images/Git.svg" alt="Git" width="40" />
+
 <img src="/images/aws.svg" alt="Aws" width="40" /> 
 
 <img src="/images/python.svg" alt="Python" width="40" />
@@ -51,7 +53,7 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 <img src="/images/azure.svg" alt="Azure" width="40" /> 
 
-<img src="/images/githubactions.svg" alt="Github Action" width="40" />
+<img src="/images/GitHub Actions.svg" alt="Github Action" width="40" />
 
 <img src="/images/hugo.svg" alt="Hugo" width="40" /> 
 
@@ -62,7 +64,15 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 ### 🏀 **Automating NBA Game Notifications with AWS & Terraform**  
 📌 *Building an automated NBA game update notification system using AWS Lambda, SNS, and Terraform.*  
-**Tech Stack:** AWS Lambda, SNS, EventBridge, IAM, Terraform, Python  
+**Tech Stack:** AWS Lambda, SNS, EventBridge, IAM, Terraform, Python 
+
+<img src="/images/aws.svg" alt="Aws" width="40" />
+
+<img src="/images/terraform.svg" alt="Terraform" width="40" />
+
+<img src="/images/python.svg" alt="Python" width="40" />
+
+
 [🔗 Read More →](/projects/nba_game_notification/)  
 
 ---
