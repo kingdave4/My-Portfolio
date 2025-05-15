@@ -746,3 +746,17 @@ table td {
     width: 100%;                 /* text takes full width */
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .cert-card {
+    color: #111 !important; /* Dark text on white background */
+    background-color: #fff !important;
+  }
+
+  .cert-card a,
+  .cert-card p,
+  .cert-card h3,
+  .cert-card .cert-content {
+    color: #111 !important;
+  }
+}
