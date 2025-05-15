@@ -24,8 +24,6 @@ After four years in IT support troubleshooting hardware, networks, and on-prem s
 
 ---
 
-## 🛠️ Technical Skills
-
 <img src="/images/Git.svg" alt="Git" width="40" />
 
 
@@ -70,6 +68,8 @@ After four years in IT support troubleshooting hardware, networks, and on-prem s
 
 <img src="/images/VS Code.svg" alt="Visual Studio Code" width="40" />
 
+
+## 🛠️ Technical Skills
 
 <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
 
