@@ -138,4 +138,4 @@ Ubuntu · CentOS · Shell scripting · Monitoring & Logging
 ## 📬 Let’s Connect
 
 If you’re looking for someone who can streamline your cloud deployments and drive automation, let’s talk!  
-[Contact Me »](davidmboli1@gmail.com)
+[Contact Me »](mailto:davidmboli1@gmail.com)
