@@ -22,6 +22,9 @@ The more I learned about **cloud computing and automation**, the more fascinated
 
 Throughout my transition, I have built a strong foundation in:
 
+<img src="/images/Git.svg" alt="Git" width="40" />
+
+
 <img src="/images/docker.svg" alt="Docker" width="40" />
 
 
@@ -62,9 +65,6 @@ Throughout my transition, I have built a strong foundation in:
 
 
 <img src="/images/VS Code.svg" alt="Visual Studio Code" width="40" />
-
-
-<img src="/images/Git.svg" alt="Aws" width="40" />
 
 
 ✅ **Cloud Technologies** – Working with AWS services like **S3, Glue, Athena, and CloudWatch** to automate and manage infrastructure.
