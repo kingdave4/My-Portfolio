@@ -727,18 +727,22 @@ table td {
   margin-top: 0.5rem;
 }
 
-@media (max-width: 768px) {
-  .cert-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .cert-content {
-    width: 100%;
+@media (max-width: 600px) {
+  .cert-card {
+    flex-direction: column;      /* stack icon above text */
+    align-items: flex-start;     /* left-align everything */
+    max-width: 100%;             /* allow full container width on narrow screens */
+    padding: 0.6rem;
+    gap: 0.5rem;
   }
 
   .cert-card img {
-    margin-bottom: 1rem;
+    width: 30px;                 /* smaller icon on mobile */
+    margin: 0;                   /* reset any margins */
+  }
+
+  .cert-card .cert-content {
+    width: 100%;                 /* text takes full width */
   }
 }
-
