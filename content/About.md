@@ -11,7 +11,7 @@ showTableOfContents: true
 
 ## 🚀 My Journey: From IT Support to Cloud Engineering
 
-After four years in IT support troubleshooting hardware, networks, and on-prem servers, I fell in love with automating and scaling infrastructure. Today, as an **AZ-104 Certified Azure Administrator Associate**, I architect and deploy cloud solutions using Infrastructure as Code, containers, and CI/CD pipelines—transforming manual workflows into repeatable, reliable processes.
+After three years in IT support troubleshooting hardware, networks, and on-prem servers, I fell in love with automating and scaling infrastructure. Today, as an **AZ-104 Certified Azure Administrator Associate**, I architect and deploy cloud solutions using Infrastructure as Code, containers, and CI/CD pipelines—transforming manual workflows into repeatable, reliable processes.
 
 ---
 
