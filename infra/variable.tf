@@ -11,3 +11,11 @@ variable "static_site_name" {
   type        = string
   default     = "my-static-web-app"
 }
+
+
+variable "prefix" {
+  description = "Prefix for the storage account name."
+  type        = string
+  default     = "myhugoblog" 
+}
+
