@@ -18,8 +18,8 @@ I’m always excited to discuss new cloud and DevOps challenges. Whether you’r
 
 ## 🤝 Follow Me
 
-- **LinkedIn**: [linkedin.com/in/myprofile](https://www.linkedin.com/in/david-mboli-idie-38b974209/)  
-- **GitHub**: [github.com/mygithub](https://github.com/kingdave4)  
+- LinkedIn: [linkedin.com/in/myprofile](https://www.linkedin.com/in/david-mboli-idie-38b974209/)  
+- GitHub: [github.com/mygithub](https://github.com/kingdave4)  
 
 ---
 
