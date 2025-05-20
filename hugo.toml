@@ -51,7 +51,7 @@ publishDir = "public"
   [[menu.main]]
     name = "Resume"
     url = "https://myhugoblogstorage.blob.core.windows.net/$web/DavidMboliIdie_Resume.pdf"
-    weight = 10
+    weight = 7
 
   [[menu.main]]
     identifier = "github"
