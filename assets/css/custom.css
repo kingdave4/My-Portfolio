@@ -167,10 +167,19 @@ body.page-contact {
   transform: translateY(-2px);
 }
 
-/* Status Text */
 .form-status {
-  margin-top: 1.25rem;
-  font-size: 1rem;
-  color: #dcdcdc;
-  text-align: center;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
+.form-status.sending {
+  color: #777;
+}
+.form-status.success {
+  color: #2ecc71;
+}
+.form-status.error {
+  color: #e74c3c;
+}
+
+
