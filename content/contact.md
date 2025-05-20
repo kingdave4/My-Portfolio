@@ -3,7 +3,6 @@ title: "Get in Touch"
 layout: "contact"
 subtile: "Reach out for cloud architecture, DevOps, or infrastructure automation projects."
 class: "page-contact"
-showTableOfContents: true
 ---
 
 I’m always excited to discuss new cloud and DevOps challenges. Whether you’re:
