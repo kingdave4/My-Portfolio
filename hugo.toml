@@ -53,12 +53,7 @@ publishDir = "public"
     pre = "<span data-feather='github'></span>"
     url = "https://github.com/kingdave4/My-Portfolio.git"
     weight = 9
-  
-  [[menu.main]]
-    name = "Resume"
-    url = "https://myhugoblogstorage.blob.core.windows.net/$web/DavidMboliIdie_Resume.pdf"
-    weight = 10
-  
+
 [params]
 
   # Choose the color shown when hyperlinks are hovered over
@@ -71,7 +66,7 @@ publishDir = "public"
   # Custom Head HTML (optional)
   customHeadHTML = "<script>console.log('Any HTML')</script>"
 
-  customCSS = ["css/main.css", "css/custom.css"]
+  customCSS = ["css/custom.css"]
   
   # Date format for posts
   dateFormat = "2 January, 2006"
