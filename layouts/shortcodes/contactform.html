@@ -26,11 +26,12 @@
         headers: {'Content-Type':'application/json'},
         body: JSON.stringify(data)
       });
+      const result = await resp.json();
       status.textContent = resp.ok
         ? 'Thanks for reaching out!'
-        : 'Sorry, something went wrong.';
+        : (result.error || 'Sorry, something went wrong.');
       form.reset();
-    } catch {
+    } catch (err) {
       status.textContent = 'Network error. Try again later.';
     }
   });
