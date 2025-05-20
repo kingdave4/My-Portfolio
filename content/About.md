@@ -11,56 +11,131 @@ showTableOfContents: true
 
 ## 🚀 My Journey: From IT Support to Cloud Engineering
 
-I have always been deeply passionate about technology, and over time, I realized that my true calling lies in **DevOps and Cloud Engineering**. My journey began in **IT support**, where I gained hands-on experience troubleshooting systems, managing infrastructure, and ensuring seamless IT operations. While I valued this experience, I knew I wanted to **build and automate** rather than just maintain systems.
+After three years in IT support troubleshooting hardware, networks, and on-prem servers, I fell in love with automating and scaling infrastructure. Today, as an **AZ-104 Certified Azure Administrator Associate**, I architect and deploy cloud solutions using Infrastructure as Code, containers, and CI/CD pipelines—transforming manual workflows into repeatable, reliable processes.
 
-## Certification
-![Azure administrator](/images/azure_administrator_associate.png)
-[Show credential](https://learn.microsoft.com/en-us/users/davidmboli-3321/credentials/7e6ee01dea8495d9?ref=https%3A%2F%2Fwww.linkedin.com%2F)
+---
+
+## 🔑 Core Strengths
+
+- **Collaborative Communication:** Bridging gaps between development, security, and operations  
+- **Analytical Troubleshooter:** Rapidly diagnose and resolve production incidents  
+- **Continuous Learner:** Always exploring new tools, patterns, and best practices  
+- **Documentation-Driven:** Clear runbooks and diagrams to onboard teammates  
+
+---
+
+<img src="/images/Git.svg" alt="Git" width="40" />
 
 
-## 🌟 Why Cloud & DevOps?
+<img src="/images/docker.svg" alt="Docker" width="40" />
 
-The more I learned about **cloud computing and automation**, the more fascinated I became. The idea of managing infrastructure as code (IaC), deploying applications seamlessly, and automating workflows resonated with me. Tools like **Terraform, Docker, Ansible, Kubernetes, Jenkins, and GitHub Actions** showed me how infrastructure can be built, deployed, and scaled efficiently.
 
-## 🔧 Skills I’ve Gained
+<img src="/images/azure.svg" alt="Azure" width="40" />
 
-Throughout my transition, I have built a strong foundation in:
 
-✅ **Cloud Technologies** – Working with AWS services like **S3, Glue, Athena, and CloudWatch** to automate and manage infrastructure.
+<img src="/images/python.svg" alt="Python" width="40" />
 
-✅ **Infrastructure as Code (IaC)** – Using **Terraform** to define and deploy cloud resources efficiently.
 
-✅ **CI/CD Pipelines** – Implementing **Jenkins, GitHub Actions, and other CI/CD tools** to automate deployments.
+<img src="/images/terraform.svg" alt="Terraform" width="40" />
 
-✅ **Containerization & Orchestration** – Leveraging **Docker and Kubernetes** to package and manage applications.
 
-✅ **Scripting & Automation** – Writing scripts in **Python, JSON, and YAML** to automate cloud operations.
+<img src="/images/ci-cd.svg" alt="CD/CD" width="40" />
 
-✅ **Linux Administration** – Enhancing my ability to manage and optimize cloud-based Linux environments.
 
-## 🏗️ Hands-on Projects
+<img src="/images/github.svg" alt="Github" width="40" />
 
-To solidify my learning, I have been actively working on **real-world projects**:
 
-- **NBA Data Lake Pipeline** – Automating data collection, storage, and querying using **AWS, Python, and GitHub Actions**.
-- **Weather Dashboard** – Fetching real-time weather data using **OpenWeatherMap API** and integrating it with **AWS S3**.
-- **Portfolio & Blog Deployment** – Building my personal site using **Hugo, GitHub, and Terraform on Azure** to showcase my journey and projects.
+<img src="/images/powershell.svg" alt="Powershell" width="40" />
 
-## 📄 View My Resume
 
-If you'd like to learn more about my experience and skills, you can view my resume [here](/files/My_resume.pdf).
+<img src="/images/jenkins.svg" alt="Jenkins" width="40" />
 
-## 📈 What’s Next?
 
-I am committed to continuous learning and hands-on practice. My next steps include:
+<img src="/images/GitHub Actions.svg" alt="Github Action" width="40" />
 
-🔹 Gaining AWS certifications to deepen my cloud expertise.  
-🔹 Mastering Kubernetes and Helm for scalable container orchestration.  
-🔹 Exploring advanced monitoring and security practices in cloud environments.  
 
-## 🎯 Final Thoughts
+<img src="/images/azure-devops.svg" alt="Azure Devops" width="40" />
 
-Transitioning from IT Support to Cloud Engineering has been a challenging yet **rewarding** journey. Every day, I am pushing myself to learn more, build more, and improve my problem-solving skills. I am excited about the future and eager to contribute to innovative **DevOps and cloud solutions**.
 
-🚀 **Let’s connect and build the future of cloud automation together!**
+<img src="/images/ansible.svg" alt="Ansible" width="40" />
 
+
+<img src="/images/aws.svg" alt="Aws" width="40" />
+
+
+<img src="/images/Linux.svg" alt="Linux" width="40" />
+
+
+<img src="/images/VS Code.svg" alt="Visual Studio Code" width="40" />
+
+
+## 🛠️ Technical Skills
+
+
+<div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+
+<div>
+**💻 Infrastructure as Code**  
+Terraform · Bicep · ARM · Azure CLI  
+</div>
+
+<div>
+**🐳 Containers & Orchestration**  
+Docker · Kubernetes · Azure Kubernetes Service  
+</div>
+
+<div>
+**🔁 CI/CD & Automation**  
+Azure DevOps · GitHub Actions · Jenkins  
+</div>
+
+<div>
+**☁️ Cloud Platforms**  
+Azure (VMs, Functions, Synapse) · AWS (S3, Glue, Athena)  
+</div>
+
+<div>
+**⚙️ Scripting & Tooling**  
+Python · Bash · PowerShell · YAML · JSON  
+</div>
+
+<div>
+**🐧 Linux Administration**  
+Ubuntu · CentOS · Shell scripting · Monitoring & Logging  
+</div>
+
+</div>
+
+---
+
+## 🎖️ Certifications
+
+<div class="cert-card">
+  <img src="/images/microsoft-certified-associate-badge.svg" alt="Microsoft Logo"/>
+  <div class="cert-content">
+    <h3>Microsoft Certified: Azure Administrator Associate (AZ-104)</h3>
+    <p><strong>Issued by:</strong> Microsoft</p>
+    <p><strong>Issued:</strong> 2025</p>
+    <p><strong>Credential ID:</strong> AZ104-7E6EE01DEA8495D9</p>
+    <a href="https://learn.microsoft.com/api/credentials/share/en-us/davidmboli-3321/7E6EE01DEA8495D9?sharingId=C4D3AB08BBE6BAE2" target="_blank" rel="noopener noreferrer">Verify Credential</a>
+  </div>
+</div>
+
+#
+
+<div class="cert-card">
+  <img src="/images/microsoft-certified-fundamentals-badge.svg" alt="Microsoft Logo"/>
+  <div class="cert-content">
+    <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
+    <p><strong>Issued by:</strong> Microsoft</p>
+    <p><strong>Issued:</strong> 2024</p>
+    <p><strong>Credential ID:</strong> AZ900-E79B0FED126C78D0</p>
+    <a href="https://learn.microsoft.com/api/credentials/share/en-us/davidmboli-3321/E79B0FED126C78D0?sharingId=C4D3AB08BBE6BAE2" target="_blank" rel="noopener noreferrer">Verify Credential</a>
+  </div>
+</div>
+
+
+## 📬 Let’s Connect
+
+If you’re looking for someone who can streamline your cloud deployments and drive automation, let’s talk!  
+[Contact Me »](mailto:davidmboli1@gmail.com)
