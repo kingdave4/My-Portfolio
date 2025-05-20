@@ -47,6 +47,11 @@ publishDir = "public"
     pre = "<span data-feather='tag'></span>"
     url = "/tags/"
     weight = 8
+  
+  [[menu.main]]
+    name = "Resume"
+    url = "https://myhugoblogstorage.blob.core.windows.net/$web/DavidMboliIdie_Resume.pdf"
+    weight = 10
 
   [[menu.main]]
     identifier = "github"
@@ -66,7 +71,7 @@ publishDir = "public"
   # Custom Head HTML (optional)
   customHeadHTML = "<script>console.log('Any HTML')</script>"
 
-  customCSS = ["css/custom.css"]
+  customCSS = ["css/custom.css", "ccs/main.css"]
   
   # Date format for posts
   dateFormat = "2 January, 2006"

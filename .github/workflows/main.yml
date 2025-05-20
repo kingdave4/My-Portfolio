@@ -31,3 +31,6 @@ jobs:
           api_location: "api"
           output_location: "public"
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+
+
+# Note: Make sure to set the AZURE_STATIC_WEB_APPS_API_TOKEN secret in your GitHub repository settings.
