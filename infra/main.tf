@@ -1,18 +1,55 @@
-resource "random_string" "suffix" {
-  length  = 4
-  special = false
-  upper   = false
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~>3.0"
+    }
+  }
 }
 
+provider "azurerm" {
+  features {}
+}
 
-# Create the azure resource Group
+module "storage" {
+  source              = "./modules/storage"
+  prefix              = var.prefix
+  location            = var.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
+module "keyvault" {
+  source              = "./modules/keyvault"
+  prefix              = var.prefix
+  location            = var.location
+  resource_group_name = azurerm_resource_group.rg.name
+  sendgrid_api_key    = var.sendgrid_api_key
+}
+
+module "function" {
+  source              = "./modules/function"
+  prefix              = var.prefix
+  location            = var.location
+  resource_group_name = azurerm_resource_group.rg.name
+  storage_account_name           = module.storage.storage_account_name
+  storage_account_connection_string = module.storage.primary_connection_string
+  storage_account_access_key     = module.storage.storage_account_access_key
+  app_insights_instrumentation_key = module.monitoring.app_insights_key
+  sendgrid_api_key              = module.keyvault.sendgrid_api_key
+}
+
+module "monitoring" {
+  source              = "./modules/monitoring"
+  prefix              = var.prefix
+  location            = var.location
+  resource_group_name = azurerm_resource_group.rg.name
+}
+
 resource "azurerm_resource_group" "rg" {
-  name     = "static-web-app-rg"
+  name     = "${var.prefix}-rg"
   location = var.location
 }
-
-
-# Create the azure static Web App
+# Create a static web app
 resource "azurerm_static_web_app" "static_site" {
   name                = var.static_site_name
   resource_group_name = azurerm_resource_group.rg.name
@@ -20,36 +57,4 @@ resource "azurerm_static_web_app" "static_site" {
   sku_tier            = "Free"
   sku_size            = "Free"
 }
-
-resource "azurerm_storage_account" "my_storage_account" {
-  name                    = "${var.prefix}storage${random_string.suffix.result}"
-  resource_group_name      = azurerm_resource_group.rg.name
-  location                 = azurerm_resource_group.rg.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-}
-
-
-resource "azurerm_service_plan" "my_service_plan" {
-  name                = "${var.prefix}servicecplan"
-  location            = azurerm_resource_group.rg.location
-  resource_group_name = azurerm_resource_group.rg.name
-  os_type            = "linux"
-  sku_name           = "B1"
-}
-
-resource "azurerm_linux_function_app" "my_func_app" {
-  name                = "${var.prefix}funcapp"
-  resource_group_name = azurerm_resource_group.rg.name
-  location            = azurerm_resource_group.rg.location
-
-  storage_account_name       = azurerm_storage_account.my_storage_account.name
-  storage_account_access_key = azurerm_storage_account.my_storage_account.primary_access_key
-  service_plan_id            = azurerm_service_plan.my_service_plan.id
-  https_only = true
-  site_config {}
-}
-
-
-
 

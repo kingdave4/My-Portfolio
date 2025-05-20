@@ -29,3 +29,10 @@ infra/.terraform/
 
 terraform.tfstate
 terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+secrets.tfvars
+
+local.settings.json
+.vscode
+.gitignore

@@ -56,7 +56,7 @@ publishDir = "public"
   
   [[menu.main]]
     name = "Resume"
-    url = "/Resume/"
+    url = "https://myhugoblogstorage.blob.core.windows.net/$web/DavidMboliIdie_Resume.pdf"
     weight = 10
   
 [params]
@@ -71,7 +71,7 @@ publishDir = "public"
   # Custom Head HTML (optional)
   customHeadHTML = "<script>console.log('Any HTML')</script>"
 
-  customCSS = ["css/main.css"]
+  customCSS = ["css/main.css", "css/custom.css"]
   
   # Date format for posts
   dateFormat = "2 January, 2006"

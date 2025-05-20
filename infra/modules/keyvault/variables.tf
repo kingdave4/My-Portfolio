@@ -10,17 +10,11 @@ variable "location" {
 
 variable "prefix" {
   description = "Prefix for the storage account name."
-  type        = string 
+  type        = string
 }
 
 variable "sendgrid_api_key" {
   description = "SendGrid API key for email notifications."
   type        = string
   sensitive   = true
-}
-
-variable "static_site_name" {
-  description = "Name of the static site."
-  type        = string
-  default     = "my-hugo-blog-static-site"
 }
