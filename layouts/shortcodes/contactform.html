@@ -17,10 +17,15 @@
 <script>
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
+  const submitBtn = form.querySelector('button[type="submit"]');
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
+
+    // Disable button and show "Sending…"
+    submitBtn.disabled = true;
     status.textContent = 'Sending…';
+    status.className = 'form-status sending';
 
     const data = Object.fromEntries(new FormData(form));
 
@@ -34,18 +39,21 @@
       let result = {};
       try {
         result = await resp.json();
-      } catch (err) {
-        result = {};
+      } catch {}
+
+      if (resp.ok) {
+        status.textContent = 'Thanks for reaching out!';
+        status.className = 'form-status success';
+        form.reset();
+      } else {
+        status.textContent = result.error || 'Sorry, something went wrong.';
+        status.className = 'form-status error';
       }
-
-      status.textContent = resp.ok
-        ? 'Thanks for reaching out!'
-        : (result.error || 'Sorry, something went wrong.');
-        
-      if (resp.ok) form.reset();
-
-    } catch (err) {
+    } catch {
       status.textContent = 'Network error. Try again later.';
+      status.className = 'form-status error';
+    } finally {
+      submitBtn.disabled = false;
     }
   });
 </script>
