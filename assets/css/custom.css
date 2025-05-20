@@ -95,65 +95,82 @@ body.page-contact {
   font-size: 19px;  /* up from 17.5px */
 }
 
-.contact-form-container {
-  max-width: 700px;       /* was 600px, now wider */
-  margin: 3rem auto;      /* more vertical breathing room */
-  padding: 2.5rem;        /* extra padding */
-  background: #1f1f1f;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+/* Contact Page Enhancements */
+body.page-contact {
+  font-size: 20px; /* Slight bump up for better readability */
+  background-color: #12151a; /* Optional: darker page background for contrast */
 }
 
+/* Contact Form Container */
+.contact-form-container {
+  max-width: 800px;              /* Was 700px – more horizontal space */
+  margin: 4rem auto;             /* Extra breathing room vertically */
+  padding: 3rem 2.5rem;          /* More balanced padding */
+  background: #1f1f1f;
+  border-radius: 12px;           /* Slightly softer corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
 
-/* Section heading */
+/* Contact Form Title */
 .contact-form-container h2 {
-  font-size: 2.25rem;     /* was 2rem */
-  margin-bottom: 2rem;    
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
   text-align: center;
 }
 
-
-/* Form layout */
+/* Form Fields */
 .contact-form .form-group + .form-group {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 
-/* Inputs & textarea */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 1.25rem;       /* was 1rem */
-  font-size: 1.125rem;    /* was 1rem */
-  margin-bottom: 1.25rem; /* space between fields */
+  padding: 1.5rem;              /* Was 1.25rem */
+  font-size: 1.25rem;           /* Was 1.125rem */
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #000;
 }
 
-
+/* Focus States */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #0078d4;    /* Azure-style blue accent */
+  border: 2px solid #0078d4;
+  box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
 }
 
-/* Textarea specifics */
+/* Textarea */
 .contact-form textarea {
-  min-height: 150px;
-  resize: vertical;
+  min-height: 180px;
 }
 
-/* Submit button */
+/* Submit Button */
 .btn-submit {
-  padding: 1rem 0;        /* taller button */
-  font-size: 1.125rem;    /* match input text size */
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .btn-submit:hover {
-  transform: translateY(-1px);
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
 }
-/* Status message */
+
+/* Status Text */
 .form-status {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #f0f0f0;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+  color: #dcdcdc;
   text-align: center;
 }
-
-
