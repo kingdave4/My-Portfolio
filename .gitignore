@@ -36,3 +36,7 @@ secrets.tfvars
 local.settings.json
 .vscode
 .gitignore
+terraform.tfvars
+terraform.tfvars.json
+terraform.tfstate
+terraform.tfstate.backup
