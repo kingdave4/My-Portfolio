@@ -58,3 +58,21 @@ resource "azurerm_static_web_app" "static_site" {
   sku_size            = "Free"
 }
 
+data "archive_file" "function_package" {
+  type        = "zip"
+  source_dir  = "${path.module}/./api"
+  output_path = "${path.module}/./functionapp.zip"
+}
+
+
+resource "null_resource" "deploy_function_app" {
+  depends_on = [module.function]
+
+  triggers = {
+    source_hash = data.archive_file.function_package.output_base64sha256
+  }
+
+  provisioner "local-exec" {
+    command = "bash ./deploy_api.sh ${module.function.function_app_name} ${module.function.resource_group_name}"
+  }
+}
