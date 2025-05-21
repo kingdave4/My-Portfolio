@@ -46,6 +46,7 @@
         status.className = 'form-status success';
         form.reset();
       } else {
+        console.error('Response:', resp.status, await resp.text());
         status.textContent = result.error || 'Sorry, something went wrong.';
         status.className = 'form-status error';
       }
