@@ -57,16 +57,3 @@ resource "azurerm_static_web_app" "static_site" {
   sku_tier            = "Free"
   sku_size            = "Free"
 }
-
-
-resource "null_resource" "deploy_function_app" {
-  depends_on = [module.function]
-
-  triggers = {
-     always_run = timestamp() # This will ensure the function app is always deployed when this resource is created
-  }
-
-  provisioner "local-exec" {
-    command = "bash ./deploy_api.sh ${module.function.function_app_name} ${module.function.resource_group_name}"
-  }
-}
