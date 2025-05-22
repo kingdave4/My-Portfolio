@@ -1,15 +1,3 @@
 {
-  "version": "2.0",
-  "extensions": {
-    "sendGrid": {
-      "apiKey": "SENDGRID_API_KEY",
-      "from": "80da97eed946434cbef2c357fda2420e@domainsbyproxy.com",
-      "to": "davidmboli1@gmail.com",
-      "subject": "New Contact Form Message"
-    },
-    "blob": {
-      "path": "submissions/{rand-guid}.json",
-      "connection": "AzureWebJobsStorage"
-    }
-  }
+  "version": "2.0"
 }
