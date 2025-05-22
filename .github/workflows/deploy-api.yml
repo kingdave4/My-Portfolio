@@ -1,13 +1,8 @@
 name: Deploy Azure Function App (api)
 
 on:
-  push:
-    paths:
-      - 'infra/api/**'
-      - '.github/workflows/deploy-api.yml'
-    branches:
-      - main
-
+  workflow_dispatch
+    
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
