@@ -127,8 +127,9 @@ body.page-contact {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 1.5rem;              /* Was 1.25rem */
-  font-size: 1.25rem;           /* Was 1.125rem */
+  padding: 2rem;              /* Was 1.25rem */
+  font-size: 1.5rem;           /* Was 1.125rem */
+  line-height: 1.4; 
   margin-bottom: 1.5rem;
   border: none;
   border-radius: 6px;
@@ -146,7 +147,7 @@ body.page-contact {
 
 /* Textarea */
 .contact-form textarea {
-  min-height: 180px;
+  min-height: 250px;
 }
 
 /* Submit Button */
