@@ -1,0 +1,31 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "route": "submit_form",
+      "methods": ["post"]
+    },
+    {
+      "type": "sendGrid",
+      "direction": "out",
+      "name": "sendgrid_msg",
+      "apiKey": "SENDGRID_API_KEY",
+      "from": "80da97eed946434cbef2c357fda2420e@domainsbyproxy.com"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "output_blob",
+      "path": "submissions/{rand-guid}.json",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}
