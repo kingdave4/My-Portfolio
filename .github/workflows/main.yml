@@ -1,4 +1,4 @@
-name: Deploy Hugo Site to Azure Static Web App
+name: Deploy Hugo Site and Azure Function to Azure
 
 on:
   push:
@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-    
+      AZURE_FUNCTIONAPP_PUBLISH_PROFILE: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,7 +20,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.125.7' # Update to your Hugo version
+          hugo-version: '0.125.7'
           extended: true
 
       - name: Build Hugo Site
@@ -33,5 +34,24 @@ jobs:
           output_location: "public"
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-# Note: Make sure to set the AZURE_STATIC_WEB_APPS_API_TOKEN secret in your GitHub repository settings.
+      - name: Install Azure Functions Core Tools
+        run: npm install -g azure-functions-core-tools@4 --unsafe-perm true
+
+      - name: Install Python dependencies for Function App
+        run: |
+          cd api
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt --target="./.python_packages/lib/site-packages"
+
+      - name: Deploy Python Azure Function App
+        uses: Azure/functions-action@v1
+        with:
+          app-name: ${{ secrets.AZURE_FUNCTIONAPP_NAME }}
+          package: ./api
+          publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
+
