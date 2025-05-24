@@ -45,7 +45,7 @@ terraform.tfstate.backup
 .terraform.tfstate.lock.info
 functionapp.zip
 
-
+.hugo_build.lock
 
 bin
 obj

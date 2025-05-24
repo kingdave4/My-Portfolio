@@ -23,13 +23,13 @@ I’m always excited to discuss new cloud and DevOps challenges. Whether you’r
 
 ---
 
-## 📅 Schedule a Call
+### 📅 Schedule a Call
 
 If you’d prefer a quick chat, book a slot here:  
 [Schedule a Professional Discussion](https://calendly.com/davidmboli1)  
 
 ---
 
-## ✉️ Send Me a Message
+### ✉️ Send Me a Message
 
 {{< contactform >}}
