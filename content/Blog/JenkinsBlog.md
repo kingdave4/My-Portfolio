@@ -3,6 +3,8 @@ title: "Learning Jenkins Basics: My Getting Started Tutorial and Advice"
 date: 2024-08-05
 description: "A personal blog post discussing how I learned the basics of Jenkins via a course taken on Udemy with beginner-friendly advice and takeaways."
 tags: ["Jenkins", "DevOps", "CI/CD", "Automation", "Cloud Engineering"]
+type: post
+showTableOfContents: true
 ---
 
 I continued my learning journey in DevOps by exploring **Jenkins**, the widely used, open-source automation server. Within the same Udemy course *DevOps Beginners to Advanced with Projects* I gained a solid understanding of Jenkins and how it integrates into the CI/CD process.
