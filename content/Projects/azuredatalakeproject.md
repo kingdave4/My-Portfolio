@@ -14,10 +14,6 @@ This project automates the provisioning of an end-to-end Azure Data Lake solutio
 
 ---
 
-{{< toc >}}
-
----
-
 ## 🔧 Tools & Technologies
 
 - **Terraform**: Automates deployment of all Azure resources.
