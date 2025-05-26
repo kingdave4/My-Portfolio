@@ -1,8 +1,11 @@
 ---
 title: "Mastering Terraform Modules: My Learning Journey"
-date: 2024-10-26
+date: 2024-10-28T21:29:01+08:00
 description: "A personal blog post detailing how I learned Terraform with modules using hands-on practice and a thorough Udemy course."
 tags: ["Terraform", "DevOps", "Infrastructure as Code", "Modules", "Cloud Engineering"]
+type: post
+weight: 50
+showTableOfContents: true
 ---
 
 I've been exploring in-depth into Infrastructure as Code (IaC) over the last few months, and among the most impressive tools I've discovered is **Terraform**. My latest study led to the successful completion of a valuable Udemy course called *DevOps Beginners to Advanced with Projects*, which you can find at this link: [Udemy Certificate](https://www.udemy.com/certificate/UC-31ed7e8b-7892-4bc0-8184-335d9c0dee8c/).
