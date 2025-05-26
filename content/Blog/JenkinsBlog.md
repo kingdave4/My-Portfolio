@@ -5,11 +5,11 @@ description: "A personal blog post discussing how I learned the basics of Jenkin
 tags: ["Jenkins", "DevOps", "CI/CD", "Automation", "Cloud Engineering"]
 ---
 
-I continued my learning journey in DevOps by exploring **Jenkins**, the widely used, open-source automation server. Within the same Udemy course *DevOps Beginners to Advanced with Projects*—I gained a solid understanding of Jenkins and how it integrates into the CI/CD process.
+I continued my learning journey in DevOps by exploring **Jenkins**, the widely used, open-source automation server. Within the same Udemy course *DevOps Beginners to Advanced with Projects* I gained a solid understanding of Jenkins and how it integrates into the CI/CD process.
 
 ## Why Jenkins?
 
-Jenkins is one of the most popular tools for implementing continuous integration and continuous delivery (CI/CD). It enables the automation of building, testing, and deploying your applications—something that plays a crucial role in modern DevOps workflows.
+Jenkins is one of the most popular tools for implementing continuous integration and continuous delivery (CI/CD). It enables the automation of building, testing, and deploying your applications something that plays a crucial role in modern DevOps workflows.
 
 ## Getting Started with Jenkins
 
