@@ -15,6 +15,8 @@ showTableOfContents: true
 Welcome to my first project of the 30 Days Devops Challenge!.  
 I am excited to start this journey of learning cloud technologies and tackling all the hands-on projects together.
 
+[View on GitHub](https://github.com/kingdave4/aws-weather-api.git) 
+
 ## Project Architecture Diagram
 ![Diagram ](/images/weather_dashboard_diagram.png)
 

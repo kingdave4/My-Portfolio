@@ -14,6 +14,8 @@ showTableOfContents: true
 
 This project focuses on deploying a personal portfolio and blog using Hugo as the static site generator, GitHub for version control, Terraform for infrastructure automation, and Azure Static Web Apps for hosting. The objective is to establish a scalable, automated, and cost-effective method to manage the portfolio site.
 
+[View on GitHub](https://github.com/kingdave4/My-Portfolio.git) 
+
 ### Project Archetectur diagrm
 ![Diagram for the portfolio](/images/myhugoportofolio.png)
 
@@ -209,5 +211,3 @@ In the Azure portal, navigate to your Static Web App and add your custom domain.
 Follow the instructions to validate and configure DNS settings.
 
 [click here for the instructions](https://learn.microsoft.com/en-us/azure/static-web-apps/custom-domain)
-
-[View on GitHub](https://github.com/kingdave4/My-Portfolio.git) 

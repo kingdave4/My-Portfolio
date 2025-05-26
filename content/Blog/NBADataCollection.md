@@ -1,8 +1,8 @@
 ---
-title: "Automating NBA Data Collection with AWS: My Data Lake Pipeline Project"
+title: "Automating NBA Data Collection with AWS"
 date: 2025-01-28T21:29:01+08:00
 description: "A deep dive into my NBA Data Lake Pipeline project, automating data collection and analysis using AWS services."
-tags: ["AWS", "Data Engineering", "DevOps", "GitHub Actions"]
+tags: ["AWS", "Data Engineering", "DevOps", "GitHub Actions", "AWS 30 Days DevOps Challenge"]
 type: post
 weight: 30
 categories: ["Projects"]
@@ -15,7 +15,6 @@ Welcome to my third project in the DevOps Challenge! This time, I tackled the au
 My goal was to fetch real-time NBA data from the Sportsdata.io API and create a scalable data lake on AWS. 
 
 To take it a step further, I automated the entire workflow using GitHub Actions and set up AWS CloudWatch for logging and monitoring.
-
 ---
 
 ### 🏀 What This Project Does
@@ -160,7 +159,6 @@ If an error occurs (e.g., missing API keys or AWS permissions), CloudWatch provi
 
 ![Cloudwatch logs ](/images/cloudwatch.png)
 
-
 ---
 
 ### 🌟 Lessons Learned
@@ -197,8 +195,3 @@ This project was an exciting challenge that combined **DevOps, cloud computing, 
 Automating data collection and analysis using AWS tools has been a game-changer for me. 
 
 I’m eager to keep building and refining my skills in cloud automation and data engineering!
-
-🚀 **Check out the full project on GitHub:** [NBA Data Lake Pipeline](https://github.com/kingdave4/Nba_Data_Lake)
-
-Stay tuned for more DevOps projects as I continue my journey in cloud engineering! 🌍☁️
-
