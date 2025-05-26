@@ -3,6 +3,8 @@ title: "Getting to Know Kubernetes: My First Experience and Tips"
 date: 2024-08-20
 description: "A blog post from an individual after taking a course on the basics of Kubernetes on Udemy, with beginner insights and useful takeaways."
 tags: ["Kubernetes", "DevOps", "Containers", "Cloud Native", "Cloud Engineering"]
+type: post
+showTableOfContents: true
 ---
 
 Continuing along my journey of becoming a DevOps engineer, I eventually made it to a major milestone: **learning Kubernetes**. This too was a part of the same Udemy course—*DevOps Beginners to Advanced with Projects*—that, while covering many tools, gave a solid introduction to the basics of Kubernetes.
