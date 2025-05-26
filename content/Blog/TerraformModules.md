@@ -1,6 +1,6 @@
 ---
 title: "Mastering Terraform Modules: My Learning Journey"
-date: 2024-10-28T21:29:01+08:00
+date: 2024-09-28T21:29:01+08:00
 description: "A personal blog post detailing how I learned Terraform with modules using hands-on practice and a thorough Udemy course."
 tags: ["Terraform", "DevOps", "Infrastructure as Code", "Modules", "Cloud Engineering"]
 type: post
