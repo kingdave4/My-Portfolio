@@ -1,5 +1,4 @@
 ---
-
 title: "My Projects"
 description: "A showcase of my DevOps and Cloud projects."
 date: 2025-02-02
