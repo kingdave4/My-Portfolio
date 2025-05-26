@@ -8,7 +8,7 @@ type: post
 ---
 
 
-# 🚀 My Azure Data Lake Deployment & Refresh Journey
+## 🚀 My Azure Data Lake Deployment & Refresh Journey
 
 **Repository:** [kingdave4/AzureDataLake](https://github.com/kingdave4/AzureDataLake)
 
