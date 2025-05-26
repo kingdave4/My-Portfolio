@@ -3,6 +3,8 @@ title: "Learning Docker: A DevOps Containerization Experience"
 date: 2024-07-26
 description: "A personal blog post on learning Docker from the 'DevOps Beginners to Advanced with Projects' course on Udemy, including beginner tips and takeaways."
 tags: ["Docker", "Containers", "DevOps", "Cloud Engineering", "CI/CD"]
+type: post
+showTableOfContents: true
 ---
 
 I learned about **Docker** as part of my evolving DevOps journey yet another technology revolutionizing the field of containerization. I explored the fundamentals through the *DevOps Beginners to Advanced with Projects* course on Udemy, and it was an eye-opener.
