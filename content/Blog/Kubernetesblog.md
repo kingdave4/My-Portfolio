@@ -7,7 +7,7 @@ type: post
 showTableOfContents: true
 ---
 
-Continuing along my journey of becoming a DevOps engineer, I eventually made it to a major milestone: **learning Kubernetes**. This too was a part of the same Udemy course—*DevOps Beginners to Advanced with Projects*—that, while covering many tools, gave a solid introduction to the basics of Kubernetes.
+Continuing along my journey of becoming a DevOps engineer, I eventually made it to a major milestone: **learning Kubernetes**. This too was a part of the same Udemy course *DevOps Beginners to Advanced with Projects* that, while covering many tools, gave a solid introduction to the basics of Kubernetes.
 
 ## Why Kubernetes?
 
