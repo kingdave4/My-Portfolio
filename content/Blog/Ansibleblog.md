@@ -3,6 +3,8 @@ title: "Starting with Ansible: My Initial Experience and Quick Tips"
 date: 2024-10-26
 description: "A personal blog post detailing my introduction to Ansible and some immediate lessons I learned from the Udemy course."
 tags: ["Ansible", "DevOps", "Automation", "Configuration Management", "Cloud Engineering"]
+showTableOfContents: true
+type: post
 ---
 
 Following my completion of the Terraform section of my DevOps learning journey, I moved right into **Ansible**, thanks to the same comprehensive Udemy course: *DevOps Beginners to Advanced with Projects*. While the course included a detailed section on Terraform, it also provided a solid introduction to Ansible, which I found incredibly valuable.
