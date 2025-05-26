@@ -30,7 +30,7 @@ When I saw my first JSON file appear in Blob Storage automatically every ten min
 
 ## 🏗️ High-Level Architecture
 
-![Data Lake Workflow Diagram](Datalake_Workflow_Diagram.png)
+![Data Lake Workflow Diagram](/images/Datalake_Workflow_Diagram.png)
 
 > Automated data flow: Terraform → Azure Function → Data Lake → Synapse
 
