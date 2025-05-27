@@ -52,7 +52,7 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 ---
 
-### **Azure Data Lake Deployment**
+### 📊 **Azure Data Lake Deployment**
 
 📌 *Provisioning a complete Azure Data Lake and automating NBA data ingestion with Azure Functions.*
 **Tech Stack:** Azure, Terraform, Azure Function App, Python, Key Vault, Synapse, Application Insights
