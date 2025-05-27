@@ -232,4 +232,4 @@ To improve the project, I plan to:
 
 This project has been a valuable experience in building serverless solutions and deploying infrastructure with Terraform. I'm excited to tackle more cloud and DevOps challenges as I continue my journey into Cloud Engineering! 🚀
 
-🔗 **GitHub Repository:** [nba_game_notification_update](https://github.com/kingdave4/nba_game_notification_update.git)
+[🔗 Click here to see the project →](/projects/nba_game_notification/)
