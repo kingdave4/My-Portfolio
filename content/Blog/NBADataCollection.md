@@ -17,6 +17,7 @@ My goal was to fetch real-time NBA data from the Sportsdata.io API and create a 
 ---
 
 ### 🏀 What This Project Does
+
 This project automates the process of collecting NBA player data and storing it in an AWS data lake. Here's what it accomplishes:
 
 1. **Fetch NBA Data** – Retrieves player stats from the Sportsdata.io API.
@@ -197,4 +198,4 @@ I’m eager to keep building and refining my skills in cloud automation and data
 
 ---
 
-Click here to access the project
+[🔗 Click here to access the project →](/projects/azure-datalake-project/)
