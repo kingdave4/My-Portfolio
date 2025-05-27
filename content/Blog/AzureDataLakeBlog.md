@@ -10,8 +10,6 @@ type: post
 
 ## 🚀 My Azure Data Lake Deployment & Refresh Journey
 
-**Repository:** [kingdave4/AzureDataLake](https://github.com/kingdave4/AzureDataLake)
-
 When I made the career shift from IT Support to Cloud Engineering, I understood I would require a hands-on project incorporating infrastructure-as-code, serverless compute, and analytics. I decided to automate a real-world application—processing live NBA data into an Azure Data Lake, updating it at a scheduled time, and allowing rapid querying with Synapse. Through it, I learned not only APIs and Terraform; I learned the significance of automation and observability in production systems.
 
 ---
@@ -69,4 +67,8 @@ Each hurdle compelled me to delve deeper into Azure documentation and sharpened 
 - **Orchestration**: I’m investigating using Azure Data Factory to orchestrate several different data sets (e.g., weather, stock information) with NBA statistics.
 - **Visualization**: Directly linking Power BI to Synapse to create automatically refreshing dashboards from which I don't need to initiate queries.
 - **CI/CD**: Converting my Terraform and Function deployments to an Azure DevOps pipeline, where each merge deploys the entire environment.
+  
 ---
+
+[🔗 Click here to access the project →](/projects/azure-datalake-project/)
+
