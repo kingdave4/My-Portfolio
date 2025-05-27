@@ -3,7 +3,7 @@ title: "Containerized Sports API Management System"
 date: 2025-03-09T00:00:00Z
 description: "A containerized API management system for querying real-time sports data using AWS ECS (Fargate), API Gateway, Docker, and Terraform."
 tags: ["AWS", "ECS", "API Gateway", "Terraform", "Docker", "DevOps", "Python"]
-type: "page"
+type: "post"
 image: "/images/sportdiagram.png"
 showTableOfContents: true
 ---
@@ -13,7 +13,6 @@ showTableOfContents: true
 
 The **Containerized Sports API Management System** is built as part of DevOpsChallenge #4. This project provides a scalable, serverless, and secure solution for querying real-time sports data. It leverages AWS services such as Amazon ECS (Fargate) for container orchestration, API Gateway to expose RESTful endpoints, and CloudWatch for monitoring, while automating infrastructure deployment with Terraform.
 
-[View on GitHub](https://github.com/kingdave4/Nba_Data_Lake)
 
 ### 🏗️ Architecture Overview
 
@@ -131,3 +130,16 @@ To remove all AWS resources provisioned by Terraform, run:
 ``` bash
 terraform destroy -var="sports_api_key=<Enter your SerpAPI key>" -auto-approve
 ```
+
+## 📁 Repository
+
+[GitHub - kingdave4/AzureDataLake](https://github.com/kingdave4/Nba_Data_Lake)
+
+---
+
+## 📬 Contact
+
+Feel free to reach out via [GitHub](https://github.com/kingdave4) if you have questions or suggestions!
+
+---
+

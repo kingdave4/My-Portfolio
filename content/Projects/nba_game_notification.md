@@ -4,15 +4,12 @@ date: "2025-01-21"
 description: "Automated NBA game notifications using AWS Lambda, SNS, and EventBridge with Terraform."
 categories: ["Projects", "DevOps"]
 tags: ["AWS", "Terraform", "Lambda", "SNS", "EventBridge", "Python"]
-type: "page"
+type: "post"
 showTableOfContents: true
 ---
 
----
 ### 🌟 Project Overview
 This project fetches real-time NBA game updates and delivers them to subscribers via email using AWS services. It leverages **AWS Lambda, SNS (Simple Notification Service), and EventBridge** for automation and notifications, with **Terraform** managing infrastructure as code.
-
-[View on GitHub](https://github.com/kingdave4/nba_game_notification_update.git)
 
 ### 🔧 Features
 - Fetches **real-time NBA game data** using an external API.
@@ -124,4 +121,15 @@ Check your inbox and **confirm the SNS subscription** via the email link.
 
 ---
 This project showcases my ability to **automate cloud deployments** using **Terraform** and **leverage AWS services** to create a **fully automated NBA game update notification system**. More exciting projects coming soon! 🚀
- 
+
+### 📁 Repository
+
+[GitHub - kingdave4/AzureDataLake](https://github.com/kingdave4/nba_game_notification_update.git)
+
+---
+
+### 📬 Contact
+
+Feel free to reach out via [GitHub](https://github.com/kingdave4) if you have questions or suggestions!
+
+---

@@ -5,7 +5,8 @@ description: "Automating NBA Data Ingestion and Analytics with Terraform, Azure 
 image: "Datalake_Workflow_Diagram.png"
 tags: ["Azure", "Terraform", "Data Engineering", "Serverless", "Python", "Synapse"]
 categories: ["Projects"]
-draft: false
+type: "post"
+showTableOfContents: true
 ---
 
 ## Overview
@@ -169,13 +170,13 @@ terraform destroy -var-file="secrets.tfvars" -auto-approve
 
 ---
 
-## 📁 Repository
+### 📁 Repository
 
 [GitHub - kingdave4/AzureDataLake](https://github.com/kingdave4/AzureDataLake)
 
 ---
 
-## 📬 Contact
+### 📬 Contact
 
 Feel free to reach out via [GitHub](https://github.com/kingdave4) if you have questions or suggestions!
 

@@ -3,10 +3,8 @@ title: "NCAA Game Highlights"
 date: 2025-03-09T00:00:00Z
 description: "A containerized pipeline that fetches NCAA game highlights using RapidAPI, processes videos with AWS MediaConvert, and provisions infrastructure with Terraform."
 tags: ["AWS", "MediaConvert", "Terraform", "Docker", "RapidAPI", "DevOps"]
-type: "page"
+type: "post"
 showTableOfContents: true
----
-
 ---
 
 ## Overview

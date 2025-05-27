@@ -3,8 +3,7 @@ title: "NBA Data Lake Pipeline"
 date: 2025-03-09T00:00:00Z
 description: "An automated pipeline for collecting, storing, and analyzing NBA player data using AWS and GitHub Actions."
 tags: ["AWS", "Data Lake", "GitHub Actions", "Python", "DevOps"]
-github: "https://github.com/kingdave4/Nba_Data_Lake.git"
-type: "page"
+type: "post"
 showTableOfContents: true
 ---
 
@@ -13,7 +12,6 @@ showTableOfContents: true
 
 The **NBA Data Lake Pipeline** project automates the process of collecting, storing, and analyzing NBA player data using AWS. This pipeline fetches data from the Sportsdata.io API and sets up a data lake that is easily queryable via AWS Athena. To enhance automation, GitHub Actions are used to deploy the pipeline, while AWS CloudWatch logs all activities.
 
-[View on GitHub](https://github.com/kingdave4/Nba_Data_Lake)
 
 ## What This Project Does
 
@@ -143,3 +141,17 @@ SELECT FirstName, LastName, Position, Team FROM nba_players WHERE Position = 'SG
 - Automated Data Ingestion: Integrate AWS Lambda to schedule and trigger the pipeline automatically.
 - Data Transformation: Implement an AWS Glue ETL job to transform and clean the data.
 - Advanced Analytics: Integrate AWS QuickSight for enhanced visualizations and insights.
+
+
+### 📁 Repository
+
+[GitHub - kingdave4/AzureDataLake](https://github.com/kingdave4/Nba_Data_Lake)
+
+---
+
+### 📬 Contact
+
+Feel free to reach out via [GitHub](https://github.com/kingdave4) if you have questions or suggestions!
+
+---
+

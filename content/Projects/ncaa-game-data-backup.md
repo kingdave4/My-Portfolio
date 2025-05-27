@@ -12,7 +12,6 @@ showTableOfContents: true
 
 **NCAA Game Data Backup – Project #6: SportsDataBackup** is an evolution of the previous NCAA Game Highlights project. This upgrade enhances reliability and efficiency by integrating AWS DynamoDB for backing up query data and AWS EventBridge for daily automated triggers using ECS Fargate. The pipeline fetches game highlights via RapidAPI, processes videos with AWS MediaConvert, and provisions all necessary AWS infrastructure with Terraform—all while containerizing the workflow with Docker.
 
-[View on GitHub](https://github.com/kingdave4/NCAAGameDataBackup.git)
 
 ## Project Features
 
@@ -207,3 +206,16 @@ terraform destroy -auto-approve
 - Transition from static date queries to dynamic time ranges (e.g., last 30 days).
 - Enhance logging and error handling for better observability.
 
+---
+
+### 📁 Repository
+
+[GitHub - kingdave4/AzureDataLake](https://github.com/kingdave4/NCAAGameDataBackup.gite)
+
+---
+
+### 📬 Contact
+
+Feel free to reach out via [GitHub](https://github.com/kingdave4) if you have questions or suggestions!
+
+---

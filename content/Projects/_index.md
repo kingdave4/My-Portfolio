@@ -1,4 +1,5 @@
 ---
+
 title: "My Projects"
 description: "A showcase of my DevOps and Cloud projects."
 date: 2025-02-02
@@ -11,11 +12,12 @@ toc: true
 
 * [🚀 My Cloud & DevOps Projects](#-my-cloud--devops-projects)
 * [🏗️ Featured Projects](#-featured-projects)
+
   * [🏗️ Portfolio & Blog Deployment](#-portfolio--blog-deployment)
-  * [📊 NBA Data Lake Pipeline](#-azuredatalakeproject)
+  * [📊 Azure Data Lake Deployment & Refresh](#-azure-data-lake-deployment--refresh)
   * [☁️ Weather Dashboard](#-weather-dashboard)
-  * [🏀 Automating NBA Game Notifications](#-automating-nba-game-notifications-with-aws--terraform)
-  * [🏀 Azure Data Lake Deployment & Refresh](#-azure-data-lake-deployment--refresh)
+  * [🏀 Automating NBA Game Notifications with AWS & Terraform](#-automating-nba-game-notifications-with-aws--terraform)
+  * [🏀 NBA Data Lake Pipeline](#-nba-data-lake-pipeline)
   * [🏀 Containerized Sports API Management System](#-containerized-sports-api-management-system)
   * [🏀 NCAA Game Highlights](#-ncaa-game-highlights)
   * [🏀 NCAA Game Data Backup (SportsDataBackup)](#-ncaa-game-data-backup-sportsdatabackup)
@@ -42,10 +44,9 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 <img src="/images/azure.svg" alt="Azure" width="40" /> 
 
-<img src="/images/GitHub Actions.svg" alt="Github Action" width="40" />
+<img src="/images/gitgub_actions.svg" alt="GitHub Actions" width="40" />
 
 <img src="/images/hugo.svg" alt="Hugo" width="40" /> 
-
 
 [🔗 Read More →](/projects/portfolio-deployment/)
 
@@ -56,14 +57,13 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 📌 *Provisioning a complete Azure Data Lake and automating NBA data ingestion with Azure Functions.*
 **Tech Stack:** Azure, Terraform, Azure Function App, Python, Key Vault, Synapse, Application Insights
 
-
 <img src="/images/terraform.svg" alt="Terraform" width="40" /> 
 
 <img src="/images/azure.svg" alt="Azure" width="40" /> 
 
 <img src="/images/python.svg" alt="Python" width="40" />
 
-[🔗 Read More →](/projects/azuredatalakeproject/)
+[🔗 Read More →](/projects/azure-datalake-project/)
 
 ---
 
@@ -77,7 +77,6 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 <img src="/images/aws.svg" alt="Aws" width="40" /> 
 
 <img src="/images/python.svg" alt="Python" width="40" />
-
 
 [🔗 Read More →](/projects/weather-dashboard/)
 
@@ -94,7 +93,6 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 <img src="/images/python.svg" alt="Python" width="40" />
 
-
 [🔗 Read More →](/projects/nba_game_notification/)
 
 ---
@@ -110,7 +108,7 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 <img src="/images/python.svg" alt="Python" width="40" />
 
-<img src="/images/Github Action.svg" alt="Github Action" width="40" />
+<img src="/images/github_actions.svg" alt="Github Action" width="40" />
 
 [🔗 Read More →](/projects/nba-data-lake/)
 
@@ -129,7 +127,6 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 <img src="/images/docker.svg" alt="Docker" width="40" />
 
-
 [🔗 Read More →](/projects/containerized-sports-api/)
 
 ---
@@ -144,7 +141,6 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 <img src="/images/terraform.svg" alt="Terraform" width="40" />
 
 <img src="/images/python.svg" alt="Python" width="40" />
-
 
 [🔗 Read More →](/projects/ncaa-game-highlights/)
 
@@ -163,14 +159,13 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 <img src="/images/docker.svg" alt="Docker" width="40" />
 
-
 [🔗 Read More →](/projects/ncaa-game-data-backup/)
 
 ---
 
 ## 🛠️ **Technologies I Use**
 
-* **Cloud Providers:** AWS, Azure
+* **Cloud Providers:** Azure, AWS
 * **Automation:** Terraform, GitHub Actions, Ansible
 * **Containerization:** Docker, Kubernetes
 * **CI/CD Pipelines:** GitHub Actions, Jenkins
