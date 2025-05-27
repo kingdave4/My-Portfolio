@@ -46,4 +46,4 @@ The Weather Dashboard is not just a project—it's a milestone in my journey tow
 
 Stay tuned for more updates and reflections from my 30 Days DevOps Challenge!
 
-🔗 **GitHub Repository:** [Weaher Dashboard ](https://github.com/kingdave4/aws-weather-api.git)
+[🔗 Click here to see the project →](/projects/weather-dashboard/)
