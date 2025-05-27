@@ -51,7 +51,7 @@ After three years in IT support troubleshooting hardware, networks, and on-prem 
 <img src="/images/jenkins.svg" alt="Jenkins" width="40" />
 
 
-<img src="/images/GitHub Actions.svg" alt="Github Action" width="40" />
+<img src="/images/github_actions.svg" alt="Github Action" width="40" />
 
 
 <img src="/images/azure-devops.svg" alt="Azure Devops" width="40" />
