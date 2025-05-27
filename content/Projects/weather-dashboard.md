@@ -3,19 +3,22 @@ title: "Weather Dashboard Project"
 date: "2025-01-07"
 tags: ["AWS", "Python", "boto3", "OpenWeatherMap", "DevOps", "30 Days DevOps Challenge"]
 description: "A project post for my Weather Dashboard project, which fetches weather data from the OpenWeatherMap API and saves it to an AWS S3 bucket using Python and boto3."
-type: "page"
+type: "post"
 weight: 5
 image: "/images/weather_dashboard_diagram.png"
 showTableOfContents: true
 ---
 
----
 ### 🌟 Project Overview
 
 Welcome to my first project of the 30 Days Devops Challenge!.  
 I am excited to start this journey of learning cloud technologies and tackling all the hands-on projects together.
 
+[View on GitHub](https://github.com/kingdave4/aws-weather-api.git)
+
+
 ## Project Architecture Diagram
+
 ![Diagram ](/images/weather_dashboard_diagram.png)
 
 ### Weather Dashboard
