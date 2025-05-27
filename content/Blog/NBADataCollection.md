@@ -12,9 +12,8 @@ showTableOfContents: true
 ## 🚀 Introduction
 
 Welcome to my third project in the DevOps Challenge! This time, I tackled the automation of collecting, storing, and analyzing NBA player data using AWS services. 
-My goal was to fetch real-time NBA data from the Sportsdata.io API and create a scalable data lake on AWS. 
+My goal was to fetch real-time NBA data from the Sportsdata.io API and create a scalable data lake on AWS. To take it a step further, I automated the entire workflow using GitHub Actions and set up AWS CloudWatch for logging and monitoring.
 
-To take it a step further, I automated the entire workflow using GitHub Actions and set up AWS CloudWatch for logging and monitoring.
 ---
 
 ### 🏀 What This Project Does
