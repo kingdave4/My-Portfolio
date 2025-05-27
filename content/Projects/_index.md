@@ -14,7 +14,7 @@ toc: true
 * [🏗️ Featured Projects](#-featured-projects)
 
   * [🏗️ Portfolio & Blog Deployment](#-portfolio--blog-deployment)
-  * [📊 Azure Data Lake Deployment & Refresh](#-azure-data-lake-deployment--refresh)
+  * [📊 Azure Data Lake Deployment](#-azure-data-lake-deployment)
   * [☁️ Weather Dashboard](#-weather-dashboard)
   * [🏀 Automating NBA Game Notifications with AWS & Terraform](#-automating-nba-game-notifications-with-aws--terraform)
   * [🏀 NBA Data Lake Pipeline](#-nba-data-lake-pipeline)
@@ -52,7 +52,7 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 ---
 
-### 📊  **Azure Data Lake Deployment & Refresh**
+### 📊  **Azure Data Lake Deployment**
 
 📌 *Provisioning a complete Azure Data Lake and automating NBA data ingestion with Azure Functions.*
 **Tech Stack:** Azure, Terraform, Azure Function App, Python, Key Vault, Synapse, Application Insights
@@ -141,6 +141,8 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 <img src="/images/terraform.svg" alt="Terraform" width="40" />
 
 <img src="/images/python.svg" alt="Python" width="40" />
+
+<img src="/images/docker.svg" alt="Docker" width="40" />
 
 [🔗 Read More →](/projects/ncaa-game-highlights/)
 
