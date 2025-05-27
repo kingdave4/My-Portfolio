@@ -46,4 +46,4 @@ The Weather Dashboard is not just a project—it's a milestone in my journey tow
 
 Stay tuned for more updates and reflections from my 30 Days DevOps Challenge!
 
-[🔗 Click here to see the project →](/projects/weather-dashboard/)
+[🔗 Click here to access the project →](/projects/weather-dashboard/)
