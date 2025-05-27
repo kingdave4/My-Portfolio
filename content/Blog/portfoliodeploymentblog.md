@@ -13,6 +13,7 @@ weight: 40
 When I decided to transition from IT Support to Cloud Engineering, I knew I needed a project that could truly showcase my evolving skill set. That's when I embarked on this project—to build and deploy my personal portfolio and blog using modern DevOps practices. With this portfolio, I can now host all my projects, blogs, and professional information in one place, and I’m excited to share the process with you.
 
 ### Project Archetectur diagrm
+
 ![Diagram for the portfolio](/images/myhugoportofolio.png)
 
 ## The Vision
@@ -48,10 +49,8 @@ This project has been a game changer in my transition to Cloud Engineering. Not 
 
 I’m excited to continue this journey, take on more challenges, and share my progress along the way. Stay tuned for more updates and projects as I explore the dynamic world of cloud engineering!
 
-[🔗 Click here to see the Project →](/projects/portfolio-deployment/)
-
 ---
 
-
-
 Feel free to reach out if you have any questions about my setup or if you're interested in collaborating on similar projects.
+
+[🔗 Click here to access the Project →](/projects/portfolio-deployment/)
