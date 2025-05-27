@@ -9,10 +9,6 @@ weight: 20
 showTableOfContents: true
 ---
 
-*A deep dive into my NBA Game Updates Project, automating notifications using AWS Lambda, SNS, and Terraform.*  
-
----
-
 ### 🚀 Introduction
 
 As part of my 30 Days DevOps Challenge, I completed my *NBA Game Updates Project*, an automated notification system for NBA game updates using AWS services. I chose AWS for its scalability and integration capabilities, and I used Terraform to ensure automated, consistent, and reproducible infrastructure deployment.
