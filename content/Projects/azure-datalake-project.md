@@ -13,6 +13,8 @@ showTableOfContents: true
 
 This project automates the provisioning of an end-to-end Azure Data Lake solution using Terraform and Python. It schedules a recurring refresh of NBA player data into Azure Data Lake Gen2 and enables querying with Synapse Analytics. The solution uses Azure Functions for scheduled data ingestion, Azure Key Vault for secret management, and Application Insights for observability.
 
+[View on GitHub](https://github.com/kingdave4/AzureDataLake.git)
+
 ---
 
 ## 🔧 Tools & Technologies
