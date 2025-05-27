@@ -27,7 +27,7 @@ toc: true
 
 ## 🚀 My Cloud & DevOps Projects
 
-Welcome to my projects showcase! Here, you’ll find hands-on projects that highlight my experience in **DevOps, Cloud Engineering, and Automation**. I focus on **AWS, Azure, Terraform, CI/CD, and Data Pipelines** to build scalable and reliable solutions.
+Welcome to my projects showcase! Here, you’ll find hands-on projects that highlight my experience in **DevOps, Cloud Engineering, and Automation**. I focus on **Azure, AWS, Terraform, CI/CD, and Data Pipelines** to build scalable and reliable solutions.
 
 Each project includes a breakdown of **technologies used, architecture, implementation steps, and lessons learned**. Click on any project to explore its details!
 
