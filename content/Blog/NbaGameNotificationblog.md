@@ -232,4 +232,4 @@ To improve the project, I plan to:
 
 This project has been a valuable experience in building serverless solutions and deploying infrastructure with Terraform. I'm excited to tackle more cloud and DevOps challenges as I continue my journey into Cloud Engineering! 🚀
 
-[🔗 Click here to see the project →](/projects/nba_game_notification/)
+[🔗 Click here to access the project →](/projects/nba_game_notification/)
