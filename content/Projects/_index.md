@@ -14,7 +14,7 @@ toc: true
 * [🏗️ Featured Projects](#-featured-projects)
 
   * [🏗️ Portfolio & Blog Deployment](#-portfolio--blog-deployment)
-  * [Azure Data Lake Deployment](#azure-data-lake-deployment)
+  * [📊 Azure Data Lake Deployment](#-azure-data-lake-deployment)
   * [☁️ Weather Dashboard](#-weather-dashboard)
   * [🏀 Automating NBA Game Notifications with AWS & Terraform](#-automating-nba-game-notifications-with-aws--terraform)
   * [🏀 NBA Data Lake Pipeline](#-nba-data-lake-pipeline)
