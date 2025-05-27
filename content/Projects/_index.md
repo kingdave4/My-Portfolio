@@ -44,7 +44,7 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 <img src="/images/azure.svg" alt="Azure" width="40" /> 
 
-<img src="/images/gitgub_actions.svg" alt="GitHub Actions" width="40" />
+<img src="/images/github_actions.svg" alt="GitHub Actions" width="40" />
 
 <img src="/images/hugo.svg" alt="Hugo" width="40" /> 
 
