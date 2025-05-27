@@ -12,6 +12,7 @@ showTableOfContents: true
 
 The **NBA Data Lake Pipeline** project automates the process of collecting, storing, and analyzing NBA player data using AWS. This pipeline fetches data from the Sportsdata.io API and sets up a data lake that is easily queryable via AWS Athena. To enhance automation, GitHub Actions are used to deploy the pipeline, while AWS CloudWatch logs all activities.
 
+[View on GitHub](https://github.com/kingdave4/Nba_Data_Lake.git)
 
 ## What This Project Does
 
