@@ -10,14 +10,14 @@ post: "post"
 
 My goal was simple: create a robust, scalable, and automated solution to host my personal portfolio and blog. I wanted a setup that would not only display my work and professional information, but also reflect my proficiency in cloud engineering and DevOps.
 
-By combining **Hugo** for site generation, **Terraform** for infrastructure automation, **Azure Static Web Apps** for hosting, and **GitHub Actions** for CI/CD—including deployments for both the static site and an **Azure Function** I achieved a seamless, cloud-native solution that aligns with modern DevOps practices.
+By combining **Hugo** for site generation, **Terraform** for infrastructure automation, **Azure Static Web Apps** for hosting, and **GitHub Actions** for CI/CD including deployments for both the static site and an **Azure Function** I achieved a seamless, cloud-native solution that aligns with modern DevOps practices.
 
 ---
 
 ## Why This Project?
 
 * **Showcasing My Skills:** From Infrastructure as Code (IaC) using Terraform to automated deployments via GitHub Actions, this project reflects my technical abilities and learning journey.
-* **A Central Hub:** This site is now my digital resume—hosting my blogs, projects, and even a downloadable version of my resume in a dedicated section.
+* **A Central Hub:** This site is now my digital resume hosting my blogs, projects, and even a downloadable version of my resume in a dedicated section.
 * **Smooth Career Transition:** As I pivot from IT Support to Cloud Engineering, this project has provided essential hands-on experience with cloud platforms, observability, and CI/CD.
 
 ---
@@ -70,6 +70,6 @@ This project has been transformational in my career journey. It not only serves 
 
 I’m proud of the outcome and excited to build on this foundation by contributing more content, refining the infrastructure, and adding observability enhancements.
 
-*Stay tuned to my blog for more DevOps, cloud engineering, and automation-focused content. And if you're a recruiter or fellow tech enthusiast—[feel free to reach out](https://www.linkedin.com/in/david-mboli-idie-38b974209/).*
+*Stay tuned to my blog for more DevOps, cloud engineering, and automation-focused content. And if you're a recruiter or fellow tech enthusiast [feel free to reach out](https://www.linkedin.com/in/david-mboli-idie-38b974209/).*
 
 Thanks for reading!
