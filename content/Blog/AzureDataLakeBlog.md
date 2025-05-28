@@ -1,6 +1,6 @@
 ---
 title: "My Journey Building an Azure Data Lake Deployment & Refresh"
-date: 2025-05-26
+date: 2025-05-15
 tags: ["Azure", "Terraform", "Data Lake", "Serverless", "Cloud Engineering", "Python", "Synapse"]
 categories: ["Projects", "Cloud"]
 showTableOfContents: true
