@@ -4,6 +4,7 @@ date: 2025-05-25
 description: "A DevOps-focused walkthrough of deploying a personal portfolio and blog using modern cloud practices."
 tags: [cloud, devops, azure, terraform, hugo, github-actions, portfolio]
 type: "post"
+showTableOfContents: true
 ---
 
 ## The Vision

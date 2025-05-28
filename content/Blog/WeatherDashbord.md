@@ -11,7 +11,7 @@ weight: 10
 
 ## 🌟 My Journey into Cloud Automation
 
-When I embarked on my 30 Days DevOps Challenge, I was eager to dive into cloud technologies and explore how to build scalable, automated solutions. My first project, the **Weather Dashboard**, was a hands-on experience that combined AWS services with Python programming—and it set the tone for my journey into cloud automation.
+When I embarked on my 30 Days DevOps Challenge, I was eager to dive into cloud technologies and explore how to build scalable, automated solutions. My first project, the **Weather Dashboard**, was a hands-on experience that combined AWS services with Python programming and it set the tone for my journey into cloud automation.
 
 ### Project architecture diagram
 ![Diagram ](/images/weather_dashboard_diagram.png)
@@ -42,7 +42,7 @@ Despite these challenges, the project was a major success and provided a solid f
 
 ## Final Thoughts
 
-The Weather Dashboard is not just a project—it's a milestone in my journey toward becoming a proficient cloud and DevOps engineer. This hands-on experience has given me the confidence to tackle more complex projects and explore further into the world of cloud automation. I'm excited to share more of my learnings and projects as I continue on this path.
+The Weather Dashboard is not just a project it's a milestone in my journey toward becoming a proficient cloud and DevOps engineer. This hands-on experience has given me the confidence to tackle more complex projects and explore further into the world of cloud automation. I'm excited to share more of my learnings and projects as I continue on this path.
 
 Stay tuned for more updates and reflections from my 30 Days DevOps Challenge!
 

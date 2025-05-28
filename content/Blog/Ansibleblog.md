@@ -15,7 +15,7 @@ Ansible is an agentless configuration management tool that allows you to automat
 
 ## My First Experience with Ansible
 
-We covered the basics in the course—just enough to start writing playbooks and executing tasks on remote servers. Even with that introductory exposure, I quickly saw the value Ansible brings to a DevOps workflow.
+We covered the basics in the course just enough to start writing playbooks and executing tasks on remote servers. Even with that introductory exposure, I quickly saw the value Ansible brings to a DevOps workflow.
 
 ## Quick Tips I Learned
 
@@ -67,7 +67,7 @@ vars:
 
 
 ### YAML Formatting is Strict
-YAML doesn’t tolerate mistakes. Be careful with spacing and indentation—especially in nested structures.
+YAML doesn’t tolerate mistakes. Be careful with spacing and indentation especially in nested structures.
 
 ## What's Next?
 Though I’ve only scratched the surface of Ansible, I’m excited to incorporate it into more of my personal projects, especially for:
@@ -80,7 +80,7 @@ Next, I plan to explore more advanced topics like roles, templates, and handlers
 
 
 ## Final Thoughts
-Ansible and Terraform complement each other well—Terraform handles infrastructure provisioning, while Ansible takes care of configuration. Learning both as part of a broader DevOps curriculum has given me a much better understanding of modern automation workflows.
+Ansible and Terraform complement each other well terraform handles infrastructure provisioning, while Ansible takes care of configuration. Learning both as part of a broader DevOps curriculum has given me a much better understanding of modern automation workflows.
 
 If you're new to configuration management or looking to reduce repetitive server tasks, Ansible is a great place to start. And if you’re enrolled in the DevOps Beginners to Advanced with Projects course like I was, you’re already off to a strong start.
 

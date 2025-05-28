@@ -21,7 +21,7 @@ The course led me through:
 - Deploying simple pods and services  
 - Familiarizing myself with key Kubernetes objects like Pods, Deployments, and Services  
 
-It was the ideal starting point—hands-on and not overwhelming.
+It was the ideal starting point hands-on and not overwhelming.
 
 ## Tips I Learned for Beginners
 
@@ -77,7 +77,7 @@ spec:
 ```
 
 ### 5. Don't Skip the Dashboard
-The Kubernetes Dashboard is a useful visual interface. While optional, it’s a great tool for understanding cluster activity—especially when you're just getting started.
+The Kubernetes Dashboard is a useful visual interface. While optional, it’s a great tool for understanding cluster activity especially when you're just getting started.
 
 ## What's Next?
 Now that I’ve learned the basics, my next Kubernetes objectives include:

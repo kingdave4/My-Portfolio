@@ -10,7 +10,7 @@ type: post
 
 ## 🚀 My Azure Data Lake Deployment & Refresh Journey
 
-When I made the career shift from IT Support to Cloud Engineering, I understood I would require a hands-on project incorporating infrastructure-as-code, serverless compute, and analytics. I decided to automate a real-world application—processing live NBA data into an Azure Data Lake, updating it at a scheduled time, and allowing rapid querying with Synapse. Through it, I learned not only APIs and Terraform; I learned the significance of automation and observability in production systems.
+When I made the career shift from IT Support to Cloud Engineering, I understood I would require a hands-on project incorporating infrastructure-as-code, serverless compute, and analytics. I decided to automate a real-world application processing live NBA data into an Azure Data Lake, updating it at a scheduled time, and allowing rapid querying with Synapse. Through it, I learned not only APIs and Terraform; I learned the significance of automation and observability in production systems.
 
 ---
 
@@ -22,7 +22,7 @@ In the early days of my transition, I was frequently reading docs but having tro
 - **Azure Functions** introduced me to the potential of serverless patterns and managed identities.
 - **Synapse Analytics** unveiled the process of how raw information becomes insights.
 
-When I saw my first JSON file appear in Blob Storage automatically every ten minutes, I felt a rush of confidence—this was the sort of cloud engineering I wanted to do as a career.
+When I saw my first JSON file appear in Blob Storage automatically every ten minutes, I felt a rush of confidence this was the sort of cloud engineering I wanted to do as a career.
 
 ---
 
@@ -47,7 +47,7 @@ I relied heavily on the Azure SDK for Python and the AzureRM Terraform provider.
 - **Modular Terraform**: Dividing resources into modules made it possible to reuse configurations and made it simpler to comprehend the outputs of `terraform plan`.
 - **Local Debugging**: Locally running the function using mock secrets enabled rapid iteration prior to publishing to Azure.
 
-I left most of the code samples in the repository—please feel free to go through `main.tf`, `variables.tf`, and the Python files if you prefer to see complete samples.
+I left most of the code samples in the repository please feel free to go through `main.tf`, `variables.tf`, and the Python files if you prefer to see complete samples.
 
 ---
 

@@ -11,7 +11,7 @@ I learned about **Docker** as part of my evolving DevOps journey yet another tec
 
 ## Why Docker?
 
-Docker allows you to package applications and their dependencies into lean, portable containers. These containers can run anywhere—locally, on virtual machines, or in the cloud—ensuring consistent deployment across environments.
+Docker allows you to package applications and their dependencies into lean, portable containers. These containers can run anywhere locally, on virtual machines, or in the cloud ensuring consistent deployment across environments.
 
 Docker forms the foundation of DevOps, microservices, and cloud-native development, so learning it early provides a significant advantage.
 
@@ -85,5 +85,6 @@ Now that I understand the basics, I intend to:
 ## Final Thoughts
 Docker was one of the most exciting parts of the DevOps Beginners to Advanced with Projects course. It brought to life concepts like “build once, run anywhere,” and now I can containerize my own applications confidently.
 
-More Dockerized projects and tutorials will be posted on my portfolio site soon stay tuned!
+More Dockerized projects will be posted on my portfolio site soon so stay tuned!
 And if you're just getting started, here's my course certificate that helped me build this foundation!
+[Udemy Certificate](https://www.udemy.com/certificate/UC-31ed7e8b-7892-4bc0-8184-335d9c0dee8c/).

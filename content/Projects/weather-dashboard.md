@@ -14,8 +14,6 @@ showTableOfContents: true
 Welcome to my first project of the 30 Days Devops Challenge!.  
 I am excited to start this journey of learning cloud technologies and tackling all the hands-on projects together.
 
-[View on GitHub](https://github.com/kingdave4/aws-weather-api.git)
-
 
 ## Project Architecture Diagram
 
@@ -106,6 +104,7 @@ S3 Bucket Output
 
 ![S3 output ](/images/s3bucke_weather_data.png)
 
+---
 
 ### 📁 Repository
 

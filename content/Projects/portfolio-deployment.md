@@ -1,211 +1,149 @@
 ---
-title: "Portfolio Deployment with Hugo, GitHub, Terraform & Azure Static Web Apps"
-date: 2025-02-02
-description: "Deploying my personal portfolio using Hugo, GitHub, and Terraform on Azure."
-tags: ["Hugo", "Terraform", "Azure", "GitHub Actions", "DevOps"]
-categories: ["Projects"]
+title: "Building My Cloud Portfolio with Hugo, Terraform, and Azure"
+date: 2025-05-27
+description: "A fully automated, cloud-native walkthrough of deploying my personal portfolio and blog on Azure using IaC and CI/CD."
+tags: [cloud, devops, azure, terraform, hugo, github-actions, portfolio]
 type: "post"
 showTableOfContents: true
 ---
 
-## 📌 Overview
+## Overview
 
-This project focuses on deploying a personal portfolio and blog using Hugo as the static site generator, GitHub for version control, Terraform for infrastructure automation, and Azure Static Web Apps for hosting. The objective is to establish a scalable, automated, and cost-effective method to manage the portfolio site.
+This project is a fully automated, cloud-native portfolio and blog platform built using **Hugo**, **Terraform modules**, **GitHub Actions**, and **Microsoft Azure**. It serves as a live demonstration of my expertise in Infrastructure as Code (IaC), CI/CD pipelines, serverless backend development, and secure cloud deployments.
 
-[View on GitHub](https://github.com/kingdave4/My-Portfolio.git) 
+It hosts my portfolio, blog posts, resume, and contact form, and it's entirely provisioned and managed via Terraform and GitHub Actions.
 
-### Project Archetectur diagrm
+---
+
+## 🔧 Tools & Technologies
+
+* **Hugo**: Static site generator for creating the blog and portfolio.
+* **Terraform (modular)**: Used to provision Azure infrastructure using reusable modules.
+* **Azure Static Web Apps**: Hosts the frontend Hugo site with global scalability.
+* **Azure Function App (Python)**: Backend logic for contact form and future API endpoints.
+* **Azure Blob Storage**: Static website hosting for downloadable resume.
+* **Azure Key Vault**: Manages API keys and other sensitive secrets.
+* **Application Insights**: Provides monitoring, metrics, and diagnostics.
+* **GitHub Actions**: Automates CI/CD pipeline for both frontend and backend deployments.
+
+---
+
+## 🧱 Infrastructure Diagram
+
 ![Diagram for the portfolio](/images/myhugoportofolio.png)
 
-### 🛠️ Technologies Used
+---
 
-- **Static Site Generator:** Hugo
-- **Infrastructure as Code:** Terraform
-- **Cloud Provider:** Azure Static Web Apps
-- **Automation:** GitHub Actions
-- **Domain Management:** Godaddy
+## 💻 Project Structure
+
+```
+My-Portfolio/
+├── terraform/                    # Terraform configuration
+│   ├── main.tf                   # Root module
+│   ├── modules/                  # Reusable Terraform modules
+│   │   ├── static-web-app/       # Deploys Hugo to Azure Static Web App
+│   │   ├── function-app/         # Azure Function deployment
+│   │   ├── blob-storage/         # Resume static hosting
+│   │   ├── monitoring/           # App Insights integration
+│   │   └── key-vault/            # Secrets management
+│   └── variables.tf              # Input variables
+├── hugo-site/                    # Hugo source content
+│   ├── config.toml               # Site configuration
+│   └── content/, themes/, etc.   # Blog and portfolio content
+├── azure-functions/             # Python Azure Function code
+│   ├── contact_form/             # Logic for contact form
+│   └── requirements.txt          # Python dependencies
+├── .github/workflows/
+│   └── deploy.yml               # GitHub Actions workflow
+```
 
 ---
-## The deployment process follows this flow:
 
+## 🚀 Deployment Guide
 
-- **Local Development:** Build and preview the Hugo site locally.
-- **Version Control:** Push changes to GitHub.
-- **Automation:** GitHub Actions triggers deployment.
-- **Infrastructure as Code:** Terraform provisions Azure resources.
-- **Deployment:** The site is hosted on Azure Static Web Apps.
+### 1. Clone Repository
 
-
-**Deployment: The site is hosted on Azure Static Web Apps.**
-
-🏗️ How to Deploy Your Portfolio
-
-### 🔹Step 1: Setting Up Hugo
-
-Install Hugo:
-
-If Hugo is not installed on your device then follow the Hugo installation guide for your operating system [here](https://gohugo.io/installation/).
-
-Create a New Site with the following command:
-
-```sh
-hugo new site my-portfolio
+```bash
+git clone https://github.com/kingdave4/My-Portfolio.git
+cd My-Portfolio
 ```
 
-### 🔹Step 2: Initializing GitHub Repository
+### 2. Configure Secrets
 
-Initialize Git Repository:
+Add your variables to a `.tfvars` file or securely pass them via Terraform Cloud or GitHub Secrets. Required values:
 
-Navigate to your project directory and run:
-
-```sh
-cd my-portfolio
-git init
-git add .
-git commit -m "Initial commit"
+```hcl
+subscription_id = "<YOUR_AZURE_SUBSCRIPTION_ID>"
+function_name   = "<AZURE_FUNCTION_NAME>"
+storage_name    = "<STORAGE_ACCOUNT_NAME>"
+sendgrid_api_key= "<SENDGRID_API_KEY>"
 ```
 
-Create a new repository on GitHub or you can an existing one if you alraedy have it.
+### 3. Provision Infrastructure
 
-To add Remote and Push:
-
-Connect your local repository to GitHub and push the changes:
-
-```sh
-git remote add origin https://github.com/<YOUR_USER_NAME>/my-portfolio.git
-git push -u origin main
-```
-
-### 🔹Step 3: Provisioning Azure Static Web App with Terraform
-Create a provider.tf, main.tf and variable.tf file with the following content:
-
-*** provider.tf ***
-
-```t
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 3.0"
-    }
-  }
-}
-
-# Configure the Azure provider
-provider "azurerm" {
-  features {
-    # This empty features block is REQUIRED
-    # (even if you don't configure any special features)
-  }
-}
-```
-
-*** main.tf ***
-
-```t
-# Resource Group
-resource "azurerm_resource_group" "rg" {
-  name     = "static-web-app-rg"
-  location = var.location
-}
-
-# Static Web App
-resource "azurerm_static_web_app" "static_site" {
-  name                = var.static_site_name
-  resource_group_name = azurerm_resource_group.rg.name
-  location            = azurerm_resource_group.rg.location
-  sku_tier            = "Free"
-  sku_size            = "Free"
-}
-
-#
-```
-
-
-*** Variable.tf ***
-
-```t
-variable "location" {
-  description = "Azure region for the resources."
-  type        = string
-  default     = "eastus2"
-}
-
-variable "static_site_name" {
-  description = "Name for the Azure Static Web App."
-  type        = string
-  default     = "my-static-web-app"
-}
-```
-
-
-### Initialize and Apply Terraform Configuration:
-
-```sh
+```bash
+cd terraform
 terraform init
-terraform apply
+terraform plan -var-file="secrets.tfvars"
+terraform apply -var-file="secrets.tfvars" -auto-approve
 ```
-This will provision the Azure Static Web App.
+
+### 4. Run Hugo Locally
+
+```bash
+cd hugo-site
+hugo server -D
+```
+
+### 5. GitHub Actions Deployment
+
+Pushing changes to the `main` branch triggers the GitHub Actions workflow to:
+
+* Build the Hugo static site
+* Deploy the frontend to Azure Static Web Apps
+* Deploy the backend Python Azure Function
+
+Ensure required GitHub secrets (e.g., Azure credentials, SendGrid key) are added to the repo settings.
 
 ---
-### 🔹 Step 4: Configuring GitHub Actions for Deployment ***
 
-Set Up GitHub Actions Workflow: Azure Static Web Apps integrates with GitHub Actions to automate deployments.
+## 🔁 How It Works
 
-Create Workflow File: In your repository, create .github/workflows/azure-static-web-apps.yml with the following content:
+1. **Local Development**: Designed and tested the site locally using Hugo.
+2. **Version Control**: Pushed changes to GitHub with version tracking.
+3. **CI/CD Pipeline**: Unified GitHub Actions workflow handles:
 
-``` yml
-name: Deploy Hugo Site to Azure Static Web App
+   * Hugo site build
+   * Static Web App deployment
+   * Azure Function deployment
+4. **Infrastructure Provisioning**:
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+   * Static Web App (via Terraform module)
+   * Azure Function App (Python) + Service Plan
+   * Blob Storage with `$web` container for resume
+   * Azure Key Vault for managing secrets
+   * Application Insights for telemetry
+5. **Resume Hosting**: PDF resume served from Blob Storage via static web endpoint.
 
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    env:
-      AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-    
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: recursive
+---
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.125.7' # Update to your Hugo version
-          extended: true
+## 📬 Contact Form Logic
 
-      - name: Build Hugo Site
-        run: hugo --minify
+* Frontend form on the site triggers an HTTP request
+* Azure Function (Python) receives and processes form data
+* Sends email using SendGrid API via secret stored in Azure Key Vault
+* Logs success/failure using Application Insights
 
-      - name: Deploy to Azure Static Web Apps
-        uses: azure/static-web-apps-deploy@v1
-        with:
-          action: 'upload'
-          app_location: "/"
-          output_location: "public"
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-```
+---
 
-### Set Github Secret key: 
-In your GitHub repository settings, add the ***AZURE_STATIC_WEB_APPS_API_TOKEN***  secret. 
-You can obtain this token from the Azure portal under your Static Web App's settings.
+## 📁 Repository
 
-![Deployement Token ](/images/APiToken.png)
+[GitHub - kingdave4/My-Portfolio](https://github.com/kingdave4/My-Portfolio.git)
+
+---
+
+## 📬 Contact
+
+For questions, feedback, or opportunities, feel free to [connect on LinkedIn](https://www.linkedin.com/in/david-mboli-idie-38b974209/) or drop me a message through the contact form.
 
 
-
-### 🔹Step 5: Managing Custom Domain (Optional)
-
-Configure Custom Domain:
-
-In the Azure portal, navigate to your Static Web App and add your custom domain. 
-
-Follow the instructions to validate and configure DNS settings.
-
-[click here for the instructions](https://learn.microsoft.com/en-us/azure/static-web-apps/custom-domain)

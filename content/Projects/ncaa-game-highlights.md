@@ -11,8 +11,6 @@ showTableOfContents: true
 
 **NCAA Game Highlights – Project #5** is a containerized pipeline designed to fetch NCAA game highlights via RapidAPI, process video content using AWS MediaConvert, and provision all required AWS infrastructure with Terraform. This project demonstrates a complete end-to-end solution combining Docker containerization, AWS services, and Infrastructure as Code (IaC).
 
-[View on GitHub](https://github.com/kingdave4/NCAA_GamehighLight.git)
-
 ## Project Features
 
 - **RapidAPI Integration:** Accesses NCAA game highlights from a free-tier Sports Highlights API.
@@ -214,3 +212,17 @@ ECS tasks encountered permission issues with AWS MediaConvert due to missing iam
 - Increase concurrent video processing capabilities.
 - Transition from static date queries to dynamic time ranges.
 - Improve logging and error handling for enhanced observability.
+
+---
+
+### 📁 Repository
+
+[GitHub - kingdave4/AzureDataLake](https://github.com/kingdave4/NCAA_GamehighLight.git)
+
+---
+
+### 📬 Contact
+
+Feel free to reach out via [GitHub](https://github.com/kingdave4) if you have questions or suggestions!
+
+---
