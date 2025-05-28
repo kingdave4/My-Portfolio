@@ -198,4 +198,4 @@ I’m eager to keep building and refining my skills in cloud automation and data
 
 ---
 
-[🔗 Click here to access the project →](/projects/azure-datalake-project/)
+[🔗 Click here to access the project →](/projects/nba-data-lake/)
