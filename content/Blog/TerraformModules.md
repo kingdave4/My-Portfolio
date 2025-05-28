@@ -46,12 +46,13 @@ resource "aws_s3_bucket" "this" {
 
 I then employed it in the following manner in my primary setup:
 
+```hcl
 module "my_s3_bucket" {
   source      = "./modules/s3"
   bucket_name = "my-app-logs"
   acl         = "private"
 }
-
+```
 
 ## Takeaways
 
