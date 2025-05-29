@@ -1,6 +1,6 @@
 ---
 title: "Building My Cloud Portfolio with Hugo, Terraform, and Azure"
-date: 2025-05-27
+date: 2025-05-25
 description: "A fully automated, cloud-native walkthrough of deploying my personal portfolio and blog on Azure using IaC and CI/CD."
 tags: [cloud, devops, azure, terraform, hugo, github-actions, portfolio]
 type: "post"

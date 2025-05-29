@@ -1,8 +1,7 @@
 ---
 title: "Automating NBA Game Notifications with AWS & Terraform"
-date: "2025-01-21"
-description: "How I built an automated NBA game update notification system using AWS Lambda, SNS, and Terraform."
-categories: ["Blog", "DevOps"]
+date: "2025-01-16"
+description: "My second project in the 30 Days DevOps Challenge, how I built an automated NBA game update notification system using AWS Lambda, SNS, and Terraform. "
 tags: ["AWS", "Terraform", "Lambda", "SNS", "EventBridge ", "AWS 30 Days DevOps Challenge"]
 type: post
 weight: 20
@@ -11,7 +10,7 @@ showTableOfContents: true
 
 ### 🚀 Introduction
 
-As part of my 30 Days DevOps Challenge, I completed my *NBA Game Updates Project*, an automated notification system for NBA game updates using AWS services. I chose AWS for its scalability and integration capabilities, and I used Terraform to ensure automated, consistent, and reproducible infrastructure deployment.
+As part of my 30 Days DevOps Challenge, i completed my second project *NBA Game Updates*, an automated notification system for NBA game updates using AWS services. i chose to continue with AWS for its scalability and integration capabilities, and i decided to integrate Terraform in the mix to ensure consistent automatation in the infrastructure deployment.
 
 ### Project architecture diagram
 
@@ -34,7 +33,7 @@ This project automates NBA game update notifications by:
 - **AWS SNS (Simple Notification Service):** Manages pub-sub messaging and sends email alerts to subscribers.
 - **AWS EventBridge:** Creates scheduled triggers to run the Lambda function every 2 hours.
 - **AWS IAM (Identity and Access Management):** Manages permissions and access control for AWS services.
-- **Terraform:** Automates infrastructure deployment as code, ensuring consistency and reproducibility.
+- **Terraform:** Automates infrastructure deployment as code, creates the Lambda function, SNS, and all the policy.
 
 ### 📝 Setup Instructions
 
@@ -57,111 +56,14 @@ nba_game_notification_update/
 └── README.md                    # Project documentation and setup instructions.
 ```
 
-### Main Terraform Configuration for the NBA Game Updates Project
-
-```hcl
-# Creates an IAM role for the Lambda function
-resource "aws_iam_role" "lambda_role" {
-  name = "nba_lambda_role"
-  assume_role_policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [{
-      Action = "sts:AssumeRole",
-      Effect = "Allow",
-      Principal = {
-        Service = "lambda.amazonaws.com"
-      }
-    }]
-  })
-}
-
-# Attach the AWS managed policy for Lambda execution
-resource "aws_iam_role_policy" "lambda_policy" {
-  name   = "nba_lambda_policy"
-  role   = aws_iam_role.lambda_role.id
-  policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [
-      {
-        Effect   = "Allow",
-        Action   = ["logs:CreateLogGroup", "logs:CreateLogStream", "logs:PutLogEvents"],
-        Resource = "arn:aws:logs:*:*:*"
-      },
-      {
-        Effect   = "Allow",
-        Action   = ["sns:Publish"],
-        Resource = aws_sns_topic.nba_topic.arn
-      }
-    ]
-  })
-}
-
-# Create Lambda function
-resource "aws_lambda_function" "nba_lambda" {
-  function_name = "nba_game_data_handler"
-  runtime       = "python3.9"
-  role          = aws_iam_role.lambda_role.arn
-  handler       = "lambda_function.lambda_handler"
-
-  # Path to your Lambda deployment package (ZIP file with the Python code)
-  filename = "../lambda/nba_game_lambda.zip"
-
-  # Set the environment variables
-  environment {
-    variables = {
-      NBA_API_KEY   = var.nba_api_key
-      SNS_TOPIC_ARN = aws_sns_topic.nba_topic.arn
-    }
-  }
-}
-
-# Create SNS Topic for NBA Game Updates
-resource "aws_sns_topic" "nba_topic" {
-  name = "nba_game_updates"
-}
-
-# The ARN of the SNS topic to which game updates are published.
-# Used in the Lambda function to send updates.
-resource "aws_sns_topic_subscription" "email_subscription" {
-  topic_arn = aws_sns_topic.nba_topic.arn
-  protocol  = "email"
-  endpoint  = "kingofcloud13@gmail.com" # Replace with the desired email address
-}
-
-# Lambda Permission for EventBridge
-resource "aws_lambda_permission" "allow_eventbridge" {
-  statement_id  = "AllowExecutionFromEventBridge"
-  action        = "lambda:InvokeFunction"
-  function_name = aws_lambda_function.nba_lambda.function_name
-  principal     = "events.amazonaws.com"
-  source_arn    = aws_cloudwatch_event_rule.schedule_rule.arn
-}
-
-# EventBridge Rule to trigger Lambda every 2 hours
-resource "aws_cloudwatch_event_rule" "schedule_rule" {
-  name                = "nba_game_update_schedule"
-  description         = "Schedule to trigger Lambda every 2 hours"
-  # This cron expression triggers the Lambda function every 2 hours.
-  # Format: (minute, hour, day, month, weekday).
-  schedule_expression = "cron(0 */2 * * ? *)"
-}
-
-# EventBridge Target to trigger Lambda
-resource "aws_cloudwatch_event_target" "schedule_target" {
-  rule      = aws_cloudwatch_event_rule.schedule_rule.name
-  target_id = "nba_lambda"
-  arn       = aws_lambda_function.nba_lambda.arn
-}
-
-```
-## Step 1: Prerequisites
+## Prerequisites
 
 Ensure you have:
 - An AWS account.
 - API keys for the NBA data provider.
 - IAM roles with permissions for Lambda, SNS, and EventBridge.
 
-### Step 2: How It Works
+## How It Works
 
 The project structure includes a Terraform configuration and a Python script:
 

@@ -1,6 +1,6 @@
 ---
 title: "NCAA Game Data Backup (SportsDataBackup)"
-date: 2025-03-09T00:00:00Z
+date: 2025-03-04T00:00:00Z
 description: "An evolved pipeline that fetches NCAA game highlights, backs up query data using AWS DynamoDB, and automates daily triggers with AWS EventBridge and ECS Fargate."
 tags: ["AWS", "DynamoDB", "EventBridge", "ECS Fargate", "MediaConvert", "Terraform", "Docker", "DevOps"]
 type: "post"

@@ -1,7 +1,7 @@
 ---
 title: "NCAA Game Highlights"
-date: 2025-03-09T00:00:00Z
-description: "A containerized pipeline that fetches NCAA game highlights using RapidAPI, processes videos with AWS MediaConvert, and provisions infrastructure with Terraform."
+date: 2025-02-20T00:00:00Z
+description: "DevOps Challenge #5, a containerized pipeline that fetches NCAA game highlights using RapidAPI, processes videos with AWS MediaConvert, and provisions infrastructure with Terraform."
 tags: ["AWS", "MediaConvert", "Terraform", "Docker", "RapidAPI", "DevOps"]
 type: "post"
 showTableOfContents: true
@@ -9,11 +9,11 @@ showTableOfContents: true
 
 ## Overview
 
-When I started this project, my goal was simple: I wanted to build something fun, meaningful, and technically challenging. As a huge fan of Sport and i play basketball myself, I thought, *what if I could automatically pull NCAA game highlights and do something cool with them?* That curiosity led to the creation of **NCAA Game Highlights – Project #5**, an end-to-end pipeline that grabs game footage, processes it, and stores it—all powered by cloud tools.
+Welcome to my Devops Challenge project #5: NCAA Game Highlights! This containerized pipeline fetches NCAA game highlights using RapidAPI, processes the media with AWS MediaConvert, and leverages Terraform to provision the required AWS infrastructure. This project gave me more hands-on experience with Docker, AWS services, and Infrastructure as Code (IaC) using Terraform all in one streamlined solution.
 
 ## What This Project Does
 
-* **Fetches Game Highlights:** I use a free Sports Highlights API via RapidAPI to pull in the latest NCAA basketball action.
+* **Fetches Game Highlights:** I used a free Sports Highlights API via RapidAPI to pull in the latest NCAA basketball action.
 * **Processes Video Clips:** Videos are downloaded and passed through AWS MediaConvert to get them into a web-friendly format.
 * **Runs in a Docker Container:** Everything is packaged in a Docker container, so it works the same whether I run it on my laptop or in the cloud.
 * **Automates Setup with Terraform:** I didn’t want to manually set up cloud resources every time, so I used Terraform to automate it all—S3 buckets, IAM roles, ECS, and more.
@@ -60,7 +60,7 @@ Terraform/
 
 Before diving in, I needed a few things ready:
 
-* A **RapidAPI account** to access the Sports Highlights API
+* **RapidAPI account** to access the Sports Highlights API
 * **AWS account** for cloud services
 * **Docker & Python** installed locally
 
@@ -119,3 +119,5 @@ I’m already thinking about improvements:
 
 This was a super fun blend of my interests in sports and cloud engineering. Building something from scratch that actually works—and does something useful—is always rewarding.
 
+
+[🔗 Click here to access the project →](/projects/ncaa-game-highlights/)

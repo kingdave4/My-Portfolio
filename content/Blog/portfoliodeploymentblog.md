@@ -1,6 +1,6 @@
 ---
 title: "Building My Cloud Portfolio with Hugo, Terraform, and Azure"
-date: 2025-05-22
+date: 2025-05-25
 description: "A DevOps-focused walkthrough of deploying a personal portfolio and blog using modern cloud practices."
 tags: [cloud, devops, azure, terraform, hugo, github-actions, portfolio]
 type: "post"
@@ -74,3 +74,5 @@ I’m proud of the outcome and excited to build on this foundation by contributi
 *Stay tuned to my blog for more DevOps, cloud engineering, and automation-focused content. And if you're a recruiter or fellow tech enthusiast [feel free to reach out](https://www.linkedin.com/in/david-mboli-idie-38b974209/).*
 
 Thanks for reading!
+
+[🔗 Click here to access the project →](/projects/portfolio-deployment/)

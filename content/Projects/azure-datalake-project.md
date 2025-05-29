@@ -1,6 +1,6 @@
 ---
 title: "Azure Data Lake Deployment and Refresh"
-date: 2025-05-26T10:00:00Z
+date: 2025-05-15T10:00:00Z
 description: "Automating NBA Data Ingestion and Analytics with Terraform, Azure Functions, and Synapse"
 image: "Datalake_Workflow_Diagram.png"
 tags: ["Azure", "Terraform", "Data Engineering", "Serverless", "Python", "Synapse"]

@@ -68,7 +68,6 @@ Each hurdle compelled me to delve deeper into Azure documentation and sharpened 
 - **Visualization**: Directly linking Power BI to Synapse to create automatically refreshing dashboards from which I don't need to initiate queries.
 - **CI/CD**: Converting my Terraform and Function deployments to an Azure DevOps pipeline, where each merge deploys the entire environment.
   
----
 
 [🔗 Click here to access the project →](/projects/azure-datalake-project/)
 

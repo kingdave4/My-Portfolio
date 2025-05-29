@@ -1,6 +1,6 @@
 ---
 title: "NBA Data Lake Pipeline"
-date: 2025-03-09T00:00:00Z
+date: 2025-01-22T00:00:00Z
 description: "An automated pipeline for collecting, storing, and analyzing NBA player data using AWS and GitHub Actions."
 tags: ["AWS", "Data Lake", "GitHub Actions", "Python", "DevOps"]
 type: "post"
