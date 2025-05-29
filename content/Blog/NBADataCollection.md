@@ -1,6 +1,6 @@
 ---
 title: "Automating NBA Data Collection with AWS"
-date: 2025-01-2T21:29:01+08:00
+date: 2025-01-22
 description: "My third project in the 30 Days DevOps Challenge, a deep dive into my NBA Data Lake Pipeline, automating data collection and analysis using AWS services."
 tags: ["AWS", "Data Engineering", "DevOps", "GitHub Actions", "AWS 30 Days DevOps Challenge"]
 type: post
