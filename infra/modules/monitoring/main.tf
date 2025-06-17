@@ -1,3 +1,5 @@
+# Monitoring tools for the azure function
+
 resource "azurerm_log_analytics_workspace" "log" {
   name                = "${var.prefix}-log"  
   location            = var.location
