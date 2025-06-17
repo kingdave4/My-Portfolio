@@ -50,7 +50,7 @@ publishDir = "public"
   
   [[menu.main]]
     name = "Resume"
-    url = "https://myhugoblogstorage.blob.core.windows.net/$web/David_MboliIdie_Resume_website.pdf?sp=r&st=2025-06-17T14:16:15Z&se=2030-02-04T23:16:15Z&spr=https&sv=2024-11-04&sr=b&sig=Qs7c%2FS0MI7tP6qDhyrow3fWAzrA54%2BNPa6o95RqyeNA%3D"
+    url = "https://myhugoblogstorage.blob.core.windows.net/$web/David_MboliIdie_Resume_website.pdf?sp=r&st=2025-06-17T18:41:48Z&se=2028-02-18T03:41:48Z&spr=https&sv=2024-11-04&sr=b&sig=8tg2eXFyw9lYtvtHUWtFP3kr%2BlQQB3uhqnuFXdzdx90%3D"
     weight = 7
 
   [[menu.main]]
