@@ -22,5 +22,4 @@ variable "sendgrid_api_key" {
 variable "static_site_name" {
   description = "Name of the static site."
   type        = string
-  default     = "my-hugo-blog-static-site"
 }
