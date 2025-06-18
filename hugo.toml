@@ -1,4 +1,4 @@
-baseURL = "https://www.davidmboli-idie.com"  # For local development
+baseURL = "https://www.davidmboli-idie.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "David Mboli-Idie"
