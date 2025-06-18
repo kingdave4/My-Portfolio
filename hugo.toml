@@ -65,7 +65,7 @@ publishDir = "public"
   accentColor = "#FF4D4D"
   favicon = "favicon.ico"
   # Avatar settings
-  avatarURL = "/images/my_photo.png"  # Updated path to your avatar image
+  avatarURL = "/images/my_photo.png"
   avatarSize = "size-l"               # Options: size-xs, size-s, size-m, size-l, size-xl
 
   # Custom Head HTML (optional)
