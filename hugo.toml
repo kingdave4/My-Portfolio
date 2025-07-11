@@ -90,7 +90,7 @@ publishDir = "public"
   socialIcons = [
     {name = "github", url = "https://github.com/kingdave4"},
     {name = "linkedin", url = "https://www.linkedin.com/in/david-mboli-idie-38b974209/"},
-    {name = "email", url = "mailto:davidmboli1@email.com"}
+    {name = "email", url = "mailto:davidmboli1@gmail.com"}
   ]
 
 [minify]
