@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building BetaTask‑Solutions: Why We Chose Kubernetes on Azure"
-date: 2025-07-22
+date: 2025-06-27
 description: "A deep dive into the architectural decisions, challenges, and lessons learned while provisioning Kubernetes infrastructure for BetaTask‑Solutions on Azure."
 tags: [azure, devops, aks, acr, terraform, github-actions, prometheus, grafana, challenges]
 type: "post"
