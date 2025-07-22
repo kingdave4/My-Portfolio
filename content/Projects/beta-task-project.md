@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Building BetaTask-Solutions: Why We Chose Kubernetes on Azure"
-date: 2025-07-22
+date: 2025-06-27
 description: "A deep dive into the architectural decisions, challenges, and lessons learned while provisioning Kubernetes infrastructure for BetaTask-Solutions on Azure."
-tags: \[azure, devops, aks, acr, terraform, github-actions, prometheus, grafana, challenges]
+tags: [azure, devops, aks, acr, terraform, github-actions, prometheus, grafana, challenges]
 type: "post"
 showTableOfContents: true
 ---
@@ -92,7 +92,44 @@ ToDoList-Solutions/
 
 ## 🧱 Terraform Modules
 
-### Network Module (`modules/resource-group/main.tf`)
+
+### Main.tf  (`Infra/environments/dev/main.tf`)
+
+``` hcl
+
+# 1. Resource Group
+module "rg" {
+  source              = "../../modules/resource-group"
+  resource_group_name = var.resource_group_name
+  location            = var.location
+  tags                = var.tags
+}
+
+# 2. Container Registry
+module "acr" {
+  source                  = "../../modules/container-registry"
+  container_registry_name = var.acr_name
+  resource_group_name     = module.rg.resource_group_name
+  location                = module.rg.location
+  tags                    = var.tags
+}
+
+# environments/dev/aks.tf
+module "aks" {
+  source              = "../../modules/aks"
+  cluster_name        = var.cluster_name
+  resource_group_name = module.rg.resource_group_name
+  location            = module.rg.location
+  dns_prefix          = "tododev"
+  node_count          = 1
+  vm_size             = "Standard_B2s"
+  tags                = var.tags
+}
+
+```
+
+
+### Resource group Module (`modules/resource-group/main.tf`)
 
 ``` hcl
 
@@ -186,6 +223,106 @@ On success, **deploy-to-aks** runs:
 
 ---
 
+## Github action files
+
+
+**build-and-push**
+
+``` yml
+name: Build & Push Images
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - backend/** 
+      - frontend/**
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Log in to ACR
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.ACR_LOGIN_SERVER }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Build & push backend image
+        run: |
+          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/todolist-backend:${{ github.sha }} backend/
+          docker push ${{ secrets.ACR_LOGIN_SERVER }}/todolist-backend:${{ github.sha }}
+
+      - name: Build frontend image
+        run: |
+          docker build -t ${{ secrets.ACR_LOGIN_SERVER }}/todolist-frontend:${{ github.sha }} frontend/
+          docker push ${{ secrets.ACR_LOGIN_SERVER }}/todolist-frontend:${{ github.sha }}
+
+      - name: Save image tag
+        run: echo "IMAGE_TAG=${{ github.sha }}" >> $GITHUB_ENV
+
+```
+
+**deploy-to-aks**
+
+``` yml
+
+name: Deploy to AKS
+
+on:
+  workflow_run:
+    workflows: ["Build & Push Images"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Get AKS credentials
+        run: |
+          az aks get-credentials \
+            --resource-group rg-todo-dev \
+            --name todo-aks-dev \
+            --overwrite-existing
+
+      - name: Deploy manifests to AKS
+        run: |
+          kubectl apply -f backend-deployment.yaml
+          kubectl apply -f backend-service.yaml
+          kubectl apply -f frontend-deployment.yaml
+          kubectl apply -f frontend-service.yaml
+
+      - name: Update images in deployments
+        run: |
+          kubectl set image deployment/backend-deployment todo-backend=${{ secrets.ACR_LOGIN_SERVER }}/todolist-backend:${{ github.event.workflow_run.head_sha }}
+          kubectl set image deployment/frontend-deployment frontend=${{ secrets.ACR_LOGIN_SERVER }}/todolist-frontend:${{ github.event.workflow_run.head_sha }}
+
+      - name: Wait for rollout to complete
+        run: |
+          kubectl rollout status deployment/backend-deployment
+          kubectl rollout status deployment/frontend-deployment
+
+```
+
 ## 🔍 Key Decisions & Challenges
 
 ### 1. Terraform State Locking
@@ -234,7 +371,8 @@ On success, **deploy-to-aks** runs:
 
 ## 💭 Final Thoughts
 
-Working on **BetaTask-Solutions** was an invaluable exercise in balancing cost, complexity, and reliability. By collaborating closely with my developer friend, we ensured our infrastructure choices directly supported application requirements. The challenges—from Terraform state locking to CI/CD race conditions—taught me the importance of robust pipelines, clear dependency management, and careful metric hygiene. This project not only deepened my expertise in Azure, Kubernetes, and observability, but also provided a repeatable blueprint for future cloud-native deployments.
+Working on **BetaTask-Solutions** was an invaluable exercise in balancing cost, complexity, and reliability. By collaborating closely with my developer friend, we ensured our infrastructure choices directly supported application requirements. 
+The challenges—from Terraform state locking to CI/CD race conditions—taught me the importance of robust pipelines, clear dependency management, and careful metric hygiene. This project not only deepened my expertise in Azure, Kubernetes, and observability, but also provided a repeatable blueprint for future cloud-native deployments.
 
 ---
 
