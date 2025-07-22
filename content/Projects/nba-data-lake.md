@@ -150,7 +150,7 @@ SELECT FirstName, LastName, Position, Team FROM nba_players WHERE Position = 'SG
 
 ### 📬 Contact
 
-Feel free to reach out via [GitHub](https://github.com/kingdave4) if you have questions or suggestions!
+For questions, feedback, or opportunities, feel free to [connect on LinkedIn](https://www.linkedin.com/in/david-mboli-idie-38b974209/) or drop me a message through the contact form.
 
 ---
 
