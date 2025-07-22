@@ -1,5 +1,4 @@
 ---
-
 title: "My Projects"
 description: "A showcase of my DevOps and Cloud projects."
 date: 2025-02-02
@@ -13,7 +12,7 @@ toc: true
 * [🚀 My Cloud & DevOps Projects](#-my-cloud--devops-projects)
 * [🏗️ Featured Projects](#-featured-projects)
 
-  * [🏗️ Building BetaTask Solution](#-Building-BetaTask-Solution)
+  * [🏗️ Building BetaTask Solutions](#-building-betatask-solutions)
   * [🏗️ Portfolio & Blog Deployment](#-portfolio--blog-deployment)
   * [📊 Azure Data Lake Deployment](#-azure-data-lake-deployment)
   * [☁️ Weather Dashboard](#-weather-dashboard)
