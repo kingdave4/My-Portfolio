@@ -52,7 +52,6 @@ My-Portfolio/
 │   │   ├── blob-storage/         # Resume static hosting
 │   │   ├── monitoring/           # App Insights integration
 │   │   └── key-vault/            # Secrets management
-│   └── variables.tf              # Input variables
 ├── hugo-site/                    # Hugo source content
 │   ├── config.toml               # Site configuration
 │   └── content/, themes/, etc.   # Blog and portfolio content
