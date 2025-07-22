@@ -39,6 +39,11 @@ In this post, I’ll explain *why* each choice made sense and *how* we navigated
 
 ---
 
+## 🧱 Architecture Diagram
+
+![Architecture Diagram](/images/beta-task.png)
+
+
 ## 💻 Project Structure
 
 ```text
