@@ -39,12 +39,6 @@ In this post, I’ll explain *why* each choice made sense and *how* we navigated
 
 ---
 
-## 🧱 Architecture Diagram
-
-![BetaTask‑Solutions Infrastructure](/images/betatask-infra.png)
-
----
-
 ## 💻 Project Structure
 
 ```text
