@@ -78,7 +78,7 @@ ToDoList-Solutions/
 │   ├   ├── main.tf                  # Module main reusable file
 │   ├   ├── provider.tf                # Reusable Terraform modules
 │   ├   ├── variable.tf                 # Variable file
-│   ├   ├── terraform.tfvars                 # default variable file
+│   ├   ├── secrets.tfvars                 # default variable file
 │   └── modules/                # Terraform modules
 │   │   ├── resource-group/       # Azure resource group for all the services
 │   │   ├── aks/       # Azure Kubernetes terraformm configuration file
