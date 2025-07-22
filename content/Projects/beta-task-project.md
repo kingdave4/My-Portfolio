@@ -372,6 +372,7 @@ jobs:
 ## 💭 Final Thoughts
 
 Working on **BetaTask-Solutions** was an invaluable exercise in balancing cost, complexity, and reliability. By collaborating closely with my developer friend, we ensured our infrastructure choices directly supported application requirements. 
+
 The challenges—from Terraform state locking to CI/CD race conditions—taught me the importance of robust pipelines, clear dependency management, and careful metric hygiene. This project not only deepened my expertise in Azure, Kubernetes, and observability, but also provided a repeatable blueprint for future cloud-native deployments.
 
 ---
