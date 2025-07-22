@@ -39,8 +39,14 @@ It hosts my portfolio, blog posts, resume, and contact form, and it's entirely p
 ```
 My-Portfolio/
 ├── terraform/                    # Terraform configuration
-│   ├── main.tf                   # Root module
+│   ├── environments/dev/         # Development environment
+│   ├   ├── backend.tf                  # Backend configuation - Tfstate file configuration 
+│   ├   ├── main.tf                  # Module main reusable file
+│   ├   ├── provider.tf                # Reusable Terraform modules
+│   ├   ├── variable.tf                 # Variable file
+│   ├   ├── terraform.tfvars                 # default variable file
 │   ├── modules/                  # Reusable Terraform modules
+│   │   ├── resource-group/       # Azure resource group for all the services
 │   │   ├── static-web-app/       # Deploys Hugo to Azure Static Web App
 │   │   ├── function-app/         # Azure Function deployment
 │   │   ├── blob-storage/         # Resume static hosting
