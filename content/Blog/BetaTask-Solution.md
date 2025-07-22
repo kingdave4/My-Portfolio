@@ -42,21 +42,37 @@ In this post, I’ll explain *why* each choice made sense and *how* we navigated
 ## 💻 Project Structure
 
 ```text
-BetaTask-Solutions/
-├── terraform/
-│   ├── modules/
-│   │   ├── network/            # VNet, subnets, NSGs
-│   │   ├── aks/                # AKS cluster module (Standard_B2s)
-│   │   └── acr/                # ACR module
-│   ├── backend.tf              # Azure Blob Storage for state
-│   ├── main.tf                 # Root configuration
-│   └── variables.tf            # Input definitions
-├── k8s/                        # Kubernetes manifests & Helm values
-├── .github/workflows/
-│   ├── build-and-push.yml      # Build & push images to ACR
-│   └── deploy-to-aks.yml       # Deploy manifests to AKS after build
-└── monitoring/
-    └── kube-prometheus-stack/  # Helm chart values for monitoring
+ToDoList-Solutions/
+├── frontend/                    # Vue 3 frontend
+│   ├── src/
+│   │   ├── components/         # Vue components
+│   │   │   ├── AddTodoModal.vue
+│   │   │   ├── CalendarPage.vue
+│   │   │   ├── DashboardPage.vue
+│   │   │   ├── Notes.vue
+│   │   │   ├── NotificationCenter.vue
+│   │   │   ├── ReminderModal.vue
+│   │   │   ├── TagsManager.vue
+│   │   │   └── TodoItem.vue
+│   │   ├── composables/        # Vue composables
+│   │   │   ├── useAuth.js
+│   │   │   └── useNotifications.js
+│   │   ├── services/           # API services
+│   │   └── firebase.js         # Firebase configuration
+├── backend/                     # Node.js backend (optional)
+│   ├── routes/                 # API routes
+│   │   ├── auth.js
+│   │   └── reminders.js
+│   ├── middleware/             # Authentication middleware
+│   ├── tests/                  # Test files
+│   └── server.js               # Entry point
+├── Infra/                      # Terraform infrastructure
+│   ├── environments/dev/       # Development environment
+│   └── modules/                # Terraform modules
+├── firestore.rules             # Firestore security rules
+├── docker-compose.yml          # Multi-service setup
+├── *-deployment.yaml           # Kubernetes deployments
+└── *-service.yaml              # Kubernetes services
 ```
 
 ---
@@ -144,12 +160,11 @@ On success, **deploy-to-aks** runs:
 
 ---
 
-## 📁 Repository
+## 💭 Final Thoughts
 
-[GitHub – kingdave4/BetaTask-Solutions](https://github.com/kingdave4/BetaTask-Solutions)
-
+Working on BetaTask-Solutions was an invaluable exercise in balancing cost, complexity, and reliability. By collaborating closely with my developer friend, we ensured our infrastructure choices directly supported application requirements. The challenges from Terraform state locking to CI/CD race conditions taught me the importance of robust pipelines, clear dependency management, and careful metric hygiene. This project not only deepened my expertise in Azure, Kubernetes, and observability, but also provided a repeatable blueprint for future cloud-native deployments.
 ---
 
-## 📬 Get in Touch
+Thanks for reading!
 
-Questions or feedback? Connect on [LinkedIn](https://www.linkedin.com/in/david-mboli-idie-38b974209/) or drop a line via our contact form.
+[🔗 Click here to access the project →](/projects/portfolio-deployment/)
