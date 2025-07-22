@@ -13,6 +13,7 @@ toc: true
 * [🚀 My Cloud & DevOps Projects](#-my-cloud--devops-projects)
 * [🏗️ Featured Projects](#-featured-projects)
 
+  * [🏗️ Building BetaTask Solution](#-Building-BetaTask-Solution)
   * [🏗️ Portfolio & Blog Deployment](#-portfolio--blog-deployment)
   * [📊 Azure Data Lake Deployment](#-azure-data-lake-deployment)
   * [☁️ Weather Dashboard](#-weather-dashboard)
@@ -32,6 +33,29 @@ Welcome to my projects showcase! Here, you’ll find hands-on projects that high
 Each project includes a breakdown of **technologies used, architecture, implementation steps, and lessons learned**. Click on any project to explore its details!
 
 ## 🏗️ Featured Projects
+
+
+---
+
+### 🏗️ **Building BetaTask Solutions**
+
+📌 *Provisioning Kubernetes infrastructure for BetaTask‑Solutions on Azure with cost‑efficient AKS and end‑to‑end observability.*  
+**Tech Stack:** Terraform, AKS (Standard_B2s), ACR, Docker, GitHub Actions, Prometheus & Grafana
+
+<img src="/images/terraform.svg" alt="Terraform" width="40" /> 
+
+<img src="/images/azure.svg" alt="Azure" width="40" /> 
+
+<img src="/images/github_actions.svg" alt="GitHub Actions" width="40" />
+
+<img src="/images/hugo.svg" alt="Hugo" width="40" /> 
+
+<img src="/images/docker.svg" alt="Docker" width="40" />
+
+[🔗 Read More →](/projects/beta-task-project/)
+
+---
+
 
 ---
 
