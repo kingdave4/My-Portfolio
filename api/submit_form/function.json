@@ -9,11 +9,11 @@
       "methods": ["post"]
     },
     {
-      "type": "sendGrid",
+      "type": "Mailgun",
       "direction": "out",
-      "name": "sendgrid_msg",
-      "apiKey": "SENDGRID_API_KEY",
-      "from": "contact@davidmboli-idie.com"
+      "name": "mailgun_msg",
+      "apiKey": "MAILGUN_API_KEY",
+      "from": "contact@mail.davidmboli-idie.com"
     },
     {
       "type": "blob",
