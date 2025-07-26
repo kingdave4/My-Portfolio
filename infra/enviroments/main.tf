@@ -18,7 +18,7 @@ module "keyvault" {
   prefix              = var.prefix
   location            = module.resource_group.location
   resource_group_name = module.resource_group.resource_group_name
-  sendgrid_api_key    = var.sendgrid_api_key
+  mailgun_api_key    = var.mailgun_api_key
 }
 
 module "function" {
@@ -30,7 +30,7 @@ module "function" {
   storage_account_connection_string = module.storage.primary_connection_string
   storage_account_access_key     = module.storage.storage_account_access_key
   app_insights_instrumentation_key = module.monitoring.app_insights_key
-  sendgrid_api_key              = module.keyvault.sendgrid_api_key
+  mailgun_api_key          = module.keyvault.mailgun_api_key
 }
 
 module "monitoring" {

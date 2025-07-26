@@ -26,8 +26,9 @@ resource "azurerm_key_vault" "my_keyvault" {
   }
 }
 
-resource "azurerm_key_vault_secret" "my_sendgrid_api_key" {
-  name         = "SENDGRID-API-KEY"
-  value        = var.sendgrid_api_key
+resource "azurerm_key_vault_secret" "my_mailgun_api_key" {
+  name         = "MAILGUN-API-KEY"
+  value        = var.mailgun_api_key
   key_vault_id = azurerm_key_vault.my_keyvault.id
 }
+

@@ -13,8 +13,8 @@ variable "prefix" {
   type        = string
 }
 
-variable "sendgrid_api_key" {
-  description = "SendGrid API key for email notifications."
+variable "mailgun_api_key" {
+  description = "Mailgun API key for email notifications."
   type        = string
   sensitive   = true
 }
