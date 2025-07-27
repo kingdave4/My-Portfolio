@@ -27,8 +27,8 @@ def main(req: func.HttpRequest, output_blob: func.Out[str]) -> func.HttpResponse
         # Mailgun credentials from environment variables
         MAILGUN_DOMAIN = os.environ["MAILGUN_DOMAIN"]
         MAILGUN_API_KEY = os.environ["MAILGUN_API_KEY"]
-        FROM_EMAIL = "contact@mail.davidmboli-idie.com"
-        TO_EMAIL = "davidmboli1@gmail.com"
+        FROM_EMAIL = "MAILGUN_FROM_EMAIL"
+        TO_EMAIL = "MAILGUN_TO_EMAIL"
 
         # Send email via Mailgun API
         response = requests.post(
