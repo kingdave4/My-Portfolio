@@ -34,7 +34,7 @@ resource "azurerm_linux_function_app" "func" {
     FUNCTIONS_WORKER_RUNTIME         = "python"
     APPINSIGHTS_INSTRUMENTATIONKEY   = var.app_insights_instrumentation_key
     WEBSITE_CONTENTAZUREFILECONNECTIONSTRING = var.storage_account_connection_string
-    SENDGRID_API_KEY                 = var.sendgrid_api_key
+    MAILGUN_API_KEY                 = var.mailgun_api_key
     WEBSITE_CONTENTSHARE             = "content-${var.prefix}"
     AzureWebJobsStorage              = var.storage_account_connection_string
   }
