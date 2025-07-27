@@ -30,7 +30,7 @@
     const data = Object.fromEntries(new FormData(form));
 
     try {
-      const resp = await fetch('https://myhugoblog-funcb2ro.azurewebsites.net/api/submit_form?', {
+      const resp = await fetch('https://myhugoblog-funcb2ro.azurewebsites.net/api/submit_form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
