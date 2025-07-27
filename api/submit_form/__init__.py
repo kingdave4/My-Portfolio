@@ -35,7 +35,7 @@ def main(req: func.HttpRequest, output_blob: func.Out[str]) -> func.HttpResponse
             f"https://api.mailgun.net/v3/{MAILGUN_DOMAIN}/messages",
             auth=("api", MAILGUN_API_KEY),
             data={
-                "from": f"{name} <{FROM_EMAIL}>",
+                "from": f"Website Contact <{FROM_EMAIL}>",
                 "to": TO_EMAIL,
                 "reply-to": email,
                 "subject": subject,
