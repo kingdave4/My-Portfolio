@@ -24,11 +24,11 @@ def main(req: func.HttpRequest, output_blob: func.Out[str]) -> func.HttpResponse
         subject = "New Contact Form Message"
         body = f"Name: {name}\nEmail: {email}\nMessage: {msg}"
 
-        # Mailgun credentials from environment variables
+        # Read Mailgun credentials from environment variables
         MAILGUN_DOMAIN = os.environ["MAILGUN_DOMAIN"]
         MAILGUN_API_KEY = os.environ["MAILGUN_API_KEY"]
-        FROM_EMAIL = "MAILGUN_FROM_EMAIL"
-        TO_EMAIL = "MAILGUN_TO_EMAIL"
+        FROM_EMAIL = os.environ["MAILGUN_FROM_EMAIL"]
+        TO_EMAIL = os.environ["MAILGUN_TO_EMAIL"]
 
         # Send email via Mailgun API
         response = requests.post(
@@ -69,4 +69,3 @@ def main(req: func.HttpRequest, output_blob: func.Out[str]) -> func.HttpResponse
             mimetype="application/json",
             headers={"Access-Control-Allow-Origin": "*"}
         )
-
