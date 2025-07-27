@@ -23,3 +23,19 @@ variable "static_site_name" {
   description = "Name of the static site."
   type        = string
 }
+
+variable "my_mailgun_domain" {
+  description = "Mailgun domain for email notifications."
+  type        = string
+}
+
+variable "my_mailgun_from_email" {
+  description = "From email address for Mailgun."
+  type        = string
+}
+
+variable "my_mailgun_to_email" {
+  description = "To email address for Mailgun."
+  type        = string
+}
+

@@ -18,3 +18,19 @@ variable "mailgun_api_key" {
   type        = string
   sensitive   = true
 }
+
+variable "my_mailgun_domain" {
+  description = "Mailgun domain for email notifications."
+  type        = string
+}
+
+variable "my_mailgun_from_email" {
+  description = "From email address for Mailgun."
+  type        = string
+}
+
+variable "my_mailgun_to_email" {
+  description = "To email address for Mailgun."
+  type        = string
+}
+

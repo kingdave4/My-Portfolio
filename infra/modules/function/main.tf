@@ -37,6 +37,9 @@ resource "azurerm_linux_function_app" "func" {
     MAILGUN_API_KEY                 = var.mailgun_api_key
     WEBSITE_CONTENTSHARE             = "content-${var.prefix}"
     AzureWebJobsStorage              = var.storage_account_connection_string
+    MAILGUN_DOMAIN                  = var.my_mailgun_domain
+    MAILGUN_FROM_EMAIL              = var.my_mailgun_from_email
+    MAILGUN_TO_EMAIL                = var.my_mailgun_to_email
   }
 }
 

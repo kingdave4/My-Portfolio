@@ -19,6 +19,9 @@ module "keyvault" {
   location            = module.resource_group.location
   resource_group_name = module.resource_group.resource_group_name
   mailgun_api_key    = var.mailgun_api_key
+  my_mailgun_domain  = var.my_mailgun_domain
+  my_mailgun_from_email = var.my_mailgun_from_email
+  my_mailgun_to_email = var.my_mailgun_to_email
 }
 
 module "function" {
@@ -31,6 +34,9 @@ module "function" {
   storage_account_access_key     = module.storage.storage_account_access_key
   app_insights_instrumentation_key = module.monitoring.app_insights_key
   mailgun_api_key          = module.keyvault.mailgun_api_key
+  my_mailgun_domain       = module.keyvault.my_mailgun_domain
+  my_mailgun_from_email   = module.keyvault.my_mailgun_from_email
+  my_mailgun_to_email     = module.keyvault.my_mailgun_to_email
 }
 
 module "monitoring" {

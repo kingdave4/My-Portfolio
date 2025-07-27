@@ -1,13 +1,11 @@
 import logging
 import json
+import os
+import requests
 import azure.functions as func
 
-def main(
-    req: func.HttpRequest,
-    mailgun_msg: func.Out[dict],
-    output_blob: func.Out[str]
-) -> func.HttpResponse:
-    logging.info("Processing submit_form request via Mailgun binding")
+def main(req: func.HttpRequest, output_blob: func.Out[str]) -> func.HttpResponse:
+    logging.info("Processing submit_form request via direct Mailgun API")
 
     try:
         data = req.get_json()
@@ -23,20 +21,37 @@ def main(
                 headers={"Access-Control-Allow-Origin": "*"}
             )
 
-        # Validate email logic here, if needed
-
         subject = "New Contact Form Message"
         body = f"Name: {name}\nEmail: {email}\nMessage: {msg}"
 
-        # Use the Mailgun binding to send the message
-        mailgun_msg.set({
-            "to": ["davidmboli1@gmail.com"],
-            "subject": subject,
-            "text": body,
-            "h:Reply-To": f"{name} <{email}>"
-        })
+        # Mailgun credentials from environment variables
+        MAILGUN_DOMAIN = os.environ["MAILGUN_DOMAIN"]
+        MAILGUN_API_KEY = os.environ["MAILGUN_API_KEY"]
+        FROM_EMAIL = "contact@mail.davidmboli-idie.com"
+        TO_EMAIL = "davidmboli1@gmail.com"
 
-        # Write the JSON payload to blob storage
+        # Send email via Mailgun API
+        response = requests.post(
+            f"https://api.mailgun.net/v3/{MAILGUN_DOMAIN}/messages",
+            auth=("api", MAILGUN_API_KEY),
+            data={
+                "from": f"{name} <{FROM_EMAIL}>",
+                "to": TO_EMAIL,
+                "reply-to": email,
+                "subject": subject,
+                "text": body,
+            }
+        )
+
+        if response.status_code != 200:
+            logging.error(f"Mailgun error: {response.status_code}, {response.text}")
+            return func.HttpResponse(
+                json.dumps({"error": "Email failed to send"}),
+                status_code=500,
+                mimetype="application/json",
+                headers={"Access-Control-Allow-Origin": "*"}
+            )
+
         output_blob.set(json.dumps(data))
 
         return func.HttpResponse(
@@ -54,3 +69,4 @@ def main(
             mimetype="application/json",
             headers={"Access-Control-Allow-Origin": "*"}
         )
+

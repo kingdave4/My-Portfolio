@@ -32,3 +32,22 @@ resource "azurerm_key_vault_secret" "my_mailgun_api_key" {
   key_vault_id = azurerm_key_vault.my_keyvault.id
 }
 
+resource "azurerm_key_vault_secret" "my_mailgun_domain" {
+  name         = "MAILGUN-DOMAIN"
+  value        = var.my_mailgun_domain
+  key_vault_id = azurerm_key_vault.my_keyvault.id
+}
+
+resource "azurerm_key_vault_secret" "my_mailgun_from_email" {
+  name         = "FROM-EMAIL"
+  value        = var.my_mailgun_from_email
+  key_vault_id = azurerm_key_vault.my_keyvault.id
+}
+
+
+resource "azurerm_key_vault_secret" "my_mailgun_to_email" {
+  name         = "TO-EMAIL"
+  value        = var.my_mailgun_to_email
+  key_vault_id = azurerm_key_vault.my_keyvault.id
+}
+

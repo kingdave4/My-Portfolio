@@ -9,13 +9,6 @@
       "methods": ["post"]
     },
     {
-      "type": "Mailgun",
-      "direction": "out",
-      "name": "mailgun_msg",
-      "apiKey": "MAILGUN_API_KEY",
-      "from": "contact@mail.davidmboli-idie.com"
-    },
-    {
       "type": "blob",
       "direction": "out",
       "name": "output_blob",
