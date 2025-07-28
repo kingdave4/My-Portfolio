@@ -37,7 +37,7 @@ def main(req: func.HttpRequest, output_blob: func.Out[str]) -> func.HttpResponse
             data={
                 "from": f"Website Contact <{FROM_EMAIL}>",
                 "to": TO_EMAIL,
-                "reply-to": email,
+                "h:Reply-To": f"{name} <{email}>",
                 "subject": subject,
                 "text": body,
             }
