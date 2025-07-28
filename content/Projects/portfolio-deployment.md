@@ -76,11 +76,11 @@ Add your variables to a `.tfvars` file or securely pass them via Terraform Cloud
 subscription_id = "<YOUR_AZURE_SUBSCRIPTION_ID>"
 function_name   = "<AZURE_FUNCTION_NAME>"
 storage_name    = "<STORAGE_ACCOUNT_NAME>"
-mailgun_api_key= "_API_KEY>"
-MAILGUN_DOMAIN = "MAILGUN_DOMAIN"
+mailgun_api_key = "_API_KEY>"
+MAILGUN_DOMAIN  = "MAILGUN_DOMAIN"
 MAILGUN_API_KEY = "MAILGUN_API_KEY"
-FROM_EMAIL = "MAILGUN_FROM_EMAIL"
-TO_EMAIL = "MAILGUN_TO_EMAIL"
+FROM_EMAIL      = "MAILGUN_FROM_EMAIL"
+TO_EMAIL        = "MAILGUN_TO_EMAIL"
 ```
 
 ### 3. Provision Infrastructure
