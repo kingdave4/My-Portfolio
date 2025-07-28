@@ -132,26 +132,23 @@ On success, **deploy-to-aks** runs:
 ### 1. Terraform State Locking
 
 * **Why Terraform?**: Modular IaC and team collaboration
-* **Challenge**: Concurrent applies corrupted state
-* **Solution**: Azure Blob backend with state locking + manual approval gate
+* **Challenge**: Concurrent terraform apply runs corrupted state
+* **Solution**: Moved state to Azure Blob Storage with built-in state locking and enabled soft-delete to ensure state integrity.
 
 ### 2. AKS Tier Selection
 
 * **Why Standard\_B2s?**: Cheapest tier to minimize cost during development/testing
 * **Challenge**: Limited CPU/RAM for heavier tests
-* **Solution**: Keep a separate autoscaled prod cluster (min=2, max=5) with burstable VM sizes
+* **Solution**: Keep a separate autoscaled production cluster (min=2, max=5) with burstable VM sizes
 
 ### 3. CI/CD Race Conditions
 
-* **Why two workflows?**: Clear separation of build and deploy steps
-* **Challenge**: Deploy ran before ACR indexing completed, leading to missing images
-* **Solution**: Use `workflow_run` trigger and insert a `sleep 10` before deploy
-
-### 4. Prometheus Cardinality Issues
-
-* **Why Prometheus & Grafana?**: Custom metrics (p95, OOM, node pressure)
-* **Challenge**: High cardinality causing “too many series” errors
-* **Solution**: Prune labels in scrape configs and limit metric retention
+* **Why two workflows?**: Clear separation between building images and deploying them
+* **Challenge**: Early deploy attempts occasionally used images before they finished pushing to ACR
+* **Solution**:
+* 1. Saved the built image tag (IMAGE_TAG=${{ github.sha }}) to the GitHub Actions environment in the build-and-push workflow.
+* 2. Used the workflow_run trigger in deploy-to-aks to guarantee it only runs after a successful build.
+* 3. Referenced the saved IMAGE_TAG environment variable when updating deployments, eliminating arbitrary delays.
 
 ---
 
