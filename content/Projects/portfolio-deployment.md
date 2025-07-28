@@ -38,28 +38,23 @@ It hosts my portfolio, blog posts, resume, and contact form, and it's entirely p
 
 ```
 My-Portfolio/
-├── terraform/                    # Terraform configuration
-│   ├── environments/dev/         # Development environment
-│   ├   ├── backend.tf                  # Backend configuation - Tfstate file configuration 
-│   ├   ├── main.tf                  # Module main reusable file
-│   ├   ├── provider.tf                # Reusable Terraform modules
-│   ├   ├── variable.tf                 # Variable file
-│   ├   ├── terraform.tfvars                 # default variable file
-│   ├── modules/                  # Reusable Terraform modules
-│   │   ├── resource-group/       # Azure resource group for all the services
-│   │   ├── static-web-app/       # Deploys Hugo to Azure Static Web App
-│   │   ├── function-app/         # Azure Function deployment
-│   │   ├── blob-storage/         # Resume static hosting
-│   │   ├── monitoring/           # App Insights integration
-│   │   └── key-vault/            # Secrets management
-├── hugo-site/                    # Hugo source content
-│   ├── config.toml               # Site configuration
-│   └── content/, themes/, etc.   # Blog and portfolio content
-├── azure-functions/             # Python Azure Function code
-│   ├── contact_form/             # Logic for contact form
-│   └── requirements.txt          # Python dependencies
-├── .github/workflows/
-│   └── deploy.yml               # GitHub Actions workflow
+├── .github/
+│   └── workflows/
+├── api/
+├── archetypes/
+├── assets/
+│   └── css/
+├── content/
+├── infra/
+├── layouts/
+├── static/
+│   └── images/
+├── themes/
+├── .gitignore
+├── .gitmodules
+├── .hugo_build.lock
+├── README.MD
+└── hugo.toml
 ```
 
 ---
