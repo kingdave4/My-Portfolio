@@ -342,9 +342,9 @@ jobs:
 * **Why two workflows?**: Clear separation between building images and deploying them
 * **Challenge**: Early deploy attempts occasionally used images before they finished pushing to ACR
 * **Solution**:
-* 1. Saved the built image tag (IMAGE_TAG=${{ github.sha }}) to the GitHub Actions environment in the build-and-push workflow.
-* 2. Used the workflow_run trigger in deploy-to-aks to guarantee it only runs after a successful build.
-* 3. Referenced the saved IMAGE_TAG environment variable when updating deployments, eliminating arbitrary delays.
+  1. Saved the built image tag (IMAGE_TAG=${{ github.sha }}) to the GitHub Actions environment in the build-and-push workflow.
+  2. Used the workflow_run trigger in deploy-to-aks to guarantee it only runs after a successful build.
+  3. Referenced the saved IMAGE_TAG environment variable when updating deployments, eliminating arbitrary delays.
 
 ---
 
