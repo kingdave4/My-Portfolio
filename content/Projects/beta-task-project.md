@@ -228,8 +228,8 @@ resource "azurerm_container_registry" "TodoList-registry" {
 ```bash
 cd terraform
 terraform init
-terraform plan -var-file="terraform.tfvars"
-terraform apply -var-file="terraform.tfvars" -auto-approve
+terraform plan
+terraform apply -auto-approve
 ```
 
 > **Pro Tip:** Store Terraform state in Azure Blob Storage with soft-delete enabled to avoid corruption.
