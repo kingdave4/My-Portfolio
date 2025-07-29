@@ -226,7 +226,6 @@ resource "azurerm_container_registry" "TodoList-registry" {
 ### 3. Provision Infrastructure
 
 ```bash
-cd terraform
 terraform init
 terraform plan
 terraform apply -auto-approve
