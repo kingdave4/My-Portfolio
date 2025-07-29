@@ -155,7 +155,7 @@ On success, **deploy-to-aks** runs:
 
 1. Azure CLI login
 2. Fetch AKS credentials
-3. `kubectl apply` on `root folder` manifests
+3. `kubectl apply` on `/` manifests
 
 ---
 
