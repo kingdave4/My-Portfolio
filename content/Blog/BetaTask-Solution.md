@@ -48,6 +48,10 @@ In this post, I’ll explain *why* each choice made sense and *how* we navigated
 
 ```text
 ToDoList-Solutions/
+├── .github/                  # GitHub Actions workflows
+│   └── workflows/
+│       ├── build-and-push.yml
+│       └── deploy-to-aks.yml
 ├── frontend/                    # Vue 3 frontend
 │   ├── src/
 │   │   ├── components/         # Vue components
@@ -77,7 +81,7 @@ ToDoList-Solutions/
 │   ├   ├── main.tf                  # Module main reusable file
 │   ├   ├── provider.tf                # Reusable Terraform modules
 │   ├   ├── variable.tf                 # Variable file
-│   ├   ├── secrets.tfvars                # default variable file
+│   ├   ├── secrets.tfvars                 # default variable file
 │   └── modules/                # Terraform modules
 │   │   ├── resource-group/       # Azure resource group for all the services
 │   │   ├── aks/       # Azure Kubernetes terraformm configuration file
