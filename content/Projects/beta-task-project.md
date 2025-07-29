@@ -101,7 +101,7 @@ ToDoList-Solutions/
 
 ``` hcl
 
-# 1. Resource Group
+## 1. Resource Group
 module "rg" {
   source              = "../../modules/resource-group"
   resource_group_name = var.resource_group_name
@@ -128,6 +128,13 @@ module "aks" {
   node_count          = 1
   vm_size             = "Standard_B2s"
   tags                = var.tags
+}
+
+resource "azurerm_role_assignment" "role_assignment_acr" {
+  principal_id                     = module.aks.principal_id
+  role_definition_name             = "AcrPull"
+  scope                            = module.acr.acr_resource_id
+  skip_service_principal_aad_check = true
 }
 
 ```
