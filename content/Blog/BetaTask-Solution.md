@@ -130,8 +130,8 @@ ToDoList-Solutions/
 ```bash
 cd terraform
 terraform init
-terraform plan -var-file="secrets.tfvars"
-terraform apply -var-file="secrets.tfvars" -auto-approve
+terraform plan
+terraform apply -auto-approve
 ```
 
 > **Pro Tip:** Store Terraform state in Azure Blob Storage with soft-delete enabled to avoid corruption.
