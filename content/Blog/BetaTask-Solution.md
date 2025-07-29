@@ -128,7 +128,6 @@ ToDoList-Solutions/
 ### 3. Provision Infrastructure
 
 ```bash
-cd terraform
 terraform init
 terraform plan
 terraform apply -auto-approve
