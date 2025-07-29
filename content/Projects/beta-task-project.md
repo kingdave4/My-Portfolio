@@ -49,6 +49,10 @@ In this post, I’ll explain *why* each choice made sense and *how* we navigated
 
 ```text
 ToDoList-Solutions/
+├── .github/                  # GitHub Actions workflows
+│   └── workflows/
+│       ├── build-and-push.yml
+│       └── deploy-to-aks.yml
 ├── frontend/                    # Vue 3 frontend
 │   ├── src/
 │   │   ├── components/         # Vue components
