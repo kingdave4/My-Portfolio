@@ -188,7 +188,38 @@ resource "azurerm_container_registry" "TodoList-registry" {
 
 ## 🚀 Deployment Guide
 
-### 1. Provision Infrastructure
+
+### 1. Clone the repo
+
+   ```bash
+   git clone https://github.com/kingdave4/BetaTask-Solutions.git
+   cd BetaTask-Solutions/Infra/environments/dev
+   ```
+
+### 2. Create your own terraform.tfvars file
+   
+   ```bash
+   touch terraform.tfvars
+   ```
+   Open terraform.tfvars and fill in your own values:
+
+   ```tf
+   subscription_id     = "Your Subscription ID"
+   resource_group_name = "rg-todo-dev"
+   acr_name            = "todocrdev123"
+
+   location     = "eastus2"
+   cluster_name = "todo-aks-dev"
+   vm_size      = "Standard_B2s"
+   tags = {
+     environment = "dev"
+     project     = "ToDoList"
+     owner       = "Your Name(s)"
+   }
+   ```
+
+
+### 3. Provision Infrastructure
 
 ```bash
 cd terraform
@@ -199,14 +230,14 @@ terraform apply -var-file="secrets.tfvars" -auto-approve
 
 > **Pro Tip:** Store Terraform state in Azure Blob Storage with soft-delete enabled to avoid corruption.
 
-### 2. Configure GitHub Secrets
+### 4. Configure GitHub Secrets
 
 In your repo settings, add:
 
 * `AZURE_CREDENTIALS` (Service Principal JSON)
 * `ACR_LOGIN_SERVER`, `ACR_USERNAME`, `ACR_PASSWORD`
 
-### 3. Run CI/CD Workflows
+### 5. Run CI/CD Workflows
 
 Push to `main` to trigger **build-and-push**:
 
