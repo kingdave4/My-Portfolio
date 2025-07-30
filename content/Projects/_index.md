@@ -55,9 +55,6 @@ Each project includes a breakdown of **technologies used, architecture, implemen
 
 ---
 
-
----
-
 ### 🏗️ **Portfolio & Blog Deployment**
 
 📌 *Deploying my personal site using Hugo, GitHub, and Terraform on Azure.*
