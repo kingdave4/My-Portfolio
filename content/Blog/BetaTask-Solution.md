@@ -12,6 +12,24 @@ showTableOfContents: true
 
 ![Beta-taskLoginPage](/images/aks-betataskpage.png)
 
+---
+
+## 🔑 Key Highlights
+
+- **Zero-downtime rolling updates** on AKS deployments  
+- **40% faster image builds** via optimized Docker layering  
+- **Automated CI/CD** with GitHub Actions (build-and-push & deploy-to-aks)  
+- **Cost-efficient AKS** cluster on Standard_B2s nodes  
+- **Live observability** with **Prometheus** & **Grafana** dashboards  
+
+---
+
+![ Grafana Dashboard ](/images/aks-grafana.png)
+
+*Prometheus-powered Grafana dashboard tracking CPU & memory usage*
+
+---
+
 **BetaTask‑Solutions** is a collaborative pet project between me and one developer friend. While my friend focused on application development (Node/Express backend and Vue/Vite frontend), I owned the infrastructure side. We chose our tools to meet three core needs:
 
 * A **scalable** platform to handle unpredictable load
