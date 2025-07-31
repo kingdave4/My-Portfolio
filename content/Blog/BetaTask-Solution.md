@@ -10,6 +10,8 @@ showTableOfContents: true
 
 ## Overview
 
+![Beta-taskLoginPage](/images/aks-betataskpage.png)
+
 **BetaTask‑Solutions** is a collaborative pet project between me and one developer friend. While my friend focused on application development (Node/Express backend and Vue/Vite frontend), I owned the infrastructure side. We chose our tools to meet three core needs:
 
 * A **scalable** platform to handle unpredictable load
