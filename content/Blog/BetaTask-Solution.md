@@ -24,7 +24,7 @@ showTableOfContents: true
 
 ---
 
-![ Grafana Dashboard ](/images/aks-grafana.png)
+![ Grafana Dashboard ](/images/aks-prometheus-grafana.png)
 
 *Prometheus-powered Grafana dashboard tracking CPU & memory usage*
 
