@@ -97,14 +97,14 @@ ToDoList-Solutions/
 │   └── server.js               # Entry point
 ├── Infra/                      # Terraform infrastructure
 │   ├── environments/dev/       # Development environment
-│   ├   ├── backend.tf                  # Backend configuation - Tfstate file configuration 
+│   ├   ├── backend.tf                  # Backend configuration - Tfstate file configuration 
 │   ├   ├── main.tf                  # Module main reusable file
 │   ├   ├── provider.tf                # Reusable Terraform modules
-│   ├   ├── variable.tf                 # Variable file
+│   ├   ├── variables.tf                 # Variable file
 │   ├   ├── secrets.tfvars                 # default variable file
 │   └── modules/                # Terraform modules
 │   │   ├── resource-group/       # Azure resource group for all the services
-│   │   ├── aks/       # Azure Kubernetes terraformm configuration file
+│   │   ├── aks/       # Azure Kubernetes terraform configuration file
 │   │   ├── container-registry/         # Azure container registry to store the images
 ├── firestore.rules             # Firestore security rules
 ├── docker-compose.yml          # Multi-service setup
