@@ -51,3 +51,4 @@ resource "azurerm_key_vault_secret" "my_mailgun_to_email" {
   key_vault_id = azurerm_key_vault.my_keyvault.id
 }
 
+

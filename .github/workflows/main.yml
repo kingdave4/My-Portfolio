@@ -33,6 +33,7 @@ jobs:
           app_location: "/"
           output_location: "public"
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          skip_app_build: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
